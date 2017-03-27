@@ -1,0 +1,41 @@
+########################################################################
+###                                                                    #
+###   Fiery Zombie Sorcerer v1.0                                       #
+###                                                                    #
+###   Created by jaylawl                                               #
+###   Contact: jaylawlMC@gmail.com                                     #
+###                                                                    #
+########################################################################
+fiery_zombie_sorcerer:
+  Type: zombie
+  Display: '&rFiery Zombie Sorcerer'
+  KillMessages:
+  - '<target.name> was magically slain by a Fiery Zombie Sorcerer'
+  Health: 30
+  Equipment:
+  - pumpkin:4
+  - leather_chestplate:3
+  - air:2
+  - gold_boots:1
+  - blaze_rod:0
+  Options:
+    FollowRange: 24
+    ReinforcementsChance: 0
+  DamageModifiers:
+  - PROJECTILE 0.25
+  - MAGIC 1.5
+  Skills:
+  - potion{t=INVISIBILITY;d=630720000;l=0} @self ~onSpawn
+  - potion{t=FIRE_RESISTANCE;d=630720000;l=0} @self ~onSpawn
+  - ignite{t=630720000} @self ~onSpawn
+  - effect:sound{s=entity.zombie.hurt;v=1;p=0} @self ~onDamaged
+  - skill{s=fiery_zombie_sorcerer_clock} @self ~onTimer:20
+  Drops:
+  - SkeletonDrops
+  - pumpkin 1 1
+  - blaze_rod 1 1
+  - blaze_powder 1-8 1
+  - leather_chestplate 1 0.01
+  - gold_boots 1 0.01
+  - exp 75 1
+########################################################################

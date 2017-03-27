@@ -1,0 +1,50 @@
+# 
+# This example file shows you how to set up a basic drop table.
+# Drop tables can be used in both a mob's equipment and drops
+# to have multiple items tied to a single table.
+OrcDrops:
+  Conditions:
+  - playerwithin 40
+  Drops:
+  - UrukBlade 1 0.05
+  - UrukHelmet 1 0.05
+  - UrukTunic 1 0.05
+  - UrukBoots 1 0.05
+  - exp 120
+
+SkeletonKingDrops:
+  Conditions:
+  - playerwithin 40
+  Drops:
+  - KingsCrown 1 0.05
+  - 371:0 1-4 1
+  - 263:0 1-14 1
+  - 264:0 1-4 1
+  - 265:0 1-8 1
+  - exp 600
+  - heroesexp 1000
+  - BanditTunic  1 0.01
+  - SkeletonKingSword 1 0.01
+  - AdminRock 1 0.03
+  - AdminRock2 1 0.03
+  - AdminRock3 1 0.03
+  - AdminRock4 1 0.03
+  - SealedFeet 1 0.004
+  DropsPerLevel:
+  - exp 100
+SkeletonDrops:
+  Conditions:
+  - playerwithin 40
+  Drops:
+  - KingsCrown 1 0.02
+  - 371:0 1-2 1
+  - 265:0 1-4 1
+  - 264:0 1-2 1
+  - 263:0 1-4 1
+  - exp 200
+  - heroesexp 400
+  - SkeletonKingSword 1 0.01
+  - AdminRock3 1 0.03
+  - AdminRock4 1 0.03
+  DropsPerLevel:
+  - exp 100

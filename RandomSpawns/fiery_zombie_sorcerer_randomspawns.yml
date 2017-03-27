@@ -1,0 +1,18 @@
+########################################################################
+###                                                                    #
+###   Fiery Zombie Sorcerer v1.0                                       #
+###                                                                    #
+###   Created by jaylawl                                               #
+###   Contact: jaylawlMC@gmail.com                                     #
+###                                                                    #
+########################################################################
+fiery_zombie_sorcerer_randomspawns:
+  Type: fiery_zombie_sorcerer
+  Worlds: bossworld                           # add the appriorate names of your worlds here (required step)
+  Chance: 0.99                                                         # spawn chance can be modified here. 0.01 = 1 %
+  Priority: 1
+  Action: replace
+  UseWorldScaling: true
+  Conditions:
+  - outside true
+########################################################################

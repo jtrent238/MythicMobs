@@ -1,0 +1,140 @@
+# 
+# This example file shows you how to set up special items
+# for your mobs to equip or drop.
+UrukBlade:
+  Id: 268
+  Display: '&4&lUruk Blade'
+  Lore:
+  - '&6Forged in Isengard'
+  Enchantments:
+  - KNOCKBACK:2
+  - DURABILITY:10
+UrukHelmet:
+  Id: 306
+  Display: '&4&lUruk Helmet'
+  Lore:
+  - '&6Forged in Isengard'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:14
+  - DURABILITY:10
+  Attributes:
+    Head:
+      Health: 2.0-7.0
+      Armor: 1-10
+UrukBoots:
+  Id: 301
+  Display: '&4&lUruk Boots'
+  Lore:
+  - '&6Forged in Isengard'
+  Enchantments:
+  - DURABILITY:10
+  Attributes:
+    Feet:
+      Damage: 10.0-15
+      MovementSpeed: 0.01-0.1
+UrukTunic:
+  Id: 299
+  Display: '&4&lUruk Tunic'
+  Lore:
+  - '&6Forged in Isengard'
+  Attributes:
+    Chest:
+      Health: 5.0-10.0
+      MovementSpeed: 0.01-0.1
+SkeletonKingSword:
+  Id: 276
+  Data: 0
+  Display: '&3Greatsword of the Skeleton King'
+  Lore:
+  - '&6A powerful sword used by'
+  - '&6the King of Skeletons.'
+  Enchantments:
+  - DAMAGE_ALL:16
+  - KNOCKBACK:2
+  - FIRE_ASPECT:12
+KingsCrown:
+  Id: 314
+  Data: 0
+  Amount: 1
+  Display: '&dCrown of the King'
+  Lore:
+  - '&6A kingly crowl that grants'
+  - '&6the wearer unwavering power!'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:12
+  - PROTECTION_PROJECTILE:14
+  - PROTECTION_FIRE:16
+  - PROTECTION_EXPLOSIONS:12
+MiceBow:
+  Id: 261
+  Display: '&d&lMice Slayer'
+  Lore:
+  - '&1Built with bones from fallen mice.'
+  Attributes:
+    MainHand:
+      Health: 10.0
+      KnockbackResistance: 10.0
+    OffHand:
+      Health: 10.0
+      KnockbackResistance: 10.0
+  Enchantments:
+  - ARROW_FIRE:9
+  - ARROW_INFINITE:1
+  - ARROW_KNOCKBACK:10
+  - DURABILITY:13
+SealedFeet:
+  Id: 313
+  Display: '&4&lSealed Feet'
+  Lore:
+  - '&1All those Feet'
+  Attributes:
+    Feet:
+      Health: 20.0
+SealedDeath:
+  Id: 276
+  Display: '&4&lSealed Death'
+  Lore:
+  - '&1All those Souls'
+  Attributes:
+    MainHand:
+      Health: 20.0
+BanditTunic:
+  Id: 299
+  Display: '&aBandit Tunic'
+  Lore:
+  - '&6A leather tunic taken from'
+  - '&6the corpse of a bandit.'
+  - '&6makes you run 4 times faster.'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:14
+  Attributes:
+    Chest:
+      MovementSpeed: 4.0
+AdminRock:
+  Id: 4
+  Display: '&6A Peace Of Admin Mnt'
+  Lore:
+  - '&6A rare stone from admin mnt'
+  Enchantments:
+  - DURABILITY:20
+AdminRock2:
+  Id: 4
+  Display: '&6A Peace Of Admin Mnt'
+  Lore:
+  - '&6A rare stone from admin mnt'
+  Enchantments:
+  - LOOT_BONUS_BLOCKS:20
+AdminRock3:
+  Id: 1
+  Display: '&6A Peace Of Admin Mnt'
+  Lore:
+  - '&6A rare stone from admin mnt'
+  Enchantments:
+  - DIG_SPEED:10
+AdminRock4:
+  Id: 1
+  Display: '&6A Peace Of Admin Mnt'
+  Lore:
+  - '&6A rare stone from admin mnt'
+  Enchantments:
+  - ARROW_DAMAGE:10

@@ -1,0 +1,56 @@
+# 
+# These example files show you how to inject Mythic Mobs
+# you've created into your world. The name of each block
+# can be whatever you'd like but must be unique.
+RandomOrc:
+  MobType: Orc
+  Worlds: bossworld
+  Chance: 1.0
+  Priority: 1
+  Action: add
+RandomSkeletonKing:
+  MobType: SkeletonKing
+  Worlds: bossworld
+  Chance: 0.09
+  Priority: 1
+  Action: replace
+  Conditions:
+  - outside true
+RandomSkeletalKnight:
+  MobType: SkeletalKnight
+  Worlds: bossworld
+  Chance: 0.99
+  Priority: 1
+  Action: add
+RandomSkeletalMinion:
+  MobType: SkeletalMinion
+  Worlds: bossworld
+  Chance: 0.99
+  Priority: 1
+  Action: add
+RandomSkeletonKingN:
+  MobType: SkeletonKing
+  Worlds: world,FiresOfTitan
+  Chance: 0.01
+  Priority: 1
+  Action: replace
+  Conditions:
+  - outside true
+RandomSkeletalKnightN:
+  MobType: SkeletalKnight
+  Worlds: world,FiresOfTitan
+  Chance: 0.1
+  Priority: 1
+  Action: add
+RandomSkeletalMinion:
+  MobType: SkeletalMinion
+  Worlds: world,FiresOfTitan
+  Chance: 0.1
+  Priority: 1
+  Action: add
+RandomOrc2:
+  MobType: Orc
+  Worlds: world,FiresOfTitan
+  Chance: 0.02
+  Priority: 1
+  Action: add

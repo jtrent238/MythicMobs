@@ -1,0 +1,25 @@
+########################################################################
+###                                                                    #
+###   Fiery Zombie Sorcerer v1.0                                       #
+###                                                                    #
+###   Created by jaylawl                                               #
+###   Contact: jaylawlMC@gmail.com                                     #
+###                                                                    #
+########################################################################
+fiery_zombie_sorcerer_clock:
+  Skills:
+  - skill{s=fiery_zombie_sorcerer_leech}
+  - ignite{t=60} @PIR{r=5}
+  - effect:sound{s=block.fire.ambient;v=3;p=2} 0.51
+fiery_zombie_sorcerer_leech:
+  Conditions:
+  - targetwithin 10
+  Skills:
+  - potion{t=SLOW;d=19;l=255}
+  - effect:particleline{p=flame;a=1;hs=0.15;vs=0.15;y=0.5;db=0.25} @target
+  - effect:particleline{p=smoke;a=7;hs=0.2;vs=0.2;y=0.2;db=0.25} @target
+  - effect:particles{p=heart;a=1;hs=0.25;y=1.5}
+  - effect:sound{s=block.fire.extinguish;v=1;p=0} @target
+  - damage{a=1} @target
+  - heal{a=1;overheal=true}
+########################################################################
