@@ -48,3 +48,17 @@ SkeletonDrops:
   - AdminRock4 1 0.03
   DropsPerLevel:
   - exp 100
+ZombieDrops:
+  Conditions:
+  - playerwithin 40
+  Drops:
+  - 371:0 1-2 1
+  - 265:0 1-4 1
+  - 264:0 1-2 1
+  - 263:0 1-4 1
+  - exp 200
+  - heroesexp 400
+  - AdminRock3 1 0.08
+  - AdminRock4 1 0.07
+  DropsPerLevel:
+  - exp 100
