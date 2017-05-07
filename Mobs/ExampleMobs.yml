@@ -128,3 +128,43 @@ MiceKing:
     MovementSpeed: 0.2
     MaxCombatDistance: 25
     PreventOtherDrops: true
+Anubis: 
+  Type: ZOMBIE
+  BossBar:
+    Enabled: true
+    Title: 'Anubis'
+    Range: 20
+    Color: WHITE
+    Style: SOLID
+  Display: 'Anubis-Top Dog'
+  Health: 750
+  Damage: 100
+  Skills:
+  - message{cooldown=20;m="<mob.name><&co> ...!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
+  - message{m="<mob.name><&co><trigger.name>, Your soul has been weighed!"} @PlayersInRadius{r=40} ~onPlayerKill >0 1
+  - skill{s=SummonZombies} @Self 0.1
+  - skill{s=SummonZombies} @Target 0.2
+  - skill{s=AnubisMummify} @Target 0.2
+  Equipment:
+  - SealedFeet:1
+  - SkeletonKingSword:0
+  Drops:
+  - MiceBow
+  - SealedFeet
+  - Khopesh
+  - BoneClothChestplate
+  - exp 100000000
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+ZombieMinion:
+  Type: Zombie
+  Display: '&2Zombie Minion'
+  Health: 10
+  Damage: 3
+  Options:
+    MovementSpeed: 0.1
+  Drops:
+  - ZombieDrops
