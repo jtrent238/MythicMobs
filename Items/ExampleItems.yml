@@ -138,3 +138,27 @@ AdminRock4:
   - '&6A rare stone from admin mnt'
   Enchantments:
   - ARROW_DAMAGE:10
+Khopesh:
+  Id: 276
+  Display: '&C&lKhopesh'
+  Lore:
+  - '&1Legend has it Anubis used this'
+  - '&1very sword to cut the souls out'
+  - '&1of those who he weighed...'
+  Enchantments:
+  - SHARPNESS:15
+  Attributes:
+    MainHand:
+      Health: 20.0
+BoneClothChestplate:
+  Id: 299
+  Display: '&r&lBone Cloth Chestplate'
+  Lore:
+  - '&fA cloth tunic made from'
+  - '&fthe bones of all the Gods'
+  - '&fenemies...'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:17
+  Attributes:
+    Chest:
+      Health: 25.0
