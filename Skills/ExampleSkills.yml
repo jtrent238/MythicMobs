@@ -28,3 +28,20 @@ AngrySludgePoison:
   Skills:
   - potion{type=POISON;lvl=2;duration=100} @PlayersInRadius{r=15}
   - effect:particles{p=happyVillager;amount=1000;hSpread=15;ySpread=1;speed=0;yOFfset=0.5} @Self
+AnubisMummify:
+  Cooldown: 10
+  Skills:
+  - potion{type=SLOWNESS;lvl=8;duration=10} @PlayersInRadius{r=5}
+  - potion{type=BLINDNESS;lvl=8;duration=10} @PlayersInRadius{r=5}
+  - effect:particles{p=hugeexplosion;amount=100;hSpread=5;ySpread=3;speed=0;yOFfset=0.5} @Self
+  - summon{mob=tnt;ammount=2;noise=3} @PlayersInRadius{r=5}
+SummonZombies:
+  Cooldown: 15
+  Skills:
+  - message{m="<mob.name><&co> Arise, my minions!"} @PlayersInRadius{r=40}
+  - delay 20
+  - summon{mob=ZombieMinion;amount=2;noise=5} @Self
+  - delay 20
+  - summon{mob=ZombieMinion;amount=2;noise=5} @Self
+  - delay 20
+  - summon{mob=ZombieMinion;amount=2;noise=5} @Self
