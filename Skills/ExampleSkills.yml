@@ -45,3 +45,9 @@ SummonZombies:
   - summon{mob=ZombieMinion;amount=2;noise=5} @Self
   - delay 20
   - summon{mob=ZombieMinion;amount=2;noise=5} @Self
+HorusPush:
+  Skills:
+  - effect:explosion @Self
+  - damage{amount=5} @PlayersInRadius{r=10}
+  - throw{velocity=15;velocityY=5} @PlayersInRadius{r=10}
+  - message{m="Sorry! Am I PUSHING you too hard?!"} @PlayersInRadius{r=40}
