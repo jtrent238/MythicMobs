@@ -130,13 +130,13 @@ MiceKing:
     PreventOtherDrops: true
 Anubis: 
   Type: WITHER_SKELETON
+  Display: '&f&lAnubis'
   BossBar:
     Enabled: true
     Title: 'Anubis'
     Range: 20
     Color: WHITE
     Style: SOLID
-  Display: '&f&lAnubis'
   Health: 750
   Damage: 100
   Skills:
