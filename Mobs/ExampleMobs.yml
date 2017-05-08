@@ -122,21 +122,21 @@ MiceKing:
   - SealedFeet
   - SkeletonKingSword
   - BanditTunic
-  - exp 1000000
+  - exp 10000
   Options:
     AlwaysShowName: true
     MovementSpeed: 0.2
     MaxCombatDistance: 25
     PreventOtherDrops: true
 Anubis: 
-  Type: ZOMBIE
+  Type: WITHER_SKELETON
   BossBar:
     Enabled: true
     Title: 'Anubis'
     Range: 20
     Color: WHITE
     Style: SOLID
-  Display: 'Anubis-Top Dog'
+  Display: '&f&lAnubis'
   Health: 750
   Damage: 100
   Skills:
@@ -147,13 +147,13 @@ Anubis:
   - skill{s=AnubisMummify} @Target 0.2
   Equipment:
   - SealedFeet:1
-  - SkeletonKingSword:0
+  - BoneClothChestplate:1
+  - Khopesh:0
   Drops:
-  - MiceBow
-  - SealedFeet
   - Khopesh
   - BoneClothChestplate
-  - exp 100000000
+  - SealedFeet
+  - exp 10000
   Options:
     AlwaysShowName: true
     MovementSpeed: 0.3
