@@ -1,5 +1,5 @@
 Ra:
-  Type: Zombie
+  Type: Husk
   Display: '@cRa, God of the Sun'
   BossBar:
     Enabled: true
@@ -67,7 +67,7 @@ Anubis:
     Range: 20
     Color: WHITE
     Style: SOLID
-  Health: 750
+  Health: 500
   Damage: 100
   Skills:
   - message{cooldown=20;m="<mob.name><&co> ...!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
@@ -81,10 +81,7 @@ Anubis:
   - Khopesh:0
   - DeathCowl:4
   Drops:
-  - Khopesh
-  - DeathCowl
-  - BoneClothChestplate
-  - SealedFeet
+  - AnubisDrops
   - exp 10000
   - AdminRock2
   Options:
