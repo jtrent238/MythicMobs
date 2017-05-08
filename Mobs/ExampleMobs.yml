@@ -128,3 +128,12 @@ MiceKing:
     MovementSpeed: 0.2
     MaxCombatDistance: 25
     PreventOtherDrops: true
+ZombieMinion:
+  Type: Zombie
+  Display: '&2Zombie Minion'
+  Health: 10
+  Damage: 2
+  Options:
+    MovementSpeed: 0.1
+  Drops:
+  - SkeletonDrops
