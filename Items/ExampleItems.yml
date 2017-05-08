@@ -142,23 +142,53 @@ Khopesh:
   Id: 276
   Display: '&C&lKhopesh'
   Lore:
-  - '&1Legend has it Anubis used this'
-  - '&1very sword to cut the souls out'
-  - '&1of those who he weighed...'
+  - '&cLegend has it Anubis used this'
+  - '&cvery sword to cut the souls out'
+  - '&cof those who he weighed...'
   Enchantments:
-  - SHARPNESS:15
+  - DAMAGE_ALL:17
   Attributes:
     MainHand:
-      Health: 20.0
+      AttackSpeed: 2.0
+      Damage: 8.0
+      Health: 10.0
 BoneClothChestplate:
-  Id: 299
-  Display: '&r&lBone Cloth Chestplate'
+  Id: 311
+  Display: '&r&lBone Forged Chestplate'
   Lore:
-  - '&fA cloth tunic made from'
+  - '&fA sturdy tunic made from'
   - '&fthe bones of all the Gods'
   - '&fenemies...'
   Enchantments:
   - PROTECTION_ENVIRONMENTAL:17
+  - DURABILITY:15
   Attributes:
     Chest:
-      Health: 25.0
+      Health: 10.0
+      Armor: 8.0
+      ArmorToughness: 3.0
+Ankh:
+  Id:449
+  Display: '&e&lAnkh Of Life'
+  Lore:
+  - '&fHeld by Ra, this item is'
+  - '&fthe purest representation'
+  - '&fof life itself...'
+  Attributes:
+    OffHand:
+      Health: 5.0
+      Armor: 4.0
+Uas:
+  Id:293  
+  Display: '&e&lUas Sceptre of Power'
+  Lore:
+  - '&fA sturdy tunic made from'
+  - '&fthe bones of all the Gods'
+  - '&fenemies...'
+  Enchantments:
+  - DAMAGE_ALL:15
+  - FIRE_ASPECT:15
+  - DURABILITY:15
+  Attributes:
+
+      
