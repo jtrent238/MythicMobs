@@ -136,7 +136,7 @@ Anubis:
     Range: 20
     Color: WHITE
     Style: SOLID
-  Display: '&f&lAnubis'
+  Display: '&f&lAnubis, God of Death'
   Health: 750
   Damage: 100
   Skills:
@@ -149,11 +149,14 @@ Anubis:
   - SealedFeet:1
   - BoneClothChestplate:1
   - Khopesh:0
+  - DeathCowl
   Drops:
   - Khopesh
+  - DeathCowl
   - BoneClothChestplate
   - SealedFeet
   - exp 10000
+  - AdminRock2
   Options:
     AlwaysShowName: true
     MovementSpeed: 0.3
@@ -168,3 +171,64 @@ ZombieMinion:
     MovementSpeed: 0.1
   Drops:
   - ZombieDrops
+Ra:
+  Type: Giant
+  Display: '@cRa, God of the Sun'
+  BossBar:
+    Enabled: true
+    Title: 'Ra'
+    Range: 20
+    Color: WHITE
+    Style: SOLID
+   Health: 625
+  Damage: 100
+  Skills:
+  - message{cooldown=20;m="<mob.name><&co> The sun fills me with power!!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
+  - message{m="<mob.name><&co><trigger.name>, you will burn for your treason!"} @PlayersInRadius{r=40} ~onPlayerKill >0 1
+  - skill{s=SummonZombies} @Self 0.1
+  - skill{s=SummonZombies} @Target
+  Equipment:
+  - SealedFeet:1
+  - SunForgedPlate:1
+  - Uas:0
+  Drops:
+  - Ankh
+  - Uas
+  - exp 10000
+  - SunForgedPlate
+  - AdminRock
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+Horus:
+  Type: Skeleton
+  Display: '@cHorus, God of the Sky'
+  BossBar:
+    Enabled: true
+    Title: 'Horus'
+    Range: 20
+    Color: WHITE
+    Style: SOLID
+   Health: 625
+  Damage: 100
+  Skills:
+  - message{cooldown=20;m="<mob.name><&co> When I'm done with you, you'll know who the strongest god is!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
+  - message{m="<mob.name><&co><trigger.name>, your blood marks the time of the new gods!"} @PlayersInRadius{r=40} ~onPlayerKill >0 1
+  - skill{s=SummonZombies} @Self 0.1
+  - skill{s=SummonZombies} @Target
+  Equipment:
+  - SealedFeet:1
+  - SunForgedPlate:1
+  - SkyBreaker:0
+  Drops:
+  - SkyBreaker
+  - 
+  - exp 1000
+  - AdminRock4
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 25
+    PreventOtherDrops: true 
