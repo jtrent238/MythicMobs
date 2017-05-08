@@ -236,7 +236,7 @@ DeathCowl:
   - PROTECTION_ENVIRONMENTAL:19
   - DURABILITY:15
   Options: 
-    Color: Black
+    Color: 0,0,0
   Attributes:
     Head:
       Health: 4.0
