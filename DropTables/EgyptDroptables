@@ -1,0 +1,34 @@
+RaDrops:
+  Conditions:
+  - playerwithin 40
+  Drops:
+  - exp 600
+  - Uas 1
+  - Ankh 1
+  - SunFogedPlate 1
+  - AdminRock 1 0.4
+  - AdminRock2 1 0.4
+  - AdminRock3 1 0.4
+  - AdminRock4 1 0.4
+AnubisDrops:
+  Conditions:
+  - playerwithin 40
+  Drops:
+  - exp 1000
+  - BoneClothChestplate 1
+  - Kopesh 1
+  - DeathCowl 1
+  - AdminRock 1 0.4
+  - AdminRock2 1 0.4
+  - AdminRock3 1 0.4
+  - AdminRock4 1 0.4
+HorusDrops:
+  Conditions:
+  - playerwithin 40
+  Drops:
+  - exp 600
+  - Skybreaker 1
+  - AdminRock 1 0.4
+  - AdminRock2 1 0.4
+  - AdminRock3 1 0.4
+  - AdminRock4 1 0.4
