@@ -168,7 +168,7 @@ BoneClothChestplate:
       Armor: 8.0
       ArmorToughness: 3.0
 Ankh:
-  Id:449
+  Id: 449
   Display: '&e&lAnkh Of Life'
   Lore:
   - '&fHeld by Ra, this item is'
@@ -179,7 +179,7 @@ Ankh:
       Health: 5.0
       Armor: 4.0
 Uas:
-  Id:293  
+  Id: 293  
   Display: '&e&lUas Sceptre of Power'
   Lore:
   - '&fHeld by Ra, this item'
