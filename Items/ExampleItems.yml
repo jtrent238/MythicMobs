@@ -211,7 +211,7 @@ SunForgedPlate:
       Armor: 8.0
       ArmorToughness: 3.0
 SkyBreaker:
-  Id:258
+  Id: 258
   Display: '&b&lSkybreaker'
   Lore:
   - '&bMade by Horus himself, this'
