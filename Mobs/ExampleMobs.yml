@@ -136,4 +136,4 @@ ZombieMinion:
   Options:
     MovementSpeed: 0.1
   Drops:
-  - SkeletonDrops
+  - ZombieDrops
