@@ -226,7 +226,7 @@ SkyBreaker:
       AttackSpeed: 1.3
       Damage: 9.0      
 DeathCowl:
-    Id: 298
+  Id: 298
   Display: '&r&lBone Forged Chestplate'
   Lore:
   - '&fMade by Anubis, this cowl'
