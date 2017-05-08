@@ -227,7 +227,7 @@ SkyBreaker:
       Damage: 9.0      
 DeathCowl:
   Id: 298
-  Display: '&r&lBone Forged Chestplate'
+  Display: '&r&lDeath Cowl'
   Lore:
   - '&fMade by Anubis, this cowl'
   - '&foffers you sight through'
