@@ -172,7 +172,7 @@ Horus:
   Damage: 100
   Skills:
   - message{cooldown=20;m="<mob.name><&co> When I'm done with you, you'll know who the strongest god is!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
-  - message{m="<mob.name><&co><trigger.name>, your blood marks the time of the new gods!"} @PlayersInRadius{r=40} ~onPlayerKill >0 1
+  - message{m="<mob.name><&co><trigger.name>, your blood marks the time of Horus!"} @PlayersInRadius{r=40} ~onPlayerKill >0 1
   - skill{s=SummonZombies} @Self 0.1
   - skill{s=SummonZombies} @Target
   Equipment:
@@ -181,7 +181,6 @@ Horus:
   - SkyBreaker:0
   Drops:
   - SkyBreaker
-  - 
   - exp 1000
   - AdminRock4
   Options:
@@ -189,3 +188,37 @@ Horus:
     MovementSpeed: 0.3
     MaxCombatDistance: 25
     PreventOtherDrops: true 
+Anubis: 
+  Type: WITHER_SKELETON
+  Display: '&f&lAnubis'
+  BossBar:
+    Enabled: true
+    Title: 'Anubis'
+    Range: 20
+    Color: WHITE
+    Style: SOLID
+  Health: 750
+  Damage: 100
+  Skills:
+  - message{cooldown=20;m="<mob.name><&co> ...!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
+  - message{m="<mob.name><&co><trigger.name>, Your soul has been weighed!"} @PlayersInRadius{r=40} ~onPlayerKill >0 1
+  - skill{s=SummonZombies} @Self 0.1
+  - skill{s=SummonZombies} @Target 0.2
+  - skill{s=AnubisMummify} @Target 0.2
+  Equipment:
+  - SealedFeet:1
+  - BoneClothChestplate:1
+  - Khopesh:0
+  - DeathCowl
+  Drops:
+  - Khopesh
+  - DeathCowl
+  - BoneClothChestplate
+  - SealedFeet
+  - exp 10000
+  - AdminRock2
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
