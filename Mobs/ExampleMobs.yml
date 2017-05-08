@@ -137,7 +137,7 @@ Ra:
     Range: 20
     Color: WHITE
     Style: SOLID
-   Health: 625
+    Health: 625
   Damage: 100
   Skills:
   - message{cooldown=20;m="<mob.name><&co> The sun fills me with power!!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
@@ -168,7 +168,7 @@ Horus:
     Range: 20
     Color: WHITE
     Style: SOLID
-   Health: 625
+    Health: 625
   Damage: 100
   Skills:
   - message{cooldown=20;m="<mob.name><&co> When I'm done with you, you'll know who the strongest god is!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
