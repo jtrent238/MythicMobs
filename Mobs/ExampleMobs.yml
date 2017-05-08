@@ -136,7 +136,7 @@ Anubis:
     Range: 20
     Color: WHITE
     Style: SOLID
-  Display: '&f&lAnubis, God of Death'
+  Display: '&f&lAnubis'
   Health: 750
   Damage: 100
   Skills:
