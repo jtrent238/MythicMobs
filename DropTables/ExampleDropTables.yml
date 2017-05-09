@@ -58,7 +58,7 @@ ZombieDrops:
   - 263:0 1-4 1
   - exp 200
   - heroesexp 400
-  - AdminRock3 1 0.08
-  - AdminRock4 1 0.07
+  - AdminRock3 1 0.02
+  - AdminRock4 1 0.02
   DropsPerLevel:
   - exp 100
