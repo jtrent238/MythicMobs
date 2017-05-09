@@ -1,6 +1,6 @@
 Ra:
   Type: Husk
-  Display: 'Ra, God of the Sun'
+  Display: 'Ra, god of the Sun'
   BossBar:
     Enabled: true
     Title: 'Ra'
@@ -31,7 +31,7 @@ Ra:
     PreventOtherDrops: true
 Horus:
   Type: Skeleton
-  Display: 'Horus, God of the Sky'
+  Display: 'Horus, god of the Sky'
   BossBar:
     Enabled: true
     Title: 'Horus'
