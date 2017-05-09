@@ -1,0 +1,121 @@
+Khopesh:
+  Id: 276
+  Display: '&C&lKhopesh'
+  Lore:
+  - '&cLegend has it Anubis used this'
+  - '&cvery sword to cut the souls out'
+  - '&cof those who he weighed...'
+  Enchantments:
+  - DAMAGE_ALL:19
+  Attributes:
+    MainHand:
+      AttackSpeed: 2.0
+      Damage: 8.0
+      Health: 10.0
+BoneClothChestplate:
+  Id: 311
+  Display: '&r&lBone Forged Chestplate'
+  Lore:
+  - '&fA sturdy tunic made from'
+  - '&fthe bones of all the Gods'
+  - '&fenemies...'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:19
+  - DURABILITY:15
+  Attributes:
+    Chest:
+      Health: 10.0
+      Armor: 8.0
+      ArmorToughness: 3.0
+Ankh:
+  Id: 449
+  Display: '&e&lAnkh Of Life'
+  Lore:
+  - '&fHeld by Ra, this item is'
+  - '&fthe purest representation'
+  - '&fof life itself...'
+  Attributes:
+    OffHand:
+      Health: 5.0
+      Armor: 4.0
+Uas:
+  Id: 293  
+  Display: '&e&lUas Sceptre of Power'
+  Lore:
+  - '&fHeld by Ra, this item'
+  - '&fis told to be the source'
+  - '&fof Ras Power...'
+  Enchantments:
+  - DAMAGE_ALL:15
+  - FIRE_ASPECT:15
+  - DURABILITY:15
+  Attributes:
+    Mainhand:
+      AttackSpeed: 1.6
+      Damage: 8.0
+      Health: 5.0
+SunForgedPlate:
+  Id: 315
+  Display: '&r&lSun Forged Chestplate'
+  Lore:
+  - '&fThis chestplate burns brighter'
+  - '&fthan the sun, and whispers sweet'
+  - '&promises of power into your ear...'
+  Options:
+    Unbreakable:true
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:17
+  Attributes:
+    Chest:
+      Health: 10.0
+      Armor: 8.0
+      ArmorToughness: 3.0
+SkyBreaker:
+  Id: 258
+  Display: '&b&lSkybreaker'
+  Lore:
+  - '&bMade by Horus himself, this'
+  - '&baxe is fabled to be able to'
+  - '&bshatter the sky itself...'
+  Enchantments:
+  - DAMAGE_ALL:14
+  - DURABILITY:14
+  Attributes:
+    Mainhand:
+      Health: 5.0      
+      AttackSpeed: 1.3
+      Damage: 9.0      
+DeathCowl:
+  Id: 298
+  Display: '&r&lDeath Cowl'
+  Lore:
+  - '&fMade by Anubis, this cowl'
+  - '&foffers you sight through'
+  - '&fthe eyes of death itself...'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:19
+  - DURABILITY:15
+  Options: 
+    Color: 0,0,0
+  Attributes:
+    Head:
+      Health: 4.0
+      Armor: 8.0
+      ArmorToughness: 3.0
+StoneWind:
+  Id: 307
+  Display: '&r&lStone Wind Chestplate'
+  Lore:
+  - '&fForged from the wind itself'
+  - '&fit grants Horus free movement'
+  - '&foff the skies, for others, it'
+  - '&fallows fast travel...'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:13
+  - DURABILITY:13
+  Attributes:
+    Chest:
+      MovementSpeed: 1.4
+      Health: 4.0
+      Armor: 6.0
+      ArmorToughness: 3.0
