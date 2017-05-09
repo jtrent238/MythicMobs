@@ -119,3 +119,20 @@ StoneWind:
       Health: 4.0
       Armor: 6.0
       ArmorToughness: 3.0
+StoneWindPants:
+  Id:308
+  Display: '&r&lStone Wind Pants'
+  Lore:
+  - '&fForged from the wind itself'
+  - '&fit grants Horus free movement'
+  - '&foff the skies, for others, it'
+  - '&fallows fast travel...'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:13
+  - DURABILITY:13
+  Attributes:
+    Legs:
+      MovementSpeed: 1.4
+      Health: 4.0
+      Armor: 6.0
+      ArmorToughness: 3.0
