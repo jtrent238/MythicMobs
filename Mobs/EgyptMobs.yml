@@ -7,7 +7,7 @@ Ra:
     Range: 20
     Color: WHITE
     Style: SOLID
-    Health: 400
+    Health: 650
   Damage: 45
   Skills:
   - message{cooldown=20;m="<mob.name><&co> The sun fills me with power!!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
@@ -38,7 +38,7 @@ Horus:
     Range: 20
     Color: WHITE
     Style: SOLID
-    Health: 350
+    Health: 500
   Damage: 45
   Skills:
   - message{cooldown=20;m="<mob.name><&co> When I'm done with you, you'll know who the strongest god is!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
@@ -47,10 +47,12 @@ Horus:
   - skill{s=SummonZombies} @Target
   Equipment:
   - SealedFeet:1
-  - 
+  - StoneWind:3
   - SkyBreaker:0
+  - DeathCowl:4
+  - StoneWindPants:2
   Drops:
-  - SkyBreaker
+  - HorusDrops
   - exp 1000
   - AdminRock4
   Options:
@@ -60,14 +62,14 @@ Horus:
     PreventOtherDrops: true 
 Anubis: 
   Type: WITHER_SKELETON
-  Display: '&f&lAnubis'
+  Display: '&f&lAnubis, God of Death'
   BossBar:
     Enabled: true
     Title: 'Anubis'
     Range: 20
     Color: WHITE
     Style: SOLID
-  Health: 750
+  Health: 650
   Damage: 50
   Skills:
   - message{cooldown=20;m="<mob.name><&co> ...!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
