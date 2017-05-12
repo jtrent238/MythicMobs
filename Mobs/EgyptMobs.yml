@@ -38,7 +38,7 @@ Horus:
     Range: 20
     Color: WHITE
     Style: SOLID
-    Health: 500
+    Health: 650
   Damage: 45
   Skills:
   - message{cooldown=20;m="<mob.name><&co> When I'm done with you, you'll know who the strongest god is!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
@@ -47,11 +47,11 @@ Horus:
   - skill{s=SummonZombies} @Target
   Equipment:
   - SealedFeet:1
-  - StoneWind:3
   - SkyBreaker:0
   - DeathCowl:4
   - StoneWindPants:2
-  Drops:
+  - BoneClothChestplate:3
+    Drops:
   - HorusDrops
   - exp 1000
   - AdminRock4
