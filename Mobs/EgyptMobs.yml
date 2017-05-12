@@ -45,6 +45,7 @@ Horus:
   - message{m="<mob.name><&co><trigger.name>, your blood marks the time of Horus!"} @PlayersInRadius{r=40} ~onPlayerKill >0 1
   - skill{s=SummonZombies} @Self 0.1
   - skill{s=SummonZombies} @Target
+  - skill{s=HorusPush} @Target
   Equipment:
   - SealedFeet:1
   - SkyBreaker:0
