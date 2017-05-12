@@ -1,8 +1,8 @@
 AnubisMummify:
   Cooldown: 10
   Skills:
-  - potion{type=SLOWNESS;lvl=8;duration=30} @PlayersInRadius{r=10}
-  - potion{type=BLINDNESS;lvl=8;duration=30} @PlayersInRadius{r=10}
+  - potion{type=SLOW;lvl=8;duration=100} @PlayersInRadius{r=10}
+  - potion{type=BLINDNESS;lvl=8;duration=100} @PlayersInRadius{r=10}
   - effect:particles{p=hugeexplosion;amount=100;hSpread=5;ySpread=3;speed=0;yOFfset=0.5} @Self
 SummonZombies:
   Cooldown: 15
