@@ -22,6 +22,7 @@ AnubisDrops:
   - AdminRock2 1 0.04
   - AdminRock3 1 0.04
   - AdminRock4 1 0.04
+  - Anubis 1 1.00
 HorusDrops:
   Conditions:
   - playerwithin 40
