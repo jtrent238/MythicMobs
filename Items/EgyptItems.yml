@@ -60,7 +60,7 @@ SunForgedPlate:
   Lore:
   - '&fThis chestplate burns brighter'
   - '&fthan the sun, and whispers sweet'
-  - '&promises of power into your ear...'
+  - '&fpromises of power into your ear...'
   Options:
     Unbreakable:true
   Enchantments:
@@ -120,7 +120,7 @@ StoneWind:
       Armor: 6.0
       ArmorToughness: 3.0
 StoneWindPants:
-  Id:308
+  Id: 308
   Display: '&r&lStone Wind Pants'
   Lore:
   - '&fForged from the wind itself'
