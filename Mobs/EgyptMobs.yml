@@ -51,7 +51,7 @@ Horus:
   - DeathCowl:4
   - StoneWindPants:2
   - BoneClothChestplate:3
-    Drops:
+  Drops:
   - HorusDrops
   - exp 1000
   - AdminRock4
