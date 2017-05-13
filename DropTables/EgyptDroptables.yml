@@ -10,6 +10,7 @@ RaDrops:
   - AdminRock2 1 0.04
   - AdminRock3 1 0.04
   - AdminRock4 1 0.04
+  - AnubisBossKey 1 1.00
 AnubisDrops:
   Conditions:
   - playerwithin 40

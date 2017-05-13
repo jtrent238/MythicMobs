@@ -19,10 +19,8 @@ Ra:
   - SunForgedPlate:3
   - Uas:0
   Drops:
-  - Ankh
-  - Uas
+  - RaDrops
   - exp 10000
-  - SunForgedPlate
   - AdminRock
   Options:
     AlwaysShowName: true
