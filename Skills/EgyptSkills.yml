@@ -15,6 +15,7 @@ SummonZombies:
   - delay 20
   - summon{mob=ZombieMinion;amount=2;noise=5} @Self
 HorusPush:
+  Cooldown: 10
   Skills:
   - effect:explosion @Self
   - damage{amount=5} @PlayersInRadius{r=10}
