@@ -13,6 +13,7 @@ Ra:
   - message{cooldown=20;m="<mob.name><&co> The sun fills me with power!!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
   - message{m="<mob.name><&co><trigger.name>, you will burn for your treason!"} @PlayersInRadius{r=40} ~onPlayerKill >0 1
   - skill{s=SummonZombies} @Self 0.1
+  - command{c="time set day"} ~onTimer:75  
   - skill{s=SummonZombies} @Target
   Equipment:
   - SealedFeet:1
