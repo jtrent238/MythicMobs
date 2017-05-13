@@ -7,7 +7,7 @@ Ra:
     Range: 20
     Color: WHITE
     Style: SOLID
-    Health: 650
+    Health: 700
   Damage: 45
   Skills:
   - message{cooldown=20;m="<mob.name><&co> The sun fills me with power!!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
@@ -16,8 +16,9 @@ Ra:
   - skill{s=SummonZombies} @Target
   Equipment:
   - SealedFeet:1
-  - SunForgedPlate:3
   - Uas:0
+  - BoneClothChestplate:3
+  - DeathCowl:4
   Drops:
   - RaDrops
   - exp 10000
@@ -36,7 +37,7 @@ Horus:
     Range: 20
     Color: WHITE
     Style: SOLID
-    Health: 650
+    Health: 700
   Damage: 45
   Skills:
   - message{cooldown=20;m="<mob.name><&co> When I'm done with you, you'll know who the strongest god is!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
