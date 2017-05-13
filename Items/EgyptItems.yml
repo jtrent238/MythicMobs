@@ -148,7 +148,7 @@ AnubisBossKey:
   Id: 131
   Display: '&dBoss Key'
   Lore:
-  - '&7Will summon a level 2 boss!'
+  - '&7Will summon a level 3 boss!'
   - '&7Left Click: Summon'
   - '&7Right Click: Teleport'
   - '&bTitan.Linked: Anubis'
