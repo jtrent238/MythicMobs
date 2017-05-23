@@ -1,0 +1,57 @@
+AM:
+  Type: Husk
+  Display: 'Evil Aunt Mabel'
+  BossBar:
+    Enabled: true
+    Title: 'Evil Aunt Mabels '
+    Range: 20
+    Color: WHITE
+    Style: SOLID
+    Health: 700
+  Damage: 45
+  Skills:
+  Equipment:
+  Drops:
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+UP:
+  Type: Skeleton
+  Display: 'Unholy Paladin'
+  BossBar:
+    Enabled: true
+    Title: 'Unholy Paladin'
+    Range: 20
+    Color: WHITE
+    Style: SOLID
+    Health: 700
+  Damage: 45
+  Skills:
+  Equipment:
+  Drops
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 25
+    PreventOtherDrops: true 
+ESTC: 
+  Type: WITHER_SKELETON
+  Display: 'Enslave The Cats!'
+  BossBar:
+    Enabled: true
+    Title: 'Ensalver of Cats!'
+    Range: 20
+    Color: WHITE
+    Style: SOLID
+  Health: 650
+  Damage: 50
+  Skills:
+  Equipment:
+  Drops:
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
