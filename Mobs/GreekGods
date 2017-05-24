@@ -1,0 +1,57 @@
+Poseidon:
+  Type: Husk
+  Display: 'Poseidon'
+  BossBar:
+    Enabled: true
+    Title: 'Poseidon'
+    Range: 20
+    Color: WHITE
+    Style: SOLID
+    Health: 700
+  Damage: 45
+  Skills:
+  Equipment:
+  Drops:
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+Hades:
+  Type: Wither_skeleton
+  Display: 'Hades'
+  BossBar:
+    Enabled: true
+    Title: 'Hades'
+    Range: 20
+    Color: WHITE
+    Style: SOLID
+    Health: 700
+  Damage: 45
+  Skills:
+  Equipment:
+  Drops
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 25
+    PreventOtherDrops: true 
+Zeus: 
+  Type: WITHER_SKELETON
+  Display: 'Zeus'
+  BossBar:
+    Enabled: true
+    Title: 'Zues'
+    Range: 20
+    Color: WHITE
+    Style: SOLID
+  Health: 850
+  Damage: 75
+  Skills:
+  Equipment:
+  Drops:
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
