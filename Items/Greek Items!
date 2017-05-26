@@ -1,0 +1,65 @@
+PTrident:
+  Id: 277
+  Display: '&1&lPoseidons Trident'
+  Lore:
+  - '&1Every time the waves crash on the sand,'
+  - '&1each quake you feel while on the land,'
+  - '&1they were made by this tool,'
+  - '&1And by Poseidons Hand...
+  Enchantments:
+  - DAMAGE_ALL:21
+  - DURABILITY:21
+  Attributes:
+    MainHand:
+      AttackSpeed: 2.0
+      Damage: 19
+      Health: 10.0
+WaterForgedChest:
+  Id: 311
+  Display: '&r&lWater Forged Chestplate'
+  Lore:
+  - '&fA sturdy Chestplate made from'
+  - '&fCalcified water, made to keep'
+  - '&fPoseidon protected from rapids...'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:20
+  - DURABILITY:18
+  Attributes:
+    Chest:
+      Health: 12.0
+      Armor: 10.0
+      ArmorToughness: 3.0
+TamedLightning:
+  Id: 311
+  Display: '&r&lTamedLightning'
+  Lore:
+  - '&fLightning is unstable, fast, and'
+  - '&falways moving, only able to be tamed'
+  - '&fby Zeus, this chestplate is truely a'
+  - '&fwork of the gods...'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:22
+  - DURABILITY:18
+  Attributes:
+    Chest:
+      Health: 6.0
+      Armor: 6.0
+      ArmorToughness: 0.0
+      MovementSpeed: 3.2
+
+PoseidonBossKey:
+  Id: 131
+  Display: '&dBoss Key'
+  Lore:
+  - '&7Will summon a level 2 boss!'
+  - '&7Left Click: Summon'
+  - '&7Right Click: Teleport'
+  - '&bTitan.Linked: Poseidon'
+ZeusBossKey:
+  Id: 131
+  Display: '&dBoss Key'
+  Lore:
+  - '&7Will summon a level 3 boss!'
+  - '&7Left Click: Summon'
+  - '&7Right Click: Teleport'
+  - '&bTitan.Linked: Zeus'
