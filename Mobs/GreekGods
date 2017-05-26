@@ -11,6 +11,9 @@ Poseidon:
   Damage: 45
   Skills:
   Equipment:
+  - WaterForgedC:3
+  - PTrident:0
+  - SealedFeet:1
   Drops:
   Options:
     AlwaysShowName: true
@@ -41,7 +44,7 @@ Zeus:
   Display: 'Zeus'
   BossBar:
     Enabled: true
-    Title: 'Zues'
+    Title: 'Zeus'
     Range: 20
     Color: WHITE
     Style: SOLID
@@ -49,6 +52,7 @@ Zeus:
   Damage: 75
   Skills:
   Equipment:
+  - TamedLightning:3
   Drops:
   Options:
     AlwaysShowName: true
