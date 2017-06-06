@@ -43,10 +43,43 @@ TamedLightning:
   Attributes:
     Chest:
       Health: 6.0
+      Armor: 6.0      
+AxeOfMalice:
+  Id: 279
+  Display: '&c&lAce of Malice'
+  Lore:
+  - '&rYou feel the axe, calling if you will,'
+  - '&rYearning for you to give it a purpose,'
+  - '&rto kill, and nothing else..'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:22
+  - DURABILITY:18
+  Attributes:
+    Mainhand:
+      Health: 6.0
       Armor: 6.0
-      ArmorToughness: 0.0
-      MovementSpeed: 3.2
-
+      ArmorToughness: 3.0
+      AttackSpeed: 20
+      Damage: 21
+HammerOfLightning:
+  Id: 279
+  Display: '&c&lHammerOfLightning'
+  Lore:
+  - '&rFading in and out, out and in,'
+  - '&rthe axe is moving so fast that'
+  - '&rit is impossible to block in bttle,'
+  - '&rand the only time you see it is'
+  - '&rwhen it's too late...'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:22
+  - DURABILITY:18
+  Attributes:
+    Mainhand:
+      Health: 6.0
+      Armor: 6.0
+      ArmorToughness: 3.0
+      AttackSpeed: 20
+      Damage: 17
 PoseidonBossKey:
   Id: 131
   Display: '&dBoss Key'
