@@ -29,6 +29,21 @@ WaterForgedChest:
       Health: 12.0
       Armor: 10.0
       ArmorToughness: 3.0
+WaterForgedBoots:
+  Id: 311
+  Display: '&r&lWater Forged Chestplate'
+  Lore:
+  - '&fA sturdy pair of bootsmade from'
+  - '&fCalcified water, made to keep'
+  - '&fPoseidon protected from rapids...'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:20
+  - DURABILITY:18
+  Attributes:
+    Chest:
+      Health: 12.0
+      Armor: 10.0
+      ArmorToughness: 3.0      
 TamedLightning:
   Id: 311
   Display: '&r&lTamedLightning'
@@ -80,6 +95,7 @@ HammerOfLightning:
       ArmorToughness: 3.0
       AttackSpeed: 20
       Damage: 17
+      
 PoseidonBossKey:
   Id: 131
   Display: '&dBoss Key'
