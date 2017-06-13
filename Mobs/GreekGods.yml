@@ -33,7 +33,7 @@ Hades:
   Damage: 45
   Skills:
   Equipment:
-  Drops
+  Drops:
   Options:
     AlwaysShowName: true
     MovementSpeed: 0.3
