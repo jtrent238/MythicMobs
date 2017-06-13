@@ -1,3 +1,20 @@
+HadesHelm:
+  Id: 298
+  Display: '&r&lHadesHelm'
+  Lore:
+  - '&fMade by Hades, this cowl'
+  - '&foffers you safe passage through'
+  - '&fthe river of Styx....'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:19
+  - DURABILITY:15
+  Options: 
+    Color: 0,0,0
+  Attributes:
+    Head:
+      Health: 4.0
+      Armor: 8.0
+      ArmorToughness: 3.0
 PTrident:
   Id: 277
   Display: '&1&lPoseidons Trident'
