@@ -101,7 +101,7 @@ HammerOfLightning:
   - '&rthe axe is moving so fast that'
   - '&rit is impossible to block in bttle,'
   - '&rand the only time you see it is'
-  - '&rwhen it's too late...'
+  - '&rwhen its too late...'
   Enchantments:
   - PROTECTION_ENVIRONMENTAL:22
   - DURABILITY:18
