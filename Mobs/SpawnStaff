@@ -1,0 +1,27 @@
+FreeTheMice:
+  Type: Skeleton
+  Display: 'FreeTheMice'
+  Damage:0
+  Skills:
+  Disguise:
+    Type: player
+    Skin: 'freethemice'
+    Player: Steve
+    Burning: false
+    Blocking: false
+    Invisible: false
+    ShowName: True
+    Sneaking: false
+    Sprinting: false
+    ModifyBoundingBox: false
+    Glowing: true
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.0
+    MaxCombatDistance: 25
+    PreventOtherDrops: true 
+    KnockbackResistance: 100000
+    Invincible: true
+    Glowing: True
+    Despawn: False
+    
