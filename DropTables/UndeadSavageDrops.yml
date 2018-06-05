@@ -1,0 +1,11 @@
+UndeadSavageDrops:
+  Conditions:
+  - playerwithin 40
+  Drops:
+  - 264 5 0.6
+  - 266 10 0.7
+  - 265 15 0.8
+  - 263 20 0.9
+  - exp 200
+  DropsPerLevel:
+  - exp 10

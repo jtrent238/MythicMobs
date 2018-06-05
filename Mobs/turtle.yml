@@ -1,0 +1,18 @@
+turtle:
+  Mobtype: squid
+  Display: '&fTurtle'
+  Health: 1
+  Drops:
+  - turtleDrops
+  Disguise:
+   Type: babyzombie
+  Skills:
+   - potion{t=INVISIBILITY;d=2147483647;l=1} @self ~onSpawn
+   - equip{i=turtlehead:4} ~onSpawn
+   - effect:particlering{particle=bubble;radius=2;points=32;amount=2;hS=1;vS=0} @self ~onDamage
+  Options:
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+    Silent: true
+    PreventRenaming: false
+    MovementSpeed: 0.1

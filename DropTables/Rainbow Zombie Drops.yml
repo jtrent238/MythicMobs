@@ -1,0 +1,42 @@
+RainbowZombieDrops:
+  Drops:
+  - money 150-300 1
+  - iron_ingot 3-6 0.5
+  - diamond 3-6 0.5
+  - gold_ingot 3-6 0.5
+  - golden_apple 1 0.55
+  - golden_apple:1 1 0.5
+  - dye:9 1-3 0.25
+  - dye:5 1-3 0.25
+  - dye:6 1-3 0.25
+  - dye:9 1-3 0.25
+  - dye:1 1-3 0.25
+  - dye:11 1-3 0.25
+  - dye:2 1-3 0.25
+  - dye:14 1-3 0.25
+  - wool:4 1-3 0.25
+  - wool:13 1-3 0.25
+  - wool:6 1-3 0.25
+  - wool:9 1-3 0.25
+  - wool:1 1-3 0.25
+  - wool:11 1-3 0.25
+  - wool:10 1-3 0.25
+  - wool:14 1-3 0.25
+  - 384 2-5 1
+  - cooked_beef 1-3 0.75
+  - exp 150-300 1
+  - redstone 3-6 1
+StashBatDrops:
+  Drops:
+  - money 15-20 1
+  - iron_ingot 3-6 0.2
+  - diamond 3-6 0.2
+  - emerald 1 0.1
+  - gold_ingot 3-6 0.2
+  - gold_nugget 2-8 0.35
+  - golden_apple 1 0.15
+  - golden_apple:1 1 0.02
+  - 384 2-4 0.3
+  - cooked_beef 1-3 0.25
+  - exp 5-10 1
+  - redstone 3-6 0.2

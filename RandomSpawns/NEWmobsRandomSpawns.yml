@@ -1,0 +1,100 @@
+# 
+# These example files show you how to inject Mythic Mobs
+# you've created into your TestWorld. The name of each block
+# can be whatever you'd like but must be unique.
+RandomSkeletonKing:
+  MobType: SkeletonKing
+  Worlds: TestWorld
+  Chance: 0.002
+  Priority: 1
+  Action: replace
+  Conditions:
+  - outside true
+RandomSkeletalKnight:
+  MobType: SkeletalKnight
+  Worlds: TestWorld
+  Chance: 0.002
+  Priority: 1
+  Action: replace
+skeleton2:
+  MobType: skeleton2
+  Worlds: TestWorld
+  Chance: 0.002
+  Priority: 1
+  Action: replace
+skeleton2s:
+  MobType: skeleton2
+  Worlds: Minage
+  Chance: 0.002
+  Priority: 1
+  Action: replace
+mage1:
+  MobType: Enderal
+  Worlds: TestWorld
+  Chance: 0.002
+  Priority: 1
+  Action: replace
+mage2:
+  MobType: Enderal
+  Worlds: Minage
+  Chance: 0.002
+  Priority: 1
+  Action: replace
+creepers2:
+  MobType: creeper2
+  Worlds: TestWorld
+  Chance: 0.002
+  Priority: 1
+  Action: replace
+creeper2:
+  MobType: creeper2
+  Worlds: Minage
+  Chance: 0.002
+  Priority: 1
+  Action: replace
+Karazsch:
+  Mobname: Karazsch
+  Worlds: TestWorld
+  Chance: 0.002
+  Priority: 1
+  SpawnMethod: replace
+  Conditions:
+  - outside true
+SummonerCreeper:
+  Mobname: SummonerCreeper
+  Worlds: TestWorld
+  Chance: 0.002
+  Priority: 1
+  SpawnMethod: replace
+  Conditions:
+  - outside true
+RandomSkeletonKings:
+  MobType: SkeletonKing
+  Worlds: Minage
+  Chance: 0.002
+  Priority: 1
+  Action: replace
+  Conditions:
+  - outside true
+RandomSkeletalKnights:
+  MobType: SkeletalKnight
+  Worlds: Minage
+  Chance: 0.002
+  Priority: 1
+  Action: replace
+Karazschs:
+  Mobname: Karazsch
+  Worlds: Minage
+  Chance: 0.002
+  Priority: 1
+  SpawnMethod: replace
+  Conditions:
+  - outside true
+SummonerCreepers:
+  Mobname: SummonerCreeper
+  Worlds: Minage
+  Chance: 0.002
+  Priority: 1
+  SpawnMethod: replace
+  Conditions:
+  - outside true  

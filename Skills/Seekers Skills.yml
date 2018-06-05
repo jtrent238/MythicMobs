@@ -1,0 +1,89 @@
+GlowseekerAudio:
+ Skills:
+  - effect:sound{s=entity.ghast.ambient;v=0.7;p=0.2} @Self
+
+GlowseekerHit:
+ Skills:
+  - effect:sound{s=entity.zombie.step;v=1;p=0.4} @Self
+
+GlowDeco:
+ Skills:
+  - effect:particles{p=reddust;color=#832821;amount=7;y=0.2;hs=0.25;vs=0.25} @self
+  - delay 3
+  - effect:particles{p=reddust;color=#832821;amount=7;y=0.2;hs=0.25;vs=0.25} @self
+  - delay 3
+  - effect:particles{p=reddust;color=#832821;amount=7;y=0.2;hs=0.25;vs=0.25} @self
+  - delay 3
+  - effect:particles{p=reddust;color=#832821;amount=7;y=0.2;hs=0.25;vs=0.25} @self
+  - delay 3
+  - effect:particles{p=reddust;color=#832821;amount=7;y=0.2;hs=0.25;vs=0.25} @self
+  - delay 3
+  - effect:particles{p=reddust;color=#832821;amount=7;y=0.2;hs=0.25;vs=0.25} @self
+  - delay 3
+  - effect:particles{p=reddust;color=#832821;amount=7;y=0.2;hs=0.25;vs=0.25} @self
+  - delay 3
+  - effect:particles{p=reddust;color=#832821;amount=7;y=0.2;hs=0.25;vs=0.25} @self
+
+GrowDeco:
+ Skills:
+  - effect:particles{p=reddust;color=#23281D;amount=11;y=0.2;hs=0.35;vs=0.4} @self
+  - delay 3
+  - effect:particles{p=reddust;color=#23281D;amount=11;y=0.2;hs=0.35;vs=0.4} @self
+  - delay 3
+  - effect:particles{p=reddust;color=#23281D;amount=11;y=0.2;hs=0.35;vs=0.4} @self
+  - delay 3
+  - effect:particles{p=reddust;color=#23281D;amount=11;y=0.2;hs=0.35;vs=0.4} @self
+  - delay 3
+  - effect:particles{p=reddust;color=#23281D;amount=11;y=0.2;hs=0.35;vs=0.4} @self
+  - delay 3
+  - effect:particles{p=reddust;color=#23281D;amount=11;y=0.2;hs=0.35;vs=0.4} @self
+  - delay 3
+  - effect:particles{p=reddust;color=#23281D;amount=11;y=0.2;hs=0.35;vs=0.4} @self
+  - delay 3
+  - effect:particles{p=reddust;color=#23281D;amount=11;y=0.2;hs=0.35;vs=0.4} @self
+
+GlowlingDeco:
+ Skills:
+  - effect:particles{p=reddust;color=#E2695E;amount=4;y=0.14;hs=0.15;vs=0.15} @self
+  - delay 3
+  - effect:particles{p=reddust;color=#E2695E;amount=4;y=0.14;hs=0.15;vs=0.15} @self
+  - delay 3
+  - effect:particles{p=reddust;color=#E2695E;amount=4;y=0.14;hs=0.15;vs=0.15} @self
+  - delay 3
+  - effect:particles{p=reddust;color=#E2695E;amount=4;y=0.14;hs=0.15;vs=0.15} @self
+  - delay 3
+  - effect:particles{p=reddust;color=#E2695E;amount=4;y=0.14;hs=0.15;vs=0.15} @self
+  - delay 3
+  - effect:particles{p=reddust;color=#E2695E;amount=4;y=0.14;hs=0.15;vs=0.15} @self
+  - delay 3
+  - effect:particles{p=reddust;color=#E2695E;amount=4;y=0.14;hs=0.15;vs=0.15} @self
+  - delay 3
+  - effect:particles{p=reddust;color=#E2695E;amount=4;y=0.14;hs=0.15;vs=0.15} @self
+  
+  
+GlowseekerDeath:
+ Skills:
+  - effect:sound{s=entity.zombie.step;v=1;p=0.4} @Self
+  - delay 2
+  - effect:sound{s=entity.zombie.step;v=1;p=0.4} @Self
+  - delay 2
+  - effect:sound{s=entity.zombie.step;v=1;p=0.4} @Self
+  - delay 2
+  - effect:sound{s=entity.zombie.step;v=1;p=0.4} @Self
+
+MowseekerDeath:
+ Skills:
+  - effect:particles{p=reddust;a=30;hS=1;vS=1} @self
+  - summon{mob=Glowling;amount=1;noise=0}
+
+GrowseekerDeath:
+ Skills:
+  - effect:particles{p=reddust;a=30;hS=1;vS=1} @self
+  - summon{mob=Mowseeker;amount=1;noise=0}
+  
+Flameinvis:
+ Skills:
+  - effect:sound{s=entity.blaze.ambient;v=0.1;p=2}
+  - effect:particles{p=reddust;a=70;hS=1;vS=1} @self
+  - potion{type=FIRE_RESISTANCE;lvl=2;duration=10000000} @self
+  - potion{type=INVISIBILITY;lvl=1;duration=10000000} @self

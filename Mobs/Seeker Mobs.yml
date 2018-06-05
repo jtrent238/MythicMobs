@@ -1,0 +1,123 @@
+Glowling:
+ Type: VEX
+ Display: 'Dinnerbone'
+ Disguise:
+  Type: babyzombievillager
+ Health: 2
+ Damage: 1
+ Equipment:
+  - GlowseekerH:4
+ Skills:
+  - equip{i=GlowseekerH:4} ~onSpawn
+  - skill{s=GlowseekerAudio} @Self ~onTimer:80 0.4
+  - skill{s=GlowseekerDeath} @Self ~onDeath
+  - skill{s=GlowlingDeco} @Self ~onTimer:20
+  - skill{s=GlowseekerHit} @Self ~onDamaged
+  - skill{s=Flameinvis} @self ~onSpawn
+ KillMessages:
+  - '<target.name> Was eaten'
+  - '<target.name> Was killed by a Glowling'
+ AITargetSelectors:
+  - 1 specificfactionmonsters Angels
+  - 2 player
+  - 3 attacker
+ Options:
+  AlwaysShowName: false
+  MovementSpeed: 0.25
+  FollowRange: 25
+  MaxCombatDistance: 60
+  PreventRandomEquipment: true
+  PreventOtherDrops: true
+  Silent: true
+
+Glowseeker:
+ Type: VEX
+ Display: 'Dinnerbone'
+ Disguise:
+  Type: Zombie
+ Health: 5
+ Damage: 1
+ Equipment:
+  - GlowseekerH:4
+ Skills:
+  - equip{i=GlowseekerH:4} ~onSpawn
+  - skill{s=GlowseekerAudio} @Self ~onTimer:80 0.4
+  - skill{s=GlowDeco} @Self ~onTimer:20
+  - skill{s=GlowseekerDeath} @Self ~onDeath
+  - skill{s=GlowseekerHit} @Self ~onDamaged
+  - skill{s=Flameinvis} @self ~onSpawn
+ KillMessages:
+  - '<target.name> Was eaten'
+  - '<target.name> Was killed by a Glowseeker'
+ Options:
+  AlwaysShowName: false
+  MovementSpeed: 0.4
+  FollowRange: 25
+  MaxCombatDistance: 60
+  PreventRandomEquipment: true
+  PreventOtherDrops: false
+  Silent: true
+
+Mowseeker:
+ Type: VEX
+ Display: 'Dinnerbone'
+ Disguise:
+  Type: Zombie
+ Health: 7
+ Damage: 2
+ Equipment:
+  - MowseekerH:4
+ Skills:
+  - equip{i=MowseekerH:4} ~onSpawn
+  - skill{s=GlowseekerAudio} @Self ~onTimer:80 0.4
+  - skill{s=GlowseekerDeath} @Self ~onDeath
+  - skill{s=GlowDeco} @Self ~onTimer:20
+  - skill{s=MowseekerDeath} @Self ~onDeath 0.8
+  - skill{s=MowseekerDeath} @Self ~onDeath 0.5
+  - skill{s=MowseekerDeath} @Self ~onDeath 0.3
+  - skill{s=GlowseekerHit} @Self ~onDamaged
+  - skill{s=Flameinvis} @self ~onSpawn
+ KillMessages:
+  - '<target.name> Was eaten'
+  - '<target.name> Was killed by a Mowseeker'
+ Options:
+  AlwaysShowName: false
+  MovementSpeed: 0.4
+  FollowRange: 25
+  MaxCombatDistance: 60
+  PreventRandomEquipment: true
+  PreventOtherDrops: false
+  Silent: true
+
+Growseeker:
+ Type: VEX
+ Display: 'Dinnerbone'
+ Disguise:
+  Type: wither_skeleton
+ Health: 12
+ Damage: 3
+ Equipment:
+  - GrowseekerH:4
+ Skills:
+  - equip{i=GrowseekerH:4} ~onSpawn
+  - skill{s=GlowseekerAudio} @Self ~onTimer:80 0.4
+  - skill{s=GlowseekerDeath} @Self ~onDeath
+  - skill{s=GrowDeco} @Self ~onTimer:20
+  - skill{s=GrowseekerDeath} @Self ~onDeath 0.8
+  - skill{s=GrowseekerDeath} @Self ~onDeath 0.6
+  - skill{s=GrowseekerDeath} @Self ~onDeath 0.4
+  - skill{s=GlowseekerHit} @Self ~onDamaged
+  - skill{s=Flameinvis} @self ~onSpawn
+ Drops:
+  - commonmobdrops
+ KillMessages:
+  - '<target.name> Was eaten'
+  - '<target.name> Was killed by a Growseeker'
+ Options:
+  AlwaysShowName: false
+  MovementSpeed: 0.4
+  FollowRange: 25
+  PreventRandomEquipment: true
+  MaxCombatDistance: 60
+  PreventOtherDrops: false
+  Silent: true

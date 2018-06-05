@@ -1,0 +1,168 @@
+Fire_Elemental:
+  Type: PIG_ZOMBIE
+  Faction: BurnBabyBurn
+  Display: 'Fire_Elemental'
+  Disguise:
+    Type: Blaze
+    Display: '&4Fire Elemental'
+  Health: 24
+  Damage: 4
+  KillMessages:
+  - "&4<mob.name> &fturned &c<target.name> &fto ash."
+  Equipment:
+  - FireElementalsButton:4
+  Drops:
+  - FlamingBone 1-2 .35
+  - GoldCoin 1 .1
+  Skills:
+  - effect:sound{s=entity.tnt.primed;v=1;p=2} @PlayersInRadius{r=35} ~onDamaged
+  - effect:sound{s=block.fire.extinguish;v=1;p=0} @PlayersInRadius{r=35} ~onDeath
+  - effect:sound{s=entity.blaze.ambient;v=1;p=2} @PlayersInRadius{r=35} ~onTimer:100
+  - effect:particles{p=lava;amount=10;hs=0;vs=1;speed=0} @Self ~onTimer:20
+  - effect:particles{p=lava;amount=10;hs=0;vs=1;speed=0} @Self ~onTimer:25
+  - effect:particles{p=lava;amount=10;hs=0;vs=1;speed=0} @Self ~onTimer:30
+  - skill{s=MoltenShower} ~onTimer:300
+  - skill{s=FireSlam} ~onAttack @Ring{r=2}
+  AIGoalSelectors:
+  - 0 clear
+  - 1 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  - 2 hurtbytarget
+  - 3 OtherFaction
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 20
+    Silent: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    Angry: true
+### Spacer ###
+FireWizard:
+  Type: ZOMBIE
+  Display: 'Fire_Wizard'
+  Faction: BurnBabyBurn
+  Disguise:
+   Type: player
+   Player: "&4Fire Wizard"
+   Skin: FireWizard
+  Drops:
+  - GoldCoin 1 .2
+  - FlamingBone 1 .35
+  Health: 30
+  Damage: 0.5
+  DamageModifiers:
+  - FIRE 0
+  - FIRE_TICK 0
+  - LAVA 0
+  KillMessages:
+  - "&4<mob.name> &fturned &c<target.name> &fto ash."
+  - "&c<target.name> &flearned what &4<mob.name>'s &fmagic could do."
+  Skills:
+  - effect:sound{s=entity.player.hurt;;v=1;p=2} @PlayersInRadius{r=35} ~onDamaged
+  - effect:sound{s=entity.player.death;v=1;p=0} @PlayersInRadius{r=35} ~onDeath
+  - effect:sound{s=entity.player.burp;v=1;p=2} @PlayersInRadius{r=35} ~onTimer:100
+  - skill{s=SingleTargetFire} @target ~onTimer:200
+  - skill{s=AOEFire} @self ~onTimer:300
+  - skill{s=DamageImmunity} @self ~onDamaged 0.1
+  Equipment:
+  - FireWizardsButton:4
+  - FireWizardsWand:0
+  AIGoalSelectors:
+  - 0 clear
+  - 1 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  - 2 hurtbytarget
+  - 3 OtherFaction
+  Options:
+    FollowRange: 10
+    AlwaysShowName: true
+    Movements: 0.2
+    PreventOtherDrops: true
+    PreventItemPickup: true
+    Silent: true
+### Spacer ###
+HellHound:
+  Type: WOLF
+  Display: '&4Hellhound'
+  Faction: BurnBabyBurn
+  Drops:
+  - GoldCoin 1 .1
+  - FlamingBone 1 .35
+  KillMessages:
+  - "&4<mob.name> &fturned &c<target.name> &fto ash."
+  - "&c<target.name> &fwas mauled by &4<mob.name>."
+  Skills:
+  - effect:sound{s=entity.wolf.hurt;v=1;p=0} @PlayersInRadius{r=35} ~onDamaged
+  - effect:sound{s=block.wolf.death;v=1;p=0} @PlayersInRadius{r=35} ~onDeath
+  - effect:sound{s=entity.wolf.ambient;v=1;p=0} @PlayersInRadius{r=35} ~onTimer:100
+  - effect:flames @self ~onTimer:5
+  - ignite{ticks=60} @trigger ~onAttack
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  - 2 hurtbytarget
+  - 3 OtherFaction
+  Health: 20
+  Damage: 5
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.4
+    MaxCombatDistance: 30
+    Silent: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+### Spacer ###
+NetherGuardian:
+  Type: WITHER_SKELETON
+  Faction: BurnBabyBurn
+  Display: '&4Nether Guardian'
+  Drops:
+  - GoldCoin 1 .2
+  - FlamingBone 2 .35
+  - FlamingCoal 1 .08
+  Health: 35
+  Damage: 1
+  KillMessages:
+  - "&4<mob.name> &fturned &c<target.name> &fto ash."
+  - "&c<target.name> &fwas showed the power of the nether by the &4<mob.name>."
+  Equipment:
+  - NetherGuardiansSword
+  - NetherGuardiansBoots:1
+  - NetherGuardiansLeggings:2
+  - NetherGuardiansChest:3
+  Skills:
+  - effect:sound{s=entity.wither_skeleton.hurt;v=1;p=0} @PlayersInRadius{r=35} ~onDamaged
+  - effect:sound{s=block.wither_skeleton.death;v=1;p=0} @PlayersInRadius{r=35} ~onDeath
+  - effect:sound{s=entity.wither_skeleton.ambient;v=1;p=0} @PlayersInRadius{r=35} ~onTimer:100
+  - equip{i=NetherGuardiansHead:4} ~onSpawn
+  - effect:particles{p=Townaura;amount=100;hs=0.5;vs=1;speed=0} @Self ~onTimer:20
+  - effect:particles{p=Townaura;amount=100;hs=0.5;vs=1;speed=0} @Self ~onTimer:25
+  - effect:particles{p=Townaura;amount=100;hs=0.5;vs=1;speed=0} @Self ~onTimer:30
+  - skill{s=Bash} ~onAttack 0.25
+  - skill{s=Kick} ~onAttack 0.25
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  - 2 hurtbytarget
+  - 3 OtherFaction
+  Options:
+    FollowRange: 10
+    AlwaysShowName: true
+    Movements: 0.2
+    PreventOtherDrops: true
+    PreventItemPickup: true
+    Silent: true
+### Spacer ###

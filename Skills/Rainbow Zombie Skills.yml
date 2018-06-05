@@ -1,0 +1,50 @@
+RainbowZombieArmorChange:
+  Cooldown: 0.25
+  Skills:
+  - equip{item=RedHelm:4} @Self
+  - equip{item=RedChest:3} @Self
+  - equip{item=RedLegs:2} @Self
+  - equip{item=RedBoots:1} @Self
+  - delay 5
+  - equip{item=OrangeHelm:4} @Self
+  - equip{item=OrangeChest:3} @Self
+  - equip{item=OrangeLegs:2} @Self
+  - equip{item=OrangeBoots:1} @Self
+  - delay 5
+  - equip{item=YellowHelm:4} @Self
+  - equip{item=YellowChest:3} @Self
+  - equip{item=YellowLegs:2} @Self
+  - equip{item=YellowBoots:1} @Self
+  - delay 5
+  - equip{item=GreenHelm:4} @Self
+  - equip{item=GreenChest:3} @Self
+  - equip{item=GreenLegs:2} @Self
+  - equip{item=GreenFeet:1} @Self
+  - delay 5
+  - equip{item=CyanHelm:4} @Self
+  - equip{item=CyanChest:3} @Self
+  - equip{item=CyanLegs:2} @Self
+  - equip{item=CyanBoots:1} @Self
+  - delay 5
+  - equip{item=BlueHelm:4} @Self
+  - equip{item=BlueChest:3} @Self
+  - equip{item=BlueLegs:2} @Self
+  - equip{item=BlueFeet:1} @Self
+  - delay 5
+  - equip{item=PurpleHelm:4} @Self
+  - equip{item=PurpleChest:3} @Self
+  - equip{item=PurpleLegs:2} @Self
+  - equip{item=PurpleBoots:1} @Self
+  - delay 5
+  - equip{item=PinkHelm:4} @Self
+  - equip{item=PinkChest:3} @Self
+  - equip{item=PinkLegs:2} @Self
+  - equip{item=PinkBoots:1} @Self
+  - delay 5
+  - skill{s=RainbowZombieArmorChange} @Self
+LootMobTimer:
+  Cooldown: 0.25
+  Skills:
+  - delay 2400
+  - effect:particles{p=smoke;a=500;vs=0.5;hs=0.5;s=0.01;y=0.5} @Self
+  - remove @Self

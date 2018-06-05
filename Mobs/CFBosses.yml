@@ -1,0 +1,114 @@
+Xotaar:
+  Type: ZOMBIE
+  Display: '&4Xotaar the dark blade'
+  Health: 5000
+  Damage: 11
+  Skills:
+  - skill{s=BloodWell} @Target ~onAttack >0 1
+  - skill{s=DarkFlight} @Target =0%-80% 0.2
+  - skill{s=BloodThirst} @Self =0%-60% 0.2
+  - skill{s=BloodDrink} @Self =0%-60% 0.2
+  - skill{s=BloodWave} @Self =0%-60% 0.2
+  - skill{s=BoneChill} @Target =0%-40% 0.2
+  - skill{s=Massacre} @Target =0%-20% 0.2
+  Drops:
+  - XotaarEssence 1 1
+  - CrimsonBlade 1 0.1
+  Equipment:
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Options:
+    AlwaysShowName: false
+    MovementSpeed: 0.3
+    MaxCombatDistance: 20
+    PreventOtherDrops: true
+  BossBar:
+    Enabled: true
+    Title: 'Xotaar the dark blade'
+    Range: 20
+    Color: RED
+    Style: SEGMENTED_5
+  Disguise:
+    Type: player
+    Player: Xotaar
+    Skin: 01DarkKnight
+Vixius:
+  Type: ZOMBIE
+  Display: '&4Vixius the corrupted one'
+  Health: 1667
+  Damage: 6
+  Skills:
+  - skill{s=PoisonWaveNaN} @Target =0%-100% 0.2
+  - skill{s=WeakeningDarknessNAN} @Target =0%-80% 0.2
+  - skill{s=SoulRip} @Self =0%-60% 0.2
+  - skill{s=CreepingParanoia} @Target =0%-40% 0.2
+  - skill{s=NightmareBolt} @Target =0%-20% 0.2
+  Drops:
+  - VixiusEssence 1 1
+  - CrimsonHelmet 1 0.1
+  - CrimsonChestplate 1 0.1
+  Equipment:
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Options:
+    AlwaysShowName: false
+    MovementSpeed: 0.3
+    MaxCombatDistance: 20
+    PreventOtherDrops: true
+  BossBar:
+    Enabled: true
+    Title: 'Vixius the corrupted one'
+    Range: 20
+    Color: RED
+    Style: SEGMENTED_5
+  Disguise:
+    Type: player
+    Player: Vixius
+    Skin: rexbook
+Breakheart:
+  Type: ZOMBIE
+  Display: '&4Breakheart the tainted ent'
+  Health: 3334
+  Damage: 9
+  Skills:
+  - skill{s=CrushingGrip} @Target ~onAttack =0%-80% 1
+  - skill{s=NightmareFlamesNAN} @Self =0%-60% 0.2
+  - skill{s=CaveFallNAN} @Self =0%-40% 0.2
+  - skill{s=CrimsonRootsNaN} @Self =0%-20% 0.2
+  Drops:
+  - BreakheartEssence 1 1
+  - CrimsonLeggings 1 0.1
+  - CrimsonBoots 1 0.1
+  Equipment:
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Options:
+    AlwaysShowName: false
+    MovementSpeed: 0.3
+    MaxCombatDistance: 20
+    PreventOtherDrops: true
+  BossBar:
+    Enabled: true
+    Title: 'Breakheart the tainted ent'
+    Range: 20
+    Color: RED
+    Style: SEGMENTED_5
+  Disguise:
+    Type: player
+    Player: Breakheart
+    Skin: zAlphaSMartinoh_

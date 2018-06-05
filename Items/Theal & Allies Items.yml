@@ -1,0 +1,156 @@
+RHelmIII:
+  Id: leather_helmet
+  Display: '&3Renegade Brute Cap'
+  Options:
+    Color: 0,128,128
+RHelmII:
+  Id: leather_helmet
+  Display: '&3Renegade &6Thief &3Cap'
+  Options:
+    Color: 255,69,0
+RHelm:
+  Id: leather_helmet
+  Display: '&3Renegade &fGrunt &3Cap'
+  Options:
+    Color: 240,255,255
+RChest:
+  Id: leather_chestplate
+  Display: '&3Renegade Tunic'
+  Options:
+    Color: 158,112,51
+RLegs:
+  Id: leather_leggings
+  Display: '&3Renegade Pants'
+  Options:
+    Color: 158,112,51
+RLegsII:
+  Id: leather_leggings
+  Display: '&3Renegade &6Thief &3Pants'
+  Options:
+    Color: 255,69,0
+RLegsIII:
+  Id: leather_leggings
+  Display: '&3Renegade Brute Pants'
+  Options:
+    Color: 0,128,128
+RFeet:
+  Id: leather_boots
+  Display: '&3Renegade Boots'
+  Options:
+    Color: 158,112,51
+IronAxe:
+  Id: 258
+  Attributes:
+    MainHand:
+      Damage: 1
+DragonHead:
+  Id: 397
+  Data: 5
+PlaceholderHelm:
+  Id: 0
+PlaceholderArmor:
+  Id: 0
+PlaceholderItem:
+  Id: 0
+GrayBoots:
+  Id: leather_boots
+  Options:
+    Color: 182,184,179
+GrayLegs:
+  Id: leather_leggings
+  Options:
+    Color: 182,184,179
+GrayChest:
+  Id: leather_chestplate
+  Options:
+    Color: 182,184,179
+GrayHelm:
+  Id: leather_helmet
+  Options:
+    Color: 182,184,179
+CyanHelm:
+  Id: leather_helmet
+  Options:
+    Color: 0,255,255
+CyanChest:
+  Id: leather_chestplate
+  Options:
+    Color: 0,255,255
+CyanLegs:
+  Id: leather_leggings
+  Options:
+    Color: 0,255,255
+CyanBoots:
+  Id: leather_boots
+  Options:
+    Color: 0,255,255
+RedHelm:
+  Id: leather_helmet
+  Options:
+    Color: 255,0,0
+RedChest:
+  Id: leather_chestplate
+  Options:
+    Color: 255,0,0
+RedLegs:
+  Id: leather_leggings
+  Options:
+    Color: 255,0,0
+RedBoots:
+  Id: leather_boots
+  Options:
+    Color: 255,0,0
+PurpleHelm:
+  Id: leather_helmet
+  Options:
+    Color: 128,0,128
+PurpleChest:
+  Id: leather_chestplate
+  Options:
+    Color: 128,0,128
+PurpleLegs:
+  Id: leather_leggings
+  Options:
+    Color: 128,0,128
+PurpleBoots:
+  Id: leather_boots
+  Options:
+    Color: 128,0,128
+PinkHelm:
+  Id: leather_helmet
+  Options:
+    Color: 255,20,147
+PinkChest:
+  Id: leather_chestplate
+  Options:
+    Color: 255,20,147
+PinkLegs:
+  Id: leather_leggings
+  Options:
+    Color: 255,20,147
+PinkBoots:
+  Id: leather_boots
+  Options:
+    Color: 255,20,147
+LivingShadowBlockGlowing:
+  Id: 88
+  Enchantments:
+  - DURABILITY:1
+BlazeRodWeapon:
+  Id: 369
+  Enchantments:
+  - FIRE_ASPECT:2
+Bow:
+  Id: bow
+DiamondHoe:
+  Id: 293
+DiamondSword:
+  Id: 276
+MagicFire:
+  Id: 377
+  Enchantments:
+  - DURABILITY:1
+MagicSnow:
+  Id: 332
+  Enchantments:
+  - DURABILITY:1

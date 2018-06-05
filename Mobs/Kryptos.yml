@@ -1,0 +1,259 @@
+﻿Kryptos:
+  Mobtype: Zombie
+  Display: '&4Kryptos'
+  Health: 400
+  Damage: 29
+  Armor: 20
+  Disguise:
+    Type: player
+    Skin: 'H20'
+    Player: Kryptos
+  BossBar:
+    Enabled: true
+    Title: '&4Kryptos'
+    Range: 20
+    Color: RED
+    Style: SOLID
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    Despawn: true
+    FollowRange: 50
+    KnockbackResistance: 0.1
+  Skills:
+    - effect:particles{particle=portal;amount=400;vSpread=0.5;hSpread=0.5;Speed=.03;yOffset=.1} @self ~onSpawn
+    - effect:lightning @self ~onSpawn
+    - effect:sound{s=mob.enderdragon.growl;volume=1;p=1} @PIR{r=50} ~onSpawn
+    - effect:sound{s=entity.wither.spawn;volume=1;p=1} @PIR{r=50} ~onSpawn
+    - sendtitle{fadein=20;fadeout=20;duration=100;title=“&4Kryptos”;subtitle=“&9>-(&3God Of Darkness&9)-<”} @PIR{r=80} ~onSpawn
+    - effect:sound{s=mob.enderdragon.hit;volume=1;p=1} @PIR{r=50} ~onDamaged
+    - effect:particles{particle=dragonbreath;amount=30;vSpread=.5;hSpread=.5;Speed=.01;yOffset=.1} @self ~onTimer:20 
+    - effect:particles{particle=magicCrit;amount=10;vSpread=.5;hSpread=.5;Speed=.01;yOffset=.1} @self ~onTimer:20
+    - effect:particles{particle=portal;amount=10;vSpread=.5;hSpread=.5;Speed=.01;yOffset=.1} @self ~onTimer:20 
+    - potion{type=CONFUSION;d=150;l=1} @target ~onAttack
+    - skill{s=KryptosPhase1DamageAura} @Self ~onTimer:10
+    - skill{s=Phase2SpawnKryptos} @Self ~onDeath
+    - effect:sound{s=mob.blaze.death;volume=1;p=1} @PIR{r=50} ~onDeath
+  Equipment:
+    - DiamondHoe:0
+    
+SoulOfKryptos:
+  Mobtype: Stray
+  Display: '&4SoulOfKryptos'
+  Health: 800
+  Damage: 45
+  Armor: 30
+  Disguise:
+    Type: player
+    Skin: 'mmk'
+    Player: Kryptos
+  BossBar:
+    Enabled: true
+    Title: '&fSoulOfKryptos'
+    Range: 20
+    Color: WHITE
+    Style: SOLID
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    Despawn: true
+    FollowRange: 50
+    KnockbackResistance: 0.1
+  Skills:
+    - effect:particlessphere{particle=portal;amount=400;vSpread=0.5;hSpread=0.5;Speed=.03;yOffset=.1} @self ~onSpawn
+    - effect:explode @self ~onSpawn
+    - effect:sound{s=mob.enderdragon.growl;volume=1;p=1} @PIR{r=50} ~onSpawn
+    - effect:sound{s=entity.wither.spawn;volume=1;p=1} @PIR{r=50} ~onSpawn
+    - effect:sound{s=mob.enderdragon.hit;volume=1;p=1} @PIR{r=50} ~onDamaged
+    - effect:particles{particle=snowshovel;amount=30;vSpread=.5;hSpread=.5;Speed=.01;yOffset=.1} @self ~onTimer:20 
+    - effect:particles{particle=reddust;amount=10;vSpread=.5;hSpread=.5;Speed=.01;yOffset=.1} @self ~onTimer:20
+    - effect:particles{particle=instantSpell;amount=10;vSpread=.5;hSpread=.5;Speed=.01;yOffset=.1} @self ~onTimer:10 
+    - potion{type=CONFUSION;d=150;l=1} @target ~onAttack
+    - skill{s=Prison} @target ~onTimer:250
+    - skill{s=MasterMeteorShot} @target ~onTimer:100
+    - skill{s=KryptosPhase2SkullShoot} @target ~onTimer:300
+    - skill{s=KryptosPhase1DamageAura} @target ~onTimer:10
+    - skill{s=ThrowDamage} @PlayerInRadius{r=30} ~onTimer:140
+    - effect:sound{s=mob.blaze.death;volume=1;p=1} @PIR{r=50} ~onDeath
+    - skill{s=Phase3Spawn} @origin ~onDeath
+
+KryptosPhase3:
+  Mobtype: Zombie
+  Display: '&3BrianOfKryptos'
+  Health: 1000
+  Damage: 8
+  Armor: 40
+  Faction: Renegade
+  Disguise:
+    Type: BLOCK
+    Block: DRAGON_EGG
+    BlockData: 0
+  BossBar:
+    Enabled: true
+    Title: '&3BrainOfKryptos'
+    Range: 20
+    Color: CYAN
+    Style: SOLID
+  AIGoalSelectors:
+    - 0 clear
+    - 1 randomlookaround
+  Options:
+    KnockbackResistance: 1
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    Despawn: true
+    FollowRange: 50
+    KnockbackResistance: 0.1
+  Skills:
+    - damage{amount=10} @PlayersInRadius{r=3} ~onTimer:5
+    - throw{velocity=15;velocityY=5} @PlayersInRadius{r=3} ~onTimer:5
+    - effect:particlesphere{particle=dragonbreath;amount=600;radius=2} @self ~onTimer:40
+    - weather{type=thunder;duration=1000} ~onSpawn
+    - effect:particlessphere{particle=portal;amount=400;vSpread=0.5;hSpread=0.5;Speed=.03;yOffset=.1} @self ~onSpawn
+    - effect:lightning @self ~onSpawn
+    - effect:sound{s=mob.enderdragon.growl;volume=1;p=1} @PIR{r=50} ~onSpawn
+    - effect:sound{s=entity.wither.spawn;volume=1;p=1} @PIR{r=50} ~onSpawn
+    - effect:sound{s=mob.enderdragon.hit;volume=1;p=1} @PIR{r=50} ~onDamaged
+    - effect:particles{particle=dragonbreath;amount=30;vSpread=.5;hSpread=.5;Speed=.01;yOffset=.1} @self ~onTimer:20 
+    - effect:particles{particle=magicCrit;amount=10;vSpread=.5;hSpread=.5;Speed=.01;yOffset=.1} @self ~onTimer:20
+    - effect:particles{particle=portal;amount=10;vSpread=.5;hSpread=.5;Speed=.01;yOffset=.1} @self ~onTimer:20 
+    - effect:itemspray{item=redstone;duration=100;a=5;force=1} @Self ~onDamaged
+    - potion{type=CONFUSION;d=150;l=1} @target ~onAttack
+    - potion{type=POISON;d=150;l=1} @target ~onAttack
+    - skill{s=SummonMob} @Self 0.6
+    - skill{s=SummonMob2} @Self 0.6
+    - skill{s=SummonMob3} @Self 0.6
+    - skill{s=SummonMob4} @Self 0.6
+    - skill{s=Ending} @Origin ~onDeath
+    - effect:particles{particle=dragonbreath;amount=100;vSpread=.5;hSpread=.5;Speed=.01;yOffset=.1} @self ~onDamaged 
+    - effect:particles{particle=magicCrit;amount=100;vSpread=.5;hSpread=.5;Speed=.01;yOffset=.1} @self ~onDamaged
+    - effect:particles{particle=portal;amount=100;vSpread=.5;hSpread=.5;Speed=.01;yOffset=.1} @self ~onDamaged
+    
+FireMaster:
+  Mobtype: Zombie
+  Display: '&aFireMaster'
+  Health: 100
+  Damage: 18
+  ShowHealth: true
+  Faction: Renegade
+  Disguise:
+    Type: player
+    Skin: 'Fire'
+    Player: Fire Master
+  Options:
+    MaxCombatDistance: 10
+    AlwaysShowName: True
+    FollowRange: 30
+    MovementSpeed: .30
+    PreventRenaming: true
+    PreventOtherDrops: true
+  Skills:
+  - potion{type=SLOW;duration=20;level=1}
+  - leap{v=3} @target
+  - ignite @PlayersInRadius{r=10} ~onTimer:125
+  - effect:particlesphere{particle=flame;amount=600;radius=5} @self
+  - summon{type=FireMage;amount=1;radius=4} ~onDeath 0.2
+  - shootfireball{y=1;v=5} @target
+  - pull{v=5} @target ~onDeath
+  - explosion{yield=2;bd=false;fire=true} ~onDeath
+  - skill{s=MasterMeteorShot} @target ~onTimer:100
+  - leap{v=5} @target
+  - heal{amount=5} @self ~onDamage 0.3
+  Equipment:
+  - STONE_BUTTON:4
+  Drops:
+  - 370 1 0.1
+  
+LivingSoul:
+  MobType: pigzombie
+  Display: '&5LivingSoul'
+  Health: 80
+  Damage: 40
+  Faction: Renegade
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 RandomLookAround
+  - 3 LookAtPlayers
+  - 4 RandomStroll
+  - 5 Float
+  AITargetSelectors:
+  - 0 clear
+  - 1 hurtbytarget
+  - 2 players
+  KillMessages:
+  - '<target.name> was consumed by &5Lesser Living Shadow'
+  Skills:
+  - skill{s=MaxInvis} @self ~onSpawn
+  - effect:sound{s=block.stone.break;volume=1;p=0.5} @Self ~onDamaged
+  - effect:particlesphere{p=witchMagic;a=40;radius=1;y=0.5} @Self ~onTimer:5
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
+  - heal{amount=5} @self ~onDamage 0.3
+  - skill{s=DarkBolt} @target 0.6
+  - skill{s=Prison} @target 0.4
+  
+ScytheLord:
+  Mobtype: witherskeleton
+  Display: '&6Scythe Lord'
+  Health: 300
+  Damage: 20
+  Faction: Renegade
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 RandomLookAround
+  - 3 LookAtPlayers
+  - 4 RandomStroll
+  - 5 Float
+  - 6 opendoors
+  - 7 fleesun
+  AITargetSelectors:
+  - 0 clear
+  - 1 hurtbytarget
+  - 2 players
+  Skills: 
+  - potion{type=CONFUSION;d=150;l=1} @target ~onAttack
+  - potion{type=POISON;d=150;l=1} @target ~onAttack
+  - skill{s=RenegadeDarkBeam} @Target ~onTimer:300 1
+  - skill{s=DarkBolt} @Target ~onTimer:150 1
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
+  Equipment:
+  - DiamondHoe:0
+  - RHelmIII:4
+  - RChest:3
+  - RLegsIII:2
+  - RFeet:1
+  Options:
+    Despawn: true
+    FollowRange: 40
+    PreventMobKillDrops: true
+    PreventItemPickup: true
+    KnockbackResistance: 0.1
+    MovementSpeed: 0.3
+    PreventOtherDrops: true
+
+Vermil:
+  Mobtype: zombie
+  Display: '&aVermil'
+  Health: 100
+  Damage: 13
+  Faction: Renegade
+  ShowHealth: true
+  Disguise:
+    Type: cave_spider
+  Options:
+    MaxCombatDistance: 10
+    AlwaysShowName: false
+    FollowRange: 30
+    MovementSpeed: .28
+    PreventRenaming: true
+    PreventOtherDrops: true
+  Skills:
+  - effect:particles{particle=happyVillager;amount=10;vSpread=.5;hSpread=.5;Speed=.01;yOffset=.1} @self ~onSpawn 
+  - effect:particles{particle=happyVillager;amount=10;vSpread=.5;hSpread=.5;Speed=.01;yOffset=.1} @self ~onTimer:20
+  - potion{type=POISON;d=100;l=1} @target ~onAttack
+  - potion{type=CONFUSION;d=150;l=1} @target ~onAttack
+  Equipment:
+  - STONE_BUTTON:4
+  Drops:
+  - 30 2-5 1

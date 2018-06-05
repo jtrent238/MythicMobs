@@ -1,0 +1,110 @@
+﻿####Phase Transition Transitions
+Phase2SpawnKryptos:
+  Skills:
+  - sendtitle{fadein=20;fadeout=20;duration=100;title=“&4Phase2”;subtitle=“&9>-Lets Try That Again Mortal-<”} @PIR{r=80}
+  - delay 80
+  - summon{type=SoulOfKryptos;a=1;radius=6} @Self
+
+Phase3Spawn:
+  Skills:
+  - effect:particlessphere{particle=dragonbreath;amount=400;vSpread=0.5;hSpread=0.5;Speed=.03;yOffset=.1} @self
+  - delay 200
+  - sendtitle{fadein=20;fadeout=20;duration=100;title=“&4Phase3”;subtitle=“&9>-Lets See How You Are Under Pressure-<”} @PIR{r=80}
+  - delay 30
+  - summon{mob=KryptosPhase3;amount=1;radius=6} @Self
+Ending:
+  Skills:
+  - effect:itemspray{item=quartz;duration=100;a=5;force=1} @Self ~onTimer:1
+  - effect:itemspray{item=redstone;duration=100;a=5;force=1} @Self ~onTimer:1
+  - effect:particles{particle=snowshovel;amount=30;vSpread=.5;hSpread=.5;Speed=.01;yOffset=.1} @self ~onTimer:1
+  - effect:particles{particle=reddust;amount=10;vSpread=.5;hSpread=.5;Speed=.01;yOffset=.1} @self ~onTimer:1
+  - effect:particles{particle=instantSpell;amount=10;vSpread=.5;hSpread=.5;Speed=.01;yOffset=.1} @self ~onTimer:1
+  - effect:sound{s=mob.enderdragon.end;volume=3;p=1} @PIR{r=60}
+  - message{m="<mob.name><&co> ARGHHHH, &4This Is Not The End MORTAL!"} @PlayersInRadius{r=40}
+  - delay 30
+  - sendtitle{fadein=20;fadeout=20;duration=100;title=“&4Kryptos”;subtitle=“&9>-(&3Defeated!&9)-<”} @PIR{r=80}
+
+####Mob Summons
+SummonMob:
+  Cooldown: 30
+  Skills:
+  - message{m="<mob.name><&co> Arise, LivingSouls, Avenge ME!"} @PlayersInRadius{r=40}
+  - delay 20
+  - summon{mob=LivingSoul;amount=3;noise=5} @Self
+SummonMob2:
+  Cooldown: 50
+  Skills:
+  - message{m="<mob.name><&co> Arise, ScytheLord, Avenge ME!"} @PlayersInRadius{r=40}
+  - delay 20
+  - summon{mob=ScytheLord;amount=2;noise=5} @Self
+SummonMob3:
+  Cooldown: 70
+  Skills:
+  - message{m="<mob.name><&co> Arise, FireMaster, Avenge ME!"} @PlayersInRadius{r=40}
+  - delay 20
+  - summon{mob=FireMaster;amount=2;noise=5} @Self
+SummonMob4:
+  Cooldown: 90
+  Skills:
+  - message{m="<mob.name><&co> Arise, Vermil, Avenge ME!"} @PlayersInRadius{r=40}
+  - delay 20
+  - summon{mob=Vermil;amount=4;noise=5} @Self
+####Skills
+RenegadeDarkBeam:
+  Cooldown: 0.25
+  Skills:
+  - projectile{onTick=RenegadeDarkBeamEffect;onHit=RenegadeDarkBeamDamage;i=1;hR=0.75;md=400;vR=0.75;v=20;hnp=true;}
+  - effect:sound{s=entity.endermen.teleport;v=1;p=0.5} @Self
+MaxInvis:
+  Skills:
+  - potion{t=INVISIBILITY;d=999999;l=0}
+AntiKB:
+  Skills:
+  - velocity{mode=set;x=0;y=0;z=0} @Self
+ThrowDamage:
+  Skills:
+    - pull{v=5} @PlayersInRadius{r=20}
+    - delay 5
+    - shootfireball{y=1;v=5} @target
+KryptosPhase2SkullShoot:
+  Skills:
+  - effect:particlesphere{p=witchMagic;a=200;radius=20;y=1} @Self
+  - GCD{ticks=40} @Self
+  - shootskull{bd=false;y=2;v=5;repeat=2;repeatInterval=10;} @target
+  
+KryptosPhase1DamageAura:
+  Skills:
+  - effect:particles{p=portal;a=50;vs=0.5;hs=0.5;s=0.01;y=0.5} @Self
+  - effect:particlesphere{p=witchMagic;a=150;radius=10;y=1} @Self
+  - potion{t=POISON;d=80;l=0} @PlayersInRadius{r=10}
+  
+Prison:
+  Skills:
+    - prison{material=ICE;duration=100;breakable=true} @target
+    - potion{t=POISON;d=80;1=0} @PlayersInRadius{r=2} @target
+
+MasterMeteorShot:
+    Skills:
+    - projectile{type=METEOR;onTick=MasterMeteorShot-Tick;onEnd=MasterMeteorShot-Hit;onHit=MasterMeteorShot-Hit;v=50;i=1;hR=2;vR=1;mr=100;g=1.5;hfs=20} @RLNTE{amount=3;radius=5;spacing=1;minradius=0}
+
+MasterMeteorShot-Tick:
+    Skills:
+    - effect:particles{p=flame;amount=10;speed=0.00001;hS=0.1;vS=0.5} @origin
+
+MasterMeteorShot-Hit:
+    Skills:
+    - customdamage{a=55;ia=false}
+    - effect:particles{p=lava;amount=15;speed=0.2;hS=0.1;vS=1} @origin
+
+DarkBolt:
+    Skills:
+    - projectile{onTick=DarkBolt-Tick;onHit=DarkBolt-Hit;v=8;i=1;hR=1;vR=1}
+
+DarkBolt-Tick:
+    Skills:
+    - effect:particles{p=largesmoke;amount=40;speed=0;hS=0.2;vS=0.2} @origin
+    
+DarkBolt-Hit:
+    Skills:
+    - damage{a=10}
+    - potion{type=SLOW;duration=100;lvl=2}

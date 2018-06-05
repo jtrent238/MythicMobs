@@ -1,0 +1,42 @@
+RareNight:
+  MobType: Ghost,Walker
+  Worlds: world
+  Chance: 0.003
+  Priority: 1
+  Action: add
+  Conditions:
+  - worldtime 13801-22200
+RareUnder:
+  MobType: Miner
+  Worlds: world
+  Chance: 0.008
+  Priority: 1
+  Action: add
+  Conditions:
+  - inside true
+Rare:
+  MobType: Lost_Knight,Librarian
+  Worlds: world
+  Chance: 0.003
+  Priority: 1
+  Action: add
+SuperRare:
+  MobType: Diamond_dude
+  Worlds: world
+  Chance: 0.0004
+  Priority: 1
+  Action: add
+UncommonNight:
+  MobType: LilGhost,STRAY
+  Worlds: world
+  Chance: 0.008
+  Priority: 1
+  Action: add
+  Conditions:
+  - worldtime 13801-22200
+Rare2:
+  MobType: JackPot
+  Worlds: world
+  Chance: 0.003
+  Priority: 1
+  Action: add

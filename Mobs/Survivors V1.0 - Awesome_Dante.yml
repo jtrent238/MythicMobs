@@ -1,0 +1,68 @@
+#### Survivors Mob V 1.0 by Awesome_Dante ####
+### Only available on mythicmobs.net
+### Mob File ###
+
+
+
+SupriseEnemy:
+  Type: ZOMBIE
+  Display: '&6Bandit'
+  Health: 100
+  Damage: 3
+  Disguise:
+    Type: player
+    Skin: 'Bandits'
+    Player: '&6Bandit'
+  Faction: Bandits
+  Equipment:
+  - leather_helmet:4
+  - leather_boots:1
+  - leather_sword:0
+  Drops:
+  - money 200
+  Skills:
+  - skill{s=EnemySpawnAnim} ~onSpawn
+  Options:
+    AlwaysShowName: true
+    Despawn: true 
+    MovementSpeed: 0.3  
+  AIGoalSelectors:
+    - 0 clear
+    - 1 meleeattack
+    - 2 randomstroll
+    - 3 FleeSun
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - 2 otherfaction
+
+Survivor:
+  Type: Zombie
+  Display: '&aSurvivor'
+  Health: 100
+  Damage: 3
+  Disguise:
+    Type: player
+    Skin: 'homelessman'
+    Player: '&eSurvivor'
+  Faction: Bandits
+  Equipment:
+  - leather_helmet:4
+  - leather_boots:1
+  - leather_sword:0
+  Skills:
+  - skill{s=CryForHelp} ~onTimer:200
+  - skill{s=RevealSelf} ~onInteract
+  - skill{s=KilledSurvivor} ~onDeath
+  Options:
+    AlwaysShowName: true
+    Despawn: true 
+    MovementSpeed: 0.3  
+  AIGoalSelectors:
+    - 0 clear
+    - 1 randomstroll
+    - 2 lookatplayers
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - 2 otherfaction

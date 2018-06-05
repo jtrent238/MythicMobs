@@ -1,0 +1,55 @@
+BlackHoleEffect:
+  Cooldown: 0
+  Skills:
+  - skill{s=BHEffect}
+  - delay 1
+  - skill{s=BHEffect}
+  - delay 1
+  - skill{s=BHEffect}
+  - delay 1
+  - skill{s=BHEffect}
+  - delay 1
+  - skill{s=BHEffect}
+  - delay 1
+  - skill{s=BHEffect}
+  - delay 1
+  - skill{s=BHEffect}
+  - delay 1
+  - skill{s=BHEffect}
+  - delay 1
+  - skill{s=BHEffect}
+  - delay 1
+  - skill{s=BHEffect}
+  - delay 1
+  - skill{s=BHEffect}
+  - delay 1
+  - skill{s=BHEffect}
+  - delay 1
+  - skill{s=BHEffect}
+  - delay 1
+  - skill{s=BHEffect}
+  - delay 1
+  - skill{s=BHEffect}
+  - delay 1
+  - skill{s=BHEffect}
+  - delay 1
+  - skill{s=BHEffect}
+  - delay 1
+  - skill{s=BHEffect}
+  - delay 1
+  - skill{s=BHEffect}
+BHEffect:
+  Cooldown: 0.01
+  Skills:
+  - effect:particles{p=portal;a=3;hs=0.01;vs=0.01;s=1.5;y=1.8}
+  - effect:particles{p=reddust;c=#000000;a=20;hs=0.2;vs=0.2;s=0;y=2.0}
+  - effect:particles{p=reddust;c=#000000;a=2;hs=0.4;vs=0.4;s=0;y=2.0}
+
+BlackHoleDamage:
+  Cooldown: 0
+  Skills:
+  - pull{velocity=1} @LivingEntitiesInRadius{r=25}
+  - pull{velocity=2} @LivingEntitiesInRadius{r=12}
+  - pull{velocity=3} @LivingEntitiesInRadius{r=9}
+  - pull{velocity=4} @LivingEntitiesInRadius{r=6}
+  - damage{amount=5;ignoreArmor=true} @LivingEntitiesInRadius{r=2}

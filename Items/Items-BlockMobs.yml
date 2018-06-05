@@ -1,0 +1,47 @@
+turtlehead:
+  Id: 397
+  Data: 3
+  Options:
+    SkinTexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTJlNTQ4NDA4YWI3NWQ3ZGY4ZTZkNWQyNDQ2ZDkwYjZlYzYyYWE0ZjdmZWI3OTMwZDFlZTcxZWVmZGRmNjE4OSJ9fX0
+beehead:
+  Id: 397
+  Data: 3
+  Options:
+    SkinTexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTQ3MzIyZjgzMWUzYzE2OGNmYmQzZTI4ZmU5MjUxNDRiMjYxZTc5ZWIzOWM3NzEzNDlmYWM1NWE4MTI2NDczIn19fQ==
+owlhead:
+  Id: 397
+  Data: 3
+  Options:
+    SkinTexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjM2ZDhlYWRlYzk3MmMyOTgwNmVhY2YyNTI3ZTQ5NjJhM2U1ZmY1NzcyY2JjNjQwMWVhYjI2YTg5YjhmMTcyIn19fQ==
+beautiful_feather:
+  Id: 288
+  Display: '&7&oBeautiful Feather'
+  Lore:
+  - ''
+  - 'beautiful feather'
+  - 'who give luck'
+  - 'to its bearer'
+  Enchantments:
+  - DURABILITY:10
+  Attributes:
+    OffHand:
+      Luck: 5
+      MovementSpeed: 0.25
+turtle_meat:
+  Id: 319
+  Display: '&2Turtle Meat'
+honey_potion:
+  Id: potion
+  Display: '&6&l> High Quality Honey'
+  Options:
+    HideFlags: true
+    Color: 250,255,63
+  PotionEffects:
+  - HEAL 600 1
+  - SPEED 600 2
+  - HEAL_BOOST 400 2
+  Lore:
+  - ''
+  - '&9Rarity : &lRare&r'
+  - ''
+  - '&eGive to your body the power of &lHoney!'

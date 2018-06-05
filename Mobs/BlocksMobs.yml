@@ -1,0 +1,54 @@
+turtle:
+  Mobtype: squid
+  Display: 'turtle'
+  Health: 3
+  Drops:
+  - turtleDead
+  Disguise:
+   Type: babyzombie
+  Skills:
+   - potion{t=INVISIBILITY;d=2147483647;l=1} @self ~onSpawn
+   - equip{i=turtlehead:4} ~onSpawn
+   - effect:particlering{particle=bubble;radius=3;points=32;amount=6;hS=1;vS=0} @self ~onDamage
+  Options:
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+    Silent: true
+    PreventRenaming: false
+    MovementSpeed: 0.1
+bee:
+  Mobtype: bat
+  Display: 'bee'
+  Health: 3
+  Drops:
+  - beeDead
+  Disguise:
+   Type: babyzombie
+  Skills:
+   - potion{t=INVISIBILITY;d=2147483647;l=1} @self ~onSpawn
+   - equip{i=beehead:4} ~onSpawn
+   - effect:particlering{particle=crit;radius=2;points=32;amount=12;hS=1;vS=0} @self ~onDamage
+  Options:
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+    Silent: true
+    PreventRenaming: false
+    MovementSpeed: 0.1
+owl:
+  Mobtype: bat
+  Display: 'owl'
+  Health: 3
+  Drops:
+  - owlDead
+  Disguise:
+   Type: babyzombie
+  Skills:
+   - potion{t=INVISIBILITY;d=2147483647;l=1} @self ~onSpawn
+   - equip{i=owlhead:4} ~onSpawn
+   - effect:particlering{particle=crit;radius=2;points=32;amount=12;hS=1;vS=0} @self ~onDamage
+  Options:
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+    Silent: true
+    PreventRenaming: false
+    MovementSpeed: 0.15

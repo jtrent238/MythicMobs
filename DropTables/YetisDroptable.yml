@@ -1,0 +1,5 @@
+Yetidroptable:
+  MinItems: 0
+  MaxItems: 2
+  Drops:
+  - YetisIce 1 1

@@ -1,0 +1,7 @@
+birdDrops:
+  Conditions:
+  - playerwithin 40
+  Drops:
+  - 288 1 0.25
+  - 295 2 0.25
+  - 297 1 0.10

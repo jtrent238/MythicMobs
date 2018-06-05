@@ -1,0 +1,4 @@
+HerobrineHealthRegeneration:
+  Skills:
+  - heal{amount=40} <100% 1
+  - effect:particles{p=heart;amount=20;hSpread=1;vSpread=0.1;speed=0.1;yOffset=1} @Self

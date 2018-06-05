@@ -1,0 +1,357 @@
+LesserLivingShadow:
+  MobType: pigzombie
+  Display: '&5Lesser Living Shadow'
+  Health: 35
+  Damage: 7
+  Faction: Renegade
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 RandomLookAround
+  - 3 LookAtPlayers
+  - 4 RandomStroll
+  - 5 Float
+  AITargetSelectors:
+  - 0 clear
+  - 1 hurtbytarget
+  - 2 players
+  KillMessages:
+  - '<target.name> was consumed by &5Lesser Living Shadow'
+  Skills:
+  - skill{s=MaxInvis} @self ~onSpawn
+  - effect:sound{s=block.stone.break;volume=1;p=0.5} @Self ~onDamaged
+  - effect:particlesphere{p=witchMagic;a=40;radius=1;y=0.5} @Self ~onTimer:5
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
+  Equipment:
+  - PlaceholderItem:0
+  - PlaceholderArmor:4
+  - PlaceholderArmor:3
+  - PlaceholderArmor:2
+  - PlaceholderArmor:1
+  Options:
+    Silent: true
+    FollowRange: 30
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    ReinforcementsChance: 0
+    MovementSpeed: 0.35
+RRepulsor:
+  Mobtype: skeleton
+  Display: '&3&lRenegade Repulsor'
+  Health: 75
+  Damage: 10
+  Faction: Renegade
+  AITargetSelectors:
+  - 0 clear
+  - 1 hurtbytarget
+  - 2 players
+  DamageModifiers:
+  - FIRE_TICK 2
+  Skills:
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
+  Equipment:
+  - Bow:0
+  - RHelmII:4
+  - RChest:3
+  - RLegsII:2
+  - RFeet:1
+  Options:
+    Despawn: true
+    FollowRange: 40
+    PreventMobKillDrops: true
+    PreventItemPickup: true
+    KnockbackResistance: 0.1
+    PreventOtherDrops: true
+RScytheLord:
+  Mobtype: witherskeleton
+  Display: '&3&lRenegade &6Scythe Lord'
+  Health: 200
+  Damage: 10
+  Faction: Renegade
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 RandomLookAround
+  - 3 LookAtPlayers
+  - 4 RandomStroll
+  - 5 Float
+  - 6 opendoors
+  - 7 fleesun
+  AITargetSelectors:
+  - 0 clear
+  - 1 hurtbytarget
+  - 2 players
+  Skills: 
+  - skill{s=RenegadeDarkBeam} @Target ~onTimer:300 1
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
+  Equipment:
+  - DiamondHoe:0
+  - RHelmIII:4
+  - RChest:3
+  - RLegsIII:2
+  - RFeet:1
+  Options:
+    Despawn: true
+    FollowRange: 40
+    PreventMobKillDrops: true
+    PreventItemPickup: true
+    KnockbackResistance: 0.1
+    MovementSpeed: 0.3
+    PreventOtherDrops: true
+RBearRider:
+  Mobtype: Stray
+  Display: '&3&lRenegade &6Bear Rider'
+  Health: 105
+  Damage: 12
+  Riding: RWarBear
+  Faction: Renegade
+  AITargetSelectors:
+  - 0 clear
+  - 1 hurtbytarget
+  - 2 specificfaction Target
+  - 3 players
+  - 4 specificfaction Townington
+  - 5 specificfaction MA
+  Skills:
+  - potion{t=WEAKNESS;d=200;l=0} @Target ~onAttack 1
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
+  Equipment:
+  - Bow:0
+  - RHelmIII:4
+  - RChest:3
+  - RLegsIII:2
+  - RFeet:1
+  Options:
+    Despawn: true
+    FollowRange: 40
+    PreventMobKillDrops: true
+    PreventItemPickup: true
+    KnockbackResistance: 0.1
+    MovementSpeed: 0.3
+    PreventOtherDrops: true
+RWarBear:
+  Mobtype: POLAR_BEAR
+  Display: '&3&lRenegade &6War Bear'
+  Health: 50
+  Damage: 7
+  Faction: Renegade
+  AITargetSelectors:
+  - 0 clear
+  - 1 hurtbytarget
+  - 2 players
+  Skills:
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
+  Options:
+    FollowRange: 40
+    Despawn: true
+    PreventMobKillDrops: true
+RAxeman:
+  Mobtype: zombie
+  Display: '&3&lRenegade Axeman'
+  Health: 35
+  Damage: 4
+  Faction: Renegade
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 RandomLookAround
+  - 3 LookAtPlayers
+  - 4 RandomStroll
+  - 5 Float
+  - 6 opendoors
+  - 7 fleesun
+  AITargetSelectors:
+  - 0 clear
+  - 1 hurtbytarget
+  - 2 players
+  Skills:
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
+  Equipment:
+  - IronAxe:0
+  - RHelm:4
+  - RChest:3
+  - RLegs:2
+  - RFeet:1
+  Options:
+    Despawn: true
+    PreventMobKillDrops: true
+    PreventItemPickup: true
+    KnockbackResistance: 0.1
+    ReinforcementsChance: 0
+    PreventOtherDrops: true
+Theal:
+  MobType: Husk
+  Display: '&4Theal the Unstable'
+  Health: 2600
+  Damage: 13
+  Faction: Renegade
+  BossBar:
+    Enabled: true
+    Range: 60
+    Color: YELLOW
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 RandomLookAround
+  - 3 LookAtPlayers
+  - 4 RandomStroll
+  - 5 Float
+  - 6 opendoors
+  AITargetSelectors:
+  - 0 clear
+  - 1 hurtbytarget
+  - 2 players
+  DamageModifiers:
+  - FIRE_TICK 10
+  KillMessages:
+  - '<target.name> was torn to pieces by <mob.name>'
+  - '<target.name> was beaten to death by <mob.name>'
+  - '<target.name> was looted by <mob.name>'
+  - '<mob.name> &fobliterated <target.name> with "magic"'
+  Skills:
+  - message{msg="<mob.name><&co> &cThat mob was a good friend of mine and you killed him. He kinda deserved it.. BUT NOT BY YOUR HANDS!!"} @PIR{r=80} ~onSpawn
+  - message{msg="<mob.name><&co> &cYou think YOU are the best magic user? THINK AGAIN!"} @PIR{r=80} ~onDamaged =85%
+  - message{msg="<mob.name><&co> &cYou are all so depressing! Fight me with some magic! Oh that's right! YOU CAN'T! Or... can you? You can't right?"} @PIR{r=80} ~onDamaged =55%
+  - message{msg="<mob.name><&co> &cMAUAHAHAUAHAUAH... EHEHEHHUAHAHAHA... Is this laughing scaring you?! It's sure is scary!"} @PIR{r=80} ~onDamaged =35%
+  - skill{s=ThealStateSelect} @Self =90%
+  - skill{s=ThealStateSelect} @Self =60%
+  - skill{s=ThealStateSelect} @Self =30%
+  - skill{s=ThealDESTRUCTIONSTATESummonAllies} @Self ~onDamaged 0.3
+  - skill{s=ThealDESTRUCTIONSTATECharge} @Self ~onDamaged 0.3
+  - skill{s=ThealDESTRUCTIONSTATESmash} @Self ~onAttack 0.2
+  - skill{s=ThealICESTATEEffect} @Self ~onTimer:10
+  - skill{s=ThealICESTATEAura} @self ~onTimer:10
+  - skill{s=ThealICESTATEShot} @target ~onTimer:60
+  - skill{s=ThealICESTATEFrostPoolSummon} @self ~onDamaged 0.3
+  - skill{s=ThealFIRESTATEEffect} @Self ~onTimer:10
+  - skill{s=ThealFIRESTATEFireBlast} @Target ~onTimer:100
+  - skill{s=ThealFIRESTATEFlamePoolSummon} @Self ~onDamaged 0.3 
+  - skill{s=ThealDARKSTATEEffect} @Self ~onTimer:10
+  - skill{s=ThealDARKSTATEShadowPortalOpen} @Self ~onDamaged 0.3
+  - skill{s=ThealDARKSTATESkullShoot} @target ~onTimer:120
+  - skill{s=ThealDARKSTATEDamageAura} @Self ~onTimer:10
+  - effect:sound{s=entity.wither.spawn;volume=1;p=1} @PIR{r=50} ~onSpawn
+  - effect:lightning @Self ~onSpawn
+  - sendtitle{fadein=20;fadeout=20;duration=100;title=“&4Theal”;subtitle=“&9>-(&3Mentally<&sp>Unstable&9)-<”} @PIR{r=80} ~onSpawn
+  - message{msg="<mob.name><&co> &cSo you killed me.. big whoop! You want to fight about it? Er, wait..."} @PIR{r=80} ~onDeath
+  - effect:sound{s=entity.player.hurt;v=2;p=0.5} @Self ~onDeath
+  - effect:sound{s=block.stone.break;volume=2;p=1} @Self ~onDeath
+  - effect:itemspray{item=redstone;duration=100;a=5;force=1} @Self ~onDeath
+  - effect:itemspray{item=pork;duration=100;a=5;force=1} @Self ~onDeath
+  - effect:itemspray{item=bone;duration=100;a=5;force=1} @Self ~onDeath
+  - effect:itemspray{item=red_rose;duration=100;a=5;force=1} @Self ~onDeath
+  - effect:itemspray{item=gold_nugget;duration=100;a=5;force=1} @Self ~onDeath
+  - leap{velocity=75;noise=25} @Self ~onDamaged 0.25
+  - message{msg="&3<trigger.name> has defeated <mob.name>"} @PIR{r=80} ~onDeath
+  - summon{type=RainbowZombie;a=1;r=1} @Self ~onDeath 0.05
+  - heal{a=3} @Self ~onAttack
+  - effect:sound{s=entity.villager.ambient;volume=1;p=0.5} @Self ~onTimer:200 1
+  - effect:sound{s=entity.villager.hurt;v=0.5;p=0.5} @Self ~onDamaged
+  Equipment:
+  - BlazeRodWeapon:0
+  - DragonHead:4
+  - GrayChest:3
+  - GrayLegs:2
+  - GrayBoots:1
+  Modules:
+    ThreatTable: true
+  Options:
+    PreventOtherDrops: true
+    PreventItemPickup: true
+    Silent: true
+    KnockbackResistance: 1
+    FollowRange: 40
+    MaxCombatDistance: 20
+    MovementSpeed: 0.32
+FlamePool:
+  MobType: creeper
+  Display: '&6Flame Pool'
+  Health: 20
+  Damage: 0
+  DamageModifiers:
+  - ENTITY_ATTACK 0
+  - PROJECTILE 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - LAVA 0
+  - FALL 0
+  - SUFFOCATION 0
+  - MAGIC 0
+  - CUSTOM 0
+  - CONTACT 0
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  KillMessages:
+  - '<target.name> was incinerated by a &6Flame Pool'
+  - '<target.name> was cooked medium-well by a &6Flame Pool'
+  Skills:
+  - skill{s=AntiKB} @Self ~onDamaged
+  - effect:particles{p=lava;a=20;vs=1;hs=0.5;Speed=1;yOffset=1} @Self ~onTimer:10 1
+  - skill{s=MaxInvis} @self ~onSpawn
+  - skill{s=FireAuraStart} @Self ~onSpawn
+  Options:
+    KnockbackResistance: 1
+    Silent: true
+    NoAI: true
+FrostPool:
+  MobType: creeper
+  Display: '&bFrost Pool'
+  Health: 20
+  Damage: 0
+  DamageModifiers:
+  - ENTITY_ATTACK 0
+  - PROJECTILE 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - LAVA 0
+  - FALL 0
+  - SUFFOCATION 0
+  - MAGIC 0
+  - CUSTOM 0
+  - CONTACT 0
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  KillMessages:
+  - '<target.name> was turned into an icecube by &bFrost Pool'
+  - '<target.name> was shattered into icy pieces by &bFrost Pool'
+  Skills:
+  - skill{s=AntiKB} @Self ~onDamaged
+  - effect:particles{p=splash;a=20;vs=1;hs=0.5;Speed=1;yOffset=1} @Self ~onTimer:10 1
+  - effect:particles{p=snowballpoof;a=20;vs=1;hs=0.5;Speed=0;yOffset=1} @Self ~onTimer:10 1
+  - skill{s=MaxInvis} @self ~onSpawn
+  - skill{s=FrostAuraStart} @Self ~onSpawn
+  Options:
+    KnockbackResistance: 1
+    Silent: true
+    NoAI: true
+ShadowPortal:
+  MobType: pigzombie
+  Display: '&5Shadow Portal'
+  Health: 225
+  Damage: 0
+  Faction: Renegade
+  Skills:
+  - effect:particles{p=portal;a=50;vs=0.5;hs=0.5;Speed=0.01;yOffset=0.5} @Self ~onTimer:20 1
+  - effect:sound{s=entity.wither.hurt;volume=1;p=0.5} @Self ~onDamaged >0 1
+  - effect:sound{s=entity.wither.death;volume=1;p=1.5} @Self ~onDeath
+  - skill{s=MaxInvis} @self ~onSpawn
+  - skill{s=AntiKB} @Self ~onDamaged
+  - skill{s=DarknessShroud} @Self ~onSpawn
+  - skill{s=ShadowPortalCloseTimer} @Self ~onSpawn
+  - skill{s=ShadowPortalSummon} @Self ~onTimer:300 1
+  - effect:particlesphere{p=witchMagic;a=30;radius=1;y=1} @Self ~onTimer:5
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
+  Equipment:
+  - LivingShadowBlockGlowing:4
+  - PlaceholderArmor:3
+  - PlaceholderArmor:2
+  - PlaceholderArmor:1
+  Options:
+    KnockbackResistance: 1
+    FuseTicks: 10000
+    MovementSpeed: 0.005
+    ReinforcementsChance: 0
+    PreventOtherDrops: true
+    Silent: true
+    NoAI: true
+    Despawn: true

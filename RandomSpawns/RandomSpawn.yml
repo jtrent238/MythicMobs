@@ -1,0 +1,27 @@
+RandomTurtle:
+  Action: ADD
+  Type: turtle
+  Level: 1
+  Chance: 0.25
+  Priority: 1
+  UseWorldScaling: false
+  Conditions:
+  - inblock STATIONARY_WATER
+RandomBee:
+  Action: ADD
+  Type: bee
+  Level: 1
+  Chance: 0.25
+  Priority: 1
+  UseWorldScaling: false
+  Conditions:
+  - biome{b=FOREST} true
+RandomOwl:
+  Action: ADD
+  Type: owl
+  Level: 1
+  Chance: 0.25
+  Priority: 1
+  UseWorldScaling: false
+  Conditions:
+  - biome{b=snowy} true

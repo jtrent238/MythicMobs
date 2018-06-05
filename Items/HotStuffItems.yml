@@ -1,0 +1,77 @@
+###  Fire Elementals Items ###
+FireElementalsButton:
+  Id: 77
+  Display: "Fire Elemental's Button"
+  Options:
+    Unbreakable: true
+    HideFlags: true'
+FlamingBone:
+  Id: 369
+  Display: '&4FlamingBone'
+  Lore:
+  - "&6&lA Bone made of Fire,"
+  - "&6&lI woulnt hold it if I was you."
+  Options:
+    Unbreakable: true
+    HideFlags: true
+  Skills:
+  - skill{s=dontholdme} @self ~onTimer:100
+### NetherGuardian items ###
+NetherGuardiansChest:
+  Id: LEATHER_CHESTPLATE
+  Display: 'Neather Guardian Chest'
+  Options:
+     Color: 29,29,33
+     Unbreakable: true
+     HideFlags: true
+NetherGuardiansLeggings:
+  Id: LEATHER_LEGGINGS
+  Display: 'Nether Guardian Leggings'
+  Options:
+     Color: 29,29,33
+     Unbreakable: true
+     HideFlags: true
+NetherGuardiansBoots:
+  Id: LEATHER_BOOTS
+  Display: 'Nether Guardian Boots'
+  Options:
+     Color: 29,29,33
+     Unbreakable: true
+     HideFlags: true
+NetherGuardiansSword:
+  Id: IRON_SWORD
+  Display: 'Nether Guardian Sword'
+  Options:
+     Unbreakable: true
+     HideFlags: true
+NetherGuardiansHead:
+  Id: 397
+  Data: 3
+  Display: 'Nether Guardian Skull'
+  Options:
+     Unbreakable: true
+     HideFlags: true
+     SkinTexture: eyJ0aW1lc3RhbXAiOjE1MjMwMzgzNDM1MDUsInByb2ZpbGVJZCI6IjkxOGEwMjk1NTlkZDRjZTZiMTZmN2E1ZDUzZWZiNDEyIiwicHJvZmlsZU5hbWUiOiJCZWV2ZWxvcGVyIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS85ZjZmYTI4NDRlMjY4NGVlNDYyYTg3NWJmYTIwYTU1ZjQ2NWIxODA4OGQwNjQxMDZhM2U4MTcyNDJhMTIzMCJ9fX0=
+FlamingCoal:
+  Id: 263
+  Display: "&4Flaming Coal"
+  Options:
+    Unbreakable: true
+    HideFlags: true
+  Skills:
+  - skill{s=CoalBurn} @trigger ~onAttack
+### Fire Wizards Items ###
+FireWizardButton:
+  Id: 77
+  Display: "Fire Wizard's Button"
+  Options:
+    Unbreakable: true
+    HideFlags: true
+FireWizardsWand:
+  Id: 280
+  Display: "Fire Wizard's Wand"
+  Enchantments:
+  - KNOCKBACK:1
+  Options:
+    Unbreakable: true
+    HideFlags: true

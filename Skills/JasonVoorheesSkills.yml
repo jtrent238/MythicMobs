@@ -1,0 +1,50 @@
+##### JASON VOORHEES SKILLS by Awesome_Dante #####
+JasonCombo:
+  Skills:
+  - skill{s=JasonMacheteThrow} @target
+  - delay 40
+  - skill{s=JasonTemplePunch} @target
+  - delay 40
+  - skill{s=JasonChoke} @target
+JasonTemplePunch:
+  Skills:
+  - leap{v=10} @target
+  - delay 20
+  - damage{a=4} @PIR{r=1}
+JasonHealthRegeneration:
+  Skills:
+  - heal{amount=40} <100% 1
+  - effect:particles{p=heart;amount=20;hSpread=1;vSpread=0.1;speed=0.1;yOffset=1} @Self
+JasonChoke:
+  Skills:
+  - sendtitle{title="";subtitle="&7You are being choked!";d=20} @Target
+  - potion{type=SLOW;duration=100;level=4} @Self
+  - potion{type=SLOW;duration=100;level=4} @Target
+  - teleport @target
+  - delay 50
+  - damage{a=3}
+  - delay 30
+  - damage{a=3}
+JasonScaryGrowl:
+  Skills:
+  - sound{s=entity.endermen.scream;p=0.08;v=7} @self ~onSpawn
+  - delay 20
+  - sound{s=entity.endermen.scream;p=0.07;v=7} @self ~onSpawn
+  - delay 20
+  - sound{s=entity.endermen.scream;p=0.06;v=7} @self ~onSpawn
+  - delay 20
+  - sound{s=entity.endermen.scream;p=0.05;v=7} @self ~onSpawn
+  - delay 20
+  - sound{s=entity.endermen.scream;p=0.04;v=7} @self ~onSpawn
+  - delay 20
+JasonMacheteThrow:
+  Skills:
+  - missile{ot=JasonMacheteThrow-Tick;oh=JasonMacheteThrow-Hit;v=6;i=1;hR=1;vR=1;in=0.75} @PIR{r=40}
+JasonMacheteThrow-Tick:
+  Skills:
+  - effect:itemspray{item=iron_sword;amount=1;d=1;velocity=0.1;yo=0.5} @origin
+JasonMacheteThrow-Hit:
+  Skills:
+  - effect:particles{p=dripLava;amount=30;hSpread=0.2;ySpread=0.2;speed=0.1;yOffset=0.5} @Target
+  - sendtitle{title="&cHIT";subtitle="&7Hit by a flying Machete!";d=20} @Target
+  - damage{a=8} @Target 

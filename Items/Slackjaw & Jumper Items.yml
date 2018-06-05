@@ -1,0 +1,21 @@
+SlackjawBow:
+  Id: bow
+  Display: '&aThe Punch Cannon'
+  Lore:
+  - '&8Rarity: &5Epic'
+  - '&4&oPunch em real hard'
+  Enchantments:
+  - ARROW_DAMAGE:2
+  - ARROW_KNOCKBACK:4
+  Options:
+    Repairable: false
+ChainHelm:
+  Id: chainmail_helmet
+ChainChestplate:
+  Id: chainmail_chestplate
+ChainLeggings:
+  Id: chainmail_leggings
+ChainBoots:
+  Id: chainmail_boots
+DiamondSword:
+  Id: diamond_sword

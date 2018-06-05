@@ -1,0 +1,151 @@
+FalconPunchSword:
+  Id: 272
+  Display: '&4&lFALCON PUNCH SWORD'
+  Lore:
+  - '&4&oFALCON PUNCH!'
+  Enchantments:
+  - KNOCKBACK:8
+RedHelm:
+  Id: leather_helmet
+  Options:
+    Color: 255,0,0
+RedChest:
+  Id: leather_chestplate
+  Options:
+    Color: 255,0,0
+RedLegs:
+  Id: leather_leggings
+  Options:
+    Color: 255,0,0
+RedBoots:
+  Id: leather_boots
+  Options:
+    Color: 255,0,0
+OrangeHelm:
+  Id: leather_helmet
+  Options:
+    Color: 255,69,0
+OrangeChest:
+  Id: leather_chestplate
+  Options:
+    Color: 255,69,0
+OrangeLegs:
+  Id: leather_leggings
+  Options:
+    Color: 255,69,0
+OrangeBoots:
+  Id: leather_boots
+  Options:
+    Color: 255,69,0
+YellowHelm:
+  Id: leather_helmet
+  Options:
+    Color: 255,255,0
+YellowChest:
+  Id: leather_chestplate
+  Options:
+    Color: 255,255,0
+YellowLegs:
+  Id: leather_leggings
+  Options:
+    Color: 255,255,0
+YellowBoots:
+  Id: leather_boots
+  Options:
+    Color: 255,255,0
+GreenHelm:
+  Id: leather_helmet
+  Options:
+    Color: 0,255,0
+GreenChest:
+  Id: leather_chestplate
+  Options:
+    Color: 0,255,0
+GreenLegs:
+  Id: leather_leggings
+  Options:
+    Color: 0,255,0
+GreenFeet:
+  Id: leather_boots
+  Options:
+    Color: 0,255,0
+BlueHelm:
+  Id: leather_helmet
+  Options:
+    Color: 0,0,255
+BlueChest:
+  Id: leather_chestplate
+  Options:
+    Color: 0,0,255
+BlueLegs:
+  Id: leather_leggings
+  Options:
+    Color: 0,0,255
+BlueFeet:
+  Id: leather_boots
+  Options:
+    Color: 0,0,255
+CyanHelm:
+  Id: leather_helmet
+  Options:
+    Color: 0,255,255
+CyanChest:
+  Id: leather_chestplate
+  Options:
+    Color: 0,255,255
+CyanLegs:
+  Id: leather_leggings
+  Options:
+    Color: 0,255,255
+CyanBoots:
+  Id: leather_boots
+  Options:
+    Color: 0,255,255
+PurpleHelm:
+  Id: leather_helmet
+  Options:
+    Color: 128,0,128
+PurpleChest:
+  Id: leather_chestplate
+  Options:
+    Color: 128,0,128
+PurpleLegs:
+  Id: leather_leggings
+  Options:
+    Color: 128,0,128
+PurpleBoots:
+  Id: leather_boots
+  Options:
+    Color: 128,0,128
+PinkHelm:
+  Id: leather_helmet
+  Options:
+    Color: 255,20,147
+PinkChest:
+  Id: leather_chestplate
+  Options:
+    Color: 255,20,147
+PinkLegs:
+  Id: leather_leggings
+  Options:
+    Color: 255,20,147
+PinkBoots:
+  Id: leather_boots
+  Options:
+    Color: 255,20,147
+BlackHelm:
+  Id: leather_helmet
+  Options:
+    Color: 10,10,10
+BlackChest:
+  Id: leather_chestplate
+  Options:
+    Color: 10,10,10
+BlackLegs:
+  Id: leather_leggings
+  Options:
+    Color: 10,10,10
+BlackBoots:
+  Id: leather_boots
+  Options:
+    Color: 10,10,10

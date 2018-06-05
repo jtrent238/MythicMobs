@@ -1,0 +1,19 @@
+########################################################################
+###                                                                    #
+###   Hostile Snowman v1.0                                             #
+###                                                                    #
+###   Created by jaylawl                                               #
+###   Contact: jaylawlMC@gmail.com                                     #
+###                                                                    #
+########################################################################
+hostile_snowman_randomspawns:
+  Type: hostile_snowman
+  Worlds: world,world_nether,world_the_end                              # you must enter the correct names of your worlds here
+  Chance: 0.02                                                          # 0.02 corresponds to a 2 % chance for the mob to replace any other vanilla spawn
+  Priority: 1
+  Action: replace
+  UseWorldScaling: true
+  Conditions:
+  - outside true
+  - biome ICE_PLAINS,ICE_MOUNTAINS,FROZEN_OCEAN,FROZEN_RIVER,COLD_TAIGA,COLD_TAIGA_HILLS,EXTREME_HILLS,EXTREME_HILLS_PLUS,STONE_BEACH
+#########################################################################

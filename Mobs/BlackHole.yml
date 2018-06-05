@@ -1,0 +1,21 @@
+BlackHole:
+  Mobtype: wolf
+  Display: 'Black Hole'
+  Disguise.Type: villager
+  Skills:
+   - potion{t=INVISIBILITY;d=2147483647;l=1} @self ~onSpawn
+   - skill{s=BlackHoleEffect} @Self ~onTimer:20
+   - skill{s=BlackHoleDamage} @Self ~onTimer:5
+   - effect:sound{s=entity.wither.ambient;v=0.4;p=2.0} @Self ~onAttack
+  AITargetSelectors:
+  - 0 clear
+  AIGoalSelectors:
+  - 0 clear
+  Options:
+    Collidable: false
+    Invincible: true
+    KnockbackResistance: 1.0
+    MovementSpeed: 0.001
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+    Silent: true

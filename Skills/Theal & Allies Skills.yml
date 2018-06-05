@@ -1,0 +1,315 @@
+FireAuraStart:
+  Skills:
+  - skill{s=FireAuraDamageEffect} @Self
+  - effect:blockmask{m=netherrack;n=0.3;r=8;d=440} @self
+  - effect:blockmask{m=magma;n=0.3;r=8;d=440} @self
+  - delay 400
+  - remove @self
+FireAuraDamageEffect:
+  Skills:
+  - damage{a=5;i=false} @PlayersInRadius{r=8}
+  - ignite{d=200} @PlayersInRadius{r=8}
+  - effect:sound{s=block.fire.ambient;v=1;p=1} @Self
+  - effect:particlering{p=flame;a=100;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=1} 
+  - delay 3
+  - effect:particlering{p=flame;a=100;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=2} 
+  - delay 3
+  - effect:particlering{p=flame;a=100;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=3} 
+  - delay 3
+  - effect:particlering{p=flame;a=100;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=4} 
+  - delay 3
+  - effect:particlering{p=flame;a=100;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=5} 
+  - delay 3
+  - effect:particlering{p=flame;a=100;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=6} 
+  - delay 3
+  - effect:particlering{p=flame;a=100;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=7} 
+  - delay 3
+  - effect:particlering{p=flame;a=100;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=8}
+  - skill{s=FireAuraDamageEffect} @Self
+FrostAuraStart:
+  Cooldown: 1
+  Skills:
+  - skill{s=FrostAuraDamageEffect} @Self
+  - effect:blockmask{m=ice;n=0.3;r=8;d=440} @self
+  - effect:blockmask{m=packed_ice;n=0.3;r=8;d=440} @self
+  - delay 400
+  - remove @self
+FrostAuraDamageEffect:
+  Skills:
+  - damage{a=5;i=false} @PlayersInRadius{r=8}
+  - potion{t=SLOW;d=200;l=4} @PlayersInRadius{r=8}
+  - effect:sound{s=block.fire.extinguish;v=0.5;p=0.5} @Self
+  - effect:particlering{p=splash;a=100;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=1} 
+  - effect:particlering{p=snowballpoof;a=20;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=1} 
+  - delay 3
+  - effect:particlering{p=splash;a=100;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=2} 
+  - effect:particlering{p=snowballpoof;a=20;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=2} 
+  - delay 3
+  - effect:particlering{p=splash;a=100;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=3} 
+  - effect:particlering{p=snowballpoof;a=20;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=3} 
+  - delay 3
+  - effect:particlering{p=splash;a=100;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=4} 
+  - effect:particlering{p=snowballpoof;a=20;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=4} 
+  - delay 3
+  - effect:particlering{p=splash;a=100;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=5} 
+  - effect:particlering{p=snowballpoof;a=20;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=5} 
+  - delay 3
+  - effect:particlering{p=splash;a=100;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=6} 
+  - effect:particlering{p=snowballpoof;a=20;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=6} 
+  - delay 3
+  - effect:particlering{p=splash;a=100;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=7} 
+  - effect:particlering{p=snowballpoof;a=20;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=7} 
+  - delay 3
+  - effect:particlering{p=splash;a=100;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=8} 
+  - effect:particlering{p=snowballpoof;a=20;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=8} 
+  - skill{s=FrostAuraDamageEffect} @Self
+RenegadeDarkBeam:
+  Cooldown: 0.25
+  Conditions:
+  - offgcd true
+  Skills:
+  - GCD{ticks=200}
+  - projectile{onTick=RenegadeDarkBeamEffect;onHit=RenegadeDarkBeamDamage;i=1;hR=0.75;md=400;vR=0.75;v=20;hnp=true;}
+  - effect:sound{s=entity.endermen.teleport;v=1;p=0.5} @Self
+RenegadeDarkBeamEffect:
+  Cooldown: 0.05
+  Skills:
+  - effect:particles{p=smoke;a=25;vs=0.2;hs=0.2;s=0;y=1} @Origin
+  - effect:particles{p=explosion;a=25;vs=0.2;hs=0.2;s=0;y=1} @Origin
+RenegadeDarkBeamDamage:
+  Cooldown: 0.05
+  Skills:
+  - effect:particles{p=smoke;a=25;vs=1;hs=1;s=0.2;y=1}
+  - potion{t=WITHER;d=100;l=1}
+  - potion{t=HUNGER;d=300;l=0}
+  - throw{velocity=5;velocityY=5}
+  - damage{a=4;pkb=true;i=false}
+ShadowPortalSummon:
+  Cooldown: 0.25
+  Skills:
+  - effect:sound{s=entity.endermen.ambient;v=1;p=0.5} @Self 1
+  - summon{type=LesserLivingShadow;a=1;yradius=0;radius=5} 
+ShadowPortalCloseTimer:
+  Cooldown: 0.25
+  Skills:
+  - delay 3600
+  - suicide @self
+DarknessShroud:
+  Cooldown: 0.25
+  Skills:
+  - effect:particlering{p=witchMagic;a=100;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=1} 
+  - delay 3
+  - effect:particlering{p=witchMagic;a=100;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=2} 
+  - delay 3
+  - effect:particlering{p=witchMagic;a=100;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=3} 
+  - delay 3
+  - effect:particlering{p=witchMagic;a=100;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=4} 
+  - delay 3
+  - effect:particlering{p=witchMagic;a=100;vs=0.5;hs=0.5;s=0;y=0;points=20;radius=5} 
+  - delay 3
+  - skill{s=DarknessShroud} 
+ThealStateSelect:
+  Skills:
+  - effect:lightning @self
+  - message{msg="<mob.name> &6has changed states!"} @PIR{r=80}
+  - randomskill{skills=ThealStateSelectICE,ThealStateSelectFIRE,ThealStateSelectDARK,ThealStateSelectDESTRUCTION} @Self
+ThealStateSelectICE:
+  Skills:
+  - GCD{ticks=100} @Self
+  - equip{item=MagicSnow:0} @self
+  - equip{item=PlaceholderItem:5} @self
+  - equip{item=CyanChest:3} @self
+  - equip{item=CyanLegs:2} @self
+  - equip{item=CyanBoots:1} @self
+  - setstance{stance=StateICE} @Self
+ThealStateSelectFIRE:
+  Skills:
+  - GCD{ticks=100} @Self
+  - equip{item=MagicFire:0} @self
+  - equip{item=MagicFire:5} @self
+  - equip{item=RedChest:3} @self
+  - equip{item=RedLegs:2} @self
+  - equip{item=RedBoots:1} @self
+  - setstance{stance=StateFIRE} @Self
+ThealStateSelectDARK:
+  Skills:
+  - GCD{ticks=100} @Self
+  - equip{item=DiamondHoe:0} @self
+  - equip{item=DiamondHoe:5} @self
+  - equip{item=PurpleChest:3} @self
+  - equip{item=PurpleLegs:2} @self
+  - equip{item=PurpleBoots:1} @self
+  - setstance{stance=StateDARK} @Self
+ThealStateSelectDESTRUCTION:
+  Skills:
+  - GCD{ticks=100} @Self
+  - equip{item=DiamondSword:0} @self
+  - equip{item=DiamondSword:5} @self
+  - equip{item=PinkChest:3} @self
+  - equip{item=PinkLegs:2} @self
+  - equip{item=PinkBoots:1} @self
+  - setstance{stance=StateDESTRUCTION} @Self
+ThealDESTRUCTIONSTATESummonAllies:
+  Cooldown: 120
+  Conditions:
+  - stance{s=StateDESTRUCTION}
+  Skills:
+  - GCD{ticks=200} @Self
+  - message{msg="<mob.name> &2has called in reinforcements!!"} @PIR{r=80}
+  - summon{type=RBearRider;a=1;radius=6} @Self
+  - summon{type=RAxeman;a=3;radius=6} @Self
+  - summon{type=RRepulsor;a=3;radius=6} @Self
+  - summon{type=RScytheLord;a=1;radius=6} @Self
+ThealDESTRUCTIONSTATECharge:
+  Cooldown: 15
+  Conditions:
+  - offgcd true
+  - stance{s=StateDESTRUCTION}
+  TargetCondtions:
+  - targetwithin 15
+  - lineofsight true
+  Skills:
+  - GCD{ticks=200} @Self
+  - message{msg="<mob.name> &2charges towards you!"} @Trigger
+  - potion{t=SPEED;d=40;l=7} 
+  - delay 40
+  - skill{s=ThealDESTRUCTIONSTATEChargeDamage} 
+ThealDESTRUCTIONSTATEChargeDamage:
+  Cooldown: 0.25
+  Conditions:
+  - stance{s=StateDESTRUCTION}
+  TargetCondtions:
+  - targetwithin 3
+  - lineofsight true
+  Skills:
+  - effect:sound{s=entity.generic.explode;v=2;p=0.5} @Target
+  - potion{t=CONFUSION;d=200;l=0} @Target
+  - damage{a=10;i=false} @Target
+  - throw{velocity=5;velocityY=5} @Target
+ThealDESTRUCTIONSTATESmash:
+  Cooldown: 10
+  Conditions:
+  - stance{s=StateDESTRUCTION}
+  TargetCondtions:
+  - targetwithin 4
+  - lineofsight true
+  Skills:
+  - message{msg="<mob.name> &2bashes you!"} @Target
+  - effect:sound{s=block.anvil.land;v=1;p=0.5} @Target
+  - potion{t=SLOW;d=80;l=6} @Target
+ThealICESTATEEffect:
+  Conditions:
+  - stance{s=StateICE}
+  Skills:
+  - effect:particles{p=blockcrack_174;a=5;vs=0.5;hs=0.5;Speed=0.01;yOffset=1} @Self
+ThealICESTATEAura:
+  Conditions:
+  - stance{s=StateICE}
+  Skills:
+  - skill{s=ThealICESTATEAuraSlow;delay=40} @self
+  - effect:particles{p=blockcrack_174;a=5;vs=0.5;hs=0.5;s=0.01;y=1} @Self
+  - effect:particles{p=splash;a=40;vs=0;hs=0.5;s=0;y=0} @Self
+  - effect:particles{p=snowballpoof;a=20;vs=0;hs=0.5;s=0;y=0} @Self
+  - effect:particles{p=splash;a=40;vs=0;hs=0.5;s=0;y=0} @PlayersInRadius{r=12}
+  - effect:particles{p=snowballpoof;a=20;vs=0;hs=0.5;s=0;y=0} @PlayersInRadius{r=12}
+ThealICESTATEAuraSlow:
+  Conditions:
+  - stance{s=StateICE}
+  Skills:
+  - potion{t=SLOW;d=200;l=1} @PlayersInRadius{r=12} 1
+  - potion{t=SLOW_DIGGING;d=200;l=0} @PlayersInRadius{r=12} 1
+ThealICESTATEShot:
+  Conditions:
+  - stance{s=StateICE}
+  Skills:
+  - GCD{ticks=40} @Self
+  - effect:sound{s=entity.item.break;v=2;p=0.5} @Self
+  - projectile{onTick=ThealICESTATEShotEffect;onHit=ThealICESTATEShotDamage;i=1;hR=0.75;mr=30;vR=0.75;syo=1.5;sfo=0;v=15;hnp=true;}
+ThealICESTATEShotEffect:
+  Skills:
+  - effect:particles{p=snowballpoof;a=20;s=0;hR=0.2;vR=0.2} @origin
+ThealICESTATEShotDamage:
+  Skills:
+  - damage{a=13;pkb=true}
+  - effect:particles{p=splash;a=25;vs=1;hs=1;s=0;y=1}
+  - effect:sound{s=block.fire.extinguish;v=2;p=0.5}
+  - potion{type=SLOW;duration=100;l=2}
+ThealICESTATEFrostPoolSummon:
+  Cooldown: 20
+  Conditions:
+  - offgcd true
+  - stance{s=StateICE}
+  Skills:
+  - GCD{ticks=200} @Self
+  - message{msg="<mob.name> &2conjures up frost pools!"} @PIR{r=80}
+  - summon{type=FrostPool;a=3;yradius=0;radius=15} @Self
+ThealFIRESTATEEffect:
+  Conditions:
+  - stance{s=StateFIRE}
+  Skills:
+  - effect:particles{p=lava;a=8;vs=0.5;hs=0.5;s=0.01;y=1} @Self
+ThealFIRESTATEFireBlast:
+  Conditions:
+  - stance{s=StateFIRE}
+  Skills:
+  - GCD{ticks=40} @Self
+  - effect:sound{s=entity.ghast.shoot;v=2;p=0.5} @self
+  - projectile{onEnd=ThealFIRESTATEFireBlastDamage;onTick=ThealFIRESTATEFireBlastEffect;onHit=ThealFIRESTATEFireBlastDamage;i=2;hR=0.75;md=400;vR=0.75;v=12;hnp=true;}
+ThealFIRESTATEFireBlastEffect:
+  Cooldown: 0.05
+  Skills:
+  - effect:particles{p=smoke;a=10;vs=0.1;hs=0.1;s=0;y=1} @Origin
+  - effect:particles{p=flame;a=15;vs=0.1;hs=0.1;s=0;y=1} @Origin
+ThealFIRESTATEFireBlastDamage:
+  Cooldown: 0.05
+  Skills:
+  - damage{a=20;pkb=true;i=false}
+  - ignite{d=80}
+  - effect:sound{s=entity.generic.explode;v=2.0;p=0.5} @Origin
+  - effect:particles{p=hugeexplosion;a=1;vs=1;hs=1;s=1;y=1}
+  - effect:particles{p=flame;a=25;vs=1;hs=1;s=1;y=1}
+  - effect:particles{p=smoke;a=25;vs=1;hs=1;s=1;y=1}
+  - effect:particles{p=lava;a=25;vs=1;hs=1;s=1;y=1}
+  - effect:particles{p=lava;a=25;vs=1;hs=1;s=1;y=1} 
+  - effect:particles{p=reddust;a=50;vs=1;hs=1;s=0.01;y=1}
+ThealFIRESTATEFlamePoolSummon:
+  Cooldown: 20
+  Conditions:
+  - offgcd true
+  - stance{s=StateFIRE}
+  Skills:
+  - GCD{ticks=200} @Self
+  - message{msg="<mob.name> &2conjures up flame pools!"} @PIR{r=80}
+  - summon{type=FlamePool;a=3;yradius=0;radius=15} @Self
+ThealDARKSTATEEffect:
+  Conditions:
+  - stance{s=StateDARK}
+  Skills:
+  - effect:particles{p=portal;a=50;vs=0.5;hs=0.5;Speed=0.01;yOffset=0.5} @Self
+ThealDARKSTATEShadowPortalOpen:
+  Cooldown: 120
+  Conditions:
+  - stance{s=StateDark}
+  Skills:
+  - GCD{ticks=200} @Self
+  - message{msg="<mob.name> &2has opened up Shadow Portals!"} @PIR{r=80}
+  - summon{type=ShadowPortal;a=2;radius=15} @Self
+ThealDARKSTATESkullShoot:
+  Conditions:
+  - stance{s=StateDARK}
+  Skills:
+  - GCD{ticks=40} @Self
+  - shootskull{y=2;v=5;repeat=2;repeatInterval=10;} @target
+ThealDARKSTATEDamageAura:
+  Conditions:
+  - stance{s=StateDARK}
+  Skills:
+  - effect:particles{p=portal;a=50;vs=0.5;hs=0.5;s=0.01;y=0.5} @Self
+  - effect:particlesphere{p=witchMagic;a=150;radius=10;y=1} @Self
+  - potion{t=WITHER;d=80;l=0} @PlayersInRadius{r=10}
+MaxInvis:
+  Skills:
+  - potion{t=INVISIBILITY;d=999999;l=0}
+AntiKB:
+  Skills:
+  - velocity{mode=set;x=0;y=0;z=0} @Self

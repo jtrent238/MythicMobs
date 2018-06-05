@@ -1,0 +1,23 @@
+Bird:
+  Type: bat
+  Display: '&fRondine'
+  Health: 50
+  Drops:
+  - birdDrops
+  Disguise:
+   Type: babyzombie
+  Skills:
+  - potion{t=INVISIBILITY;d=2147483647;l=1} @self ~onSpawn
+  - equip{i=birdhead:4} ~onSpawn
+  - effect:particlering{particle=crit;radius=2;points=32;amount=2;hS=1;vS=0} @self ~onDamage
+  - command{c="rpl admin getexp <trigger.name> 3"} @trigger ~onDeath
+  Options:
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+    Silent: true
+    PreventRenaming: false
+    MovementSpeed: 0.1
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear

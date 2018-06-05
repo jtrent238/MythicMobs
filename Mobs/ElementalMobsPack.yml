@@ -1,0 +1,663 @@
+flamezombie:
+  Type: zombie
+  Display: '&lFlame Zombie&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 20
+  Damage: 4
+  Mount:
+  Options:
+    AlwaysShowName: True
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> was burnt to a crisp by a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+  - ignite{ticks=60} @trigger ~onAttack
+frostzombie:
+  Type: zombie
+  Display: '&lFrost Zombie&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 20
+  Damage: 4
+  Mount:
+  Options:
+    AlwaysShowName: True
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> felt the cool touch of a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+  - potion{type=SLOW;duration=40;level=2} @trigger ~onAttack
+chargedzombie:
+  Type: zombie
+  Display: '&lCharged Zombie&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 20
+  Damage: 4
+  Mount:
+  Options:
+    AlwaysShowName: True
+    MovementSpeed: 0.3
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> was overwhelmed by a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+corruptzombie:
+  Type: zombie
+  Display: '&lCorrupt Zombie&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 25
+  Damage: 4
+  Mount:
+  Options:
+    AlwaysShowName: True
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> was consumed by a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+  - potion{type=WEAKNESS;duration=40;level=1} @trigger ~onAttack
+  - potion{type=WITHER;duration=40;level=1} @trigger ~onAttack
+flamecreeper:
+  Type: CREEPER
+  Display: '&lFlame Creeper&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 20
+  Mount:
+  Options:
+    AlwaysShowName: True
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - general drop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> was burnt to a crisp by a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+  - explosion{delay=8;yield=2;f=true} @self ~onExplode
+  - ignite{ticks=60} @trigger ~onAttack
+frostcreeper:
+  Type: CREEPER
+  Display: '&lFrost Creeper&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 20
+  Mount:
+  Options:
+    AlwaysShowName: True
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> felt the cool touch of a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+  - potion{type=SLOW;duration=40;level=2} @trigger ~onAttack
+corruptcreeper:
+  Type: creeper
+  Display: '&lCorrupt Creeper&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 20
+  Mount:
+  Options:
+    AlwaysShowName: True
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> was consumed by a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+  - potion{type=WEAKNESS;duration=40;level=1} @trigger ~onAttack
+  - potion{type=WITHER;duration=40;level=1} @trigger ~onAttack
+gravitycreeper:
+  Type: creeper
+  Display: '&lGravity Creeper&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 20
+  Mount:
+  Options:
+    AlwaysShowName: True
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> was sucked in by a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+  - pull{velocity=3} @target ~onTimer:20
+  - explosion{delay=8;yield=4;bd=true} @self ~onExplode
+chargedcreeper:
+  Type: creeper
+  Display: '&lCharged Creeper&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 20
+  Mount:
+  Options:
+    AlwaysShowName: True
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> was overwhelmed by a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+flameskeleton:
+  Type: skeleton
+  Display: '&lFlame skeleton&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 20
+  Mount:
+  Options:
+    AlwaysShowName: True
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> was burnt to a crisp by a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+  - ignite{ticks=60} @trigger ~onAttack
+frostskeleton:
+  Type: skeleton
+  Display: '&lFrost Skeleton&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 20
+  Mount:
+  Options:
+    AlwaysShowName: True
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> felt the cool touch of a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+  - potion{type=SLOW;duration=40;level=2} @trigger ~onAttack
+corruptskeleton:
+  Type: skeleton
+  Display: '&lCorrupt skeleton&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 25
+  Mount:
+  Options:
+    AlwaysShowName: True
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> was consumed by a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+  - potion{type=WEAKNESS;duration=40;level=1} @trigger ~onAttack
+  - potion{type=WITHER;duration=40;level=1} @trigger ~onAttack
+chargedskeleton:
+  Type: skeleton
+  Display: '&lCharged Skeleton&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 20
+  Mount:
+  Options:
+    AlwaysShowName: True
+    MovementSpeed: 0.35
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> was overwhelmed by a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+gravityskeleton:
+  Type: skeleton
+  Display: '&lGravity Skeleton&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 20
+  Mount:
+  Options:
+    AlwaysShowName: True
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> was sucked in by a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+  - throw{velocity=20;velocityY=4} @PlayersInRadius{r=5} ~onTimer:40
+flamespider:
+  Type: spider
+  Display: '&lFlame Spider&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 16
+  Damage: 3
+  Mount:
+  Options:
+    AlwaysShowName: True
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> was burnt to a crisp by a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+  - ignite{ticks=60} @trigger ~onAttack
+frostspider:
+  Type: spider
+  Display: '&lFrost Spider&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 16
+  Damage: 3
+  Mount:
+  Options:
+    AlwaysShowName: True
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> felt the cool touch of a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+  - potion{type=SLOW;duration=40;level=2} @trigger ~onAttack
+chargedspider:
+  Type: spider
+  Display: '&lCharged Spider&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 16
+  Damage: 3
+  Mount:
+  Options:
+    AlwaysShowName: True
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> was overwhelmed by a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+corruptspider:
+  Type: spider
+  Display: '&lCorrupt Spider&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 16
+  Damage: 3
+  Mount:
+  Options:
+    AlwaysShowName: True
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> was consumed by a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+  - potion{type=WEAKNESS;duration=40;level=1} @trigger ~onAttack
+  - potion{type=WITHER;duration=40;level=1} @trigger ~onAttack
+frostghast:
+  Type: ghast
+  Display: '&lFrost Ghast&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 10
+  Mount:
+  Options:
+    AlwaysShowName: True
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> felt the cool touch of a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+  - potion{type=SLOW;duration=40;level=2} @trigger ~onAttack
+corruptghast:
+  Type: ghast
+  Display: '&lCorrupt Ghast&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 10
+  Mount:
+  Options:
+    AlwaysShowName: True
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> was consumed by a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+  - potion{type=WEAKNESS;duration=40;level=1} @trigger ~onAttack
+  - potion{type=WITHER;duration=40;level=1} @trigger ~onAttack
+flamehusk:
+  Type: HUSK
+  Display: '&lFlame Husk&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 20
+  Damage: 4
+  Mount:
+  Options:
+    AlwaysShowName: True
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> was burnt to a crisp by a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+  - ignite{ticks=60} @trigger ~onAttack
+frosthusk:
+  Type: HUSK
+  Display: '&lFrost Husk&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 20
+  Damage: 4
+  Mount:
+  Options:
+    AlwaysShowName: True
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> felt the cool touch of a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+  - potion{type=SLOW;duration=40;level=2} @trigger ~onAttack
+chargedhusk:
+  Type: HUSK
+  Display: '&lCharged Husk&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 20
+  Damage: 4
+  Mount:
+  Options:
+    AlwaysShowName: True
+    MovementSpeed: 0.3
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> was overwhelmed by a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+corrupthusk:
+  Type: HUSK
+  Display: '&lCorrupt Husk&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 20
+  Damage: 4
+  Mount:
+  Options:
+    AlwaysShowName: True
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> was consumed by a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+  - potion{type=WEAKNESS;duration=40;level=1} @trigger ~onAttack
+  - potion{type=WITHER;duration=40;level=1} @trigger ~onAttack
+flameenderman:
+  Type: ENDERMAN
+  Display: '&lFlame Enderman&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 40
+  Damage: 10
+  Mount:
+  Options:
+    AlwaysShowName: True
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> was burnt to a crisp by a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+  - ignite{ticks=60} @trigger ~onAttack
+frostenderman:
+  Type: ENDERMAN
+  Display: '&lFrost Enderman&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 40
+  Damage: 10
+  Mount:
+  Options:
+    AlwaysShowName: True
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> felt the cool touch of a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+  - potion{type=SLOW;duration=40;level=2} @trigger ~onAttack
+chargedenderman:
+  Type: ENDERMAN
+  Display: '&lCharged Enderman&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 40
+  Damage: 10
+  Mount:
+  Options:
+    AlwaysShowName: True
+    MovementSpeed: 0.3
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> was overwhelmed by a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+corruptenderman:
+  Type: ENDERMAN
+  Display: '&lCorrupt Enderman&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 40
+  Damage: 10
+  Mount:
+  Options:
+    AlwaysShowName: True
+    KnockbackResistance: .5
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> was consumed by a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+  - potion{type=WEAKNESS;duration=40;level=1} @trigger ~onAttack
+  - potion{type=WITHER;duration=40;level=1} @trigger ~onAttack
+gravityenderman:
+  Type: ENDERMAN
+  Display: '&lGravity Enderman&r Lvl - <mob.level>'
+  Faction: undead
+  Health: 40
+  Damage: 10
+  Mount:
+  Options:
+    AlwaysShowName: True
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - generaldrop
+  DropsPerLevel:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  - '<target.name> was sucked in by a <mob.name>'
+  LevelModifiers:
+  Disguise:
+  Skills:
+  - pull{velocity=3} @target ~onTimer:20

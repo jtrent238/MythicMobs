@@ -1,0 +1,50 @@
+#
+#   Loot Skills
+#
+DiamondLoot:
+  TargetConditions:
+  Skills:
+  - dropmythicitem{i=Diamond;a=3} @self
+  - delay 5
+  - dropmythicitem{i=Diamond;a=3} @self
+  - delay 5
+  - dropmythicitem{i=Diamond;a=3} @self
+  - delay 5
+  - dropmythicitem{i=Diamond;a=3} @self
+  - delay 5
+  - dropmythicitem{i=Diamond;a=3} @self
+MilkLoot:
+  TargetConditions:
+  Skills:
+  - dropmythicitem{i=Milk;a=1} @self
+  - delay 5
+  - dropmythicitem{i=Milk;a=1} @self
+  - delay 5
+  - dropmythicitem{i=Milk;a=1} @self
+  - delay 5
+  - dropmythicitem{i=Milk;a=1} @self
+  - delay 5
+  - dropmythicitem{i=Milk;a=1} @self
+  - delay 5
+  - dropmythicitem{i=Milk;a=1} @self
+  - delay 5
+  - dropmythicitem{i=Milk;a=1} @self
+  - delay 5
+  - dropmythicitem{i=Milk;a=1} @self
+  - delay 5
+  - dropmythicitem{i=Milk;a=1} @self
+  - delay 5
+  - dropmythicitem{i=Milk;a=1} @self
+#
+#   Mob Skills
+#
+WalkerEffect:
+  TargetConditions:
+  Skills:
+  - potion{type=SLOW;duration=999999;level=1}
+  - potion{type=BLINDNESS;duration=999999;level=1}
+GhostSkill:
+  Skills:
+  - cure{t=GLOWING}
+  - delay 120
+  - potion{type=GLOWING;duration=999999;level=20}

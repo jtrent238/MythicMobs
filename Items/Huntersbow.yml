@@ -1,0 +1,11 @@
+# 
+# This example file shows you how to set up special items
+# for your mobs to equip or drop.
+Huntersbow:
+  Id: 261
+  Data: 0
+  Amount: 1
+  Display: '&eHuntersBow'
+  Enchantments:
+  - ARROW_FIRE:1
+  - ARROW_DAMAGE:3

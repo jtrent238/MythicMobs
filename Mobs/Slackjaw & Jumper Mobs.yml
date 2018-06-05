@@ -1,0 +1,49 @@
+Slackjaw:
+  Mobtype: skeleton
+  Display: '&7Slackjaw'
+  Riding: 0Jumper0
+  Health: 110
+  Damage: 14
+  Faction: Hunters
+  Skills:
+  - message{msg="<mob.name><&co> &fJumper! You see that, Adventures! Looks like we are eating good tonight! Whaddya say Jumper?"} @PIR{r=30} ~onSpawn
+  - skill{s=MaxFireRes} @self ~onSpawn
+  - skill{s=SlackjawJumperAngry} @Self ~onTimer:20 1
+  - message{msg="<mob.name><&co> &fJumper... I am sorry..."} @PIR{r=30} ~onDeath
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
+  - signal{s=JumperRevenge} @MIR{r=60;t=0Jumper0} ~onDeath
+  - skill{s=SlackjawRevenge} @Self ~onSignal:SlackjawRevenge
+  Options:
+    MovementSpeed: 0.3
+    PreventItemPickup: true
+    FollowRange: 35
+    PreventOtherDrops: true
+    KnockbackResistance: 0.50
+  Equipment:
+  - SlackjawBow:0
+  - ChainHelm:4
+  - ChainChestplate:3
+  - ChainLeggings:2
+  - ChainBoots:1
+  Drops:
+  - SlackjawBow 1 .03
+0Jumper0:
+  Mobtype: spider
+  Display: '&7Jumper'
+  Health: 130
+  Damage: 12
+  Faction: Hunters
+  Skills:
+  - message{msg="<mob.name> &2hisses with excitement."} @PIR{r=40} ~onSpawn
+  - potion{t=REGENERATION;d=999999;l=1} @Self
+  - signal{s=SlackjawRevenge} @MIR{r=60;t=Slackjaw} ~onDeath
+  - skill{s=SlackjawJumperAngry} @Self ~onTimer:20 1
+  - skill{s=JumperToxicShot} @Target ~onTimer:140
+  - skill{s=JumperRevenge} @Self ~onSignal:JumperRevenge 1
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
+  Options:
+    MovementSpeed: 0.25
+    PreventItemPickup: true
+    FollowRange: 35
+    PreventOtherDrops: true
+    KnockbackResistance: 1

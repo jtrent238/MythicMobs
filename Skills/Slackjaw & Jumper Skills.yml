@@ -1,0 +1,42 @@
+JumperRevenge:
+  Cooldown: 0.25
+  Skills:
+  - potion{t=SPEED;d=100000;l=0} @Self
+  - potion{t=INCREASE_DAMAGE;d=100000;l=0} @Self
+  - setstance{stance=Vengeful} @Self
+  - message{msg="<mob.name> &2hisses very angrily."} @PlayersInRadius{r=30}
+SlackjawRevenge:
+  Cooldown: 0.25
+  Skills:
+  - potion{t=SPEED;d=100000;l=0} @Self
+  - potion{t=INCREASE_DAMAGE;d=100000;l=0} @Self
+  - setstance{stance=Vengeful} @Self
+  - message{msg="<mob.name><&co> &fJUMPER! NOOO! AAAAGH... I will kill you bastards... I WILL KILL YOU ALL!!!!"} @PlayersInRadius{r=30}
+  - equip{item=DiamondSword:0} @Self
+SlackjawJumperAngry:
+  Cooldown: 0.25
+  Conditions:
+  - stance{s=Vengeful}
+  Skills:
+  - effect:particles{p=angryVillager;a=10;vs=0.2;hs=0.2;s=0;y=1} @Self
+JumperToxicShot:
+  Cooldown: 2
+  Conditions:
+  - stance{s=Vengeful}
+  TargetConditions:
+  - targetwithin 20
+  - lineofsight true
+  Skills:
+  - projectile{onTick=JumperToxicShot;onHit=JumperToxicShot;i=2;hR=0.75;md=400;vR=0.75;v=10;hnp=true;}
+  - effect:sound{s=entity.slime.squish;v=2.0;p=0.5} @Self
+JumperToxicShotEffect:
+  Cooldown: 0.05
+  Skills:
+  - effect:sound{s=entity.silverfish.ambient;v=0.5;p=1} @Origin
+  - effect:particles{p=slime;a=15;vs=.2;hs=.2;s=0;y=1} @Origin
+  - effect:particles{p=happyVillager;a=15;vs=.2;hs=.2;s=0;y=1} @Origin
+JumperToxicShotDamage:
+  Cooldown: 0.05
+  Skills:
+  - potion{t=POISON;d=200;l=1} @PlayersNearOrigin{r=3}
+  - damage{a=12;i=false;pkb=true} @PlayersNearOrigin{r=3}

@@ -1,0 +1,10 @@
+Randomturtle:
+  Action: REPLACE
+  Type: turtle
+  Level: 1
+  Chance: 0.10
+  Priority: 100
+  UseWorldScaling: false
+  Worlds: Laputa_Islands,world
+  Conditions:
+  - inblock STATIONARY_WATER

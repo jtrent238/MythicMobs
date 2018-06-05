@@ -1,0 +1,35 @@
+# 
+# These example files show you some of the basic attributes and
+# skills MythicMobs can use. Far more is possible!
+Hunter:
+  Type: SKELETON
+  Display: '&e&lHunter'
+  Health: 20
+  Damage: 12
+  Skills:
+  - potion{type=WEAKNESS;duration=200;lvl=1} @Target ~onAttack
+  - effect:particlering{particle=flame;radius=2;points=32;amount=2;hS=1;vS=0} @Self
+  - skill{s=HorseMount} @self ~onSpawn
+  - remove @MIR{r=5;t=Horse1} ~onDeath
+  Equipment:
+  - LEATHER_HELMET:4
+  - LEATHER_CHESTPLATE:3
+  - LEATHER_LEGGINGS:2
+  - LEATHER_BOOTS:1
+  - Huntersbow:0
+  Drops:
+  - exp 10
+  - GOLD_INGOT 1
+  Options:
+    MovementSpeed: 0.1
+Horse1:
+  Type: HORSE
+  Display: '&eHunters Horse'
+  Health: 10
+  Drops:
+  - exp 10
+  - GOLD_INGOT 1
+  Options:
+    MovementSpeed: 0.2
+    HorseTamed: true
+    HorseSaddled: true

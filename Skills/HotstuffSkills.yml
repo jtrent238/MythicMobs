@@ -1,0 +1,68 @@
+MoltenShower:
+  Cooldown: 1
+  Skills:
+  - shootfireball{y=1;v=1;i=true;ft=100;sml=true;ps=true} @PlayersInRadius{r=20}
+  - delay 10
+  - shootfireball{y=1;v=1;i=true;ft=100;sml=true;ps=true} @PlayersInRadius{r=20}
+  - delay 10
+  - shootfireball{y=1;v=1;i=true;ft=100;sml=true;ps=true} @PlayersInRadius{r=20}
+FireSlam:
+  Cooldown: 1
+  Skills:
+  - jump{v=0.75}
+  - delay 10
+  - setblock{m=fire;md=0}
+SingleTargetFire:
+  Cooldown: 1
+  Skills:
+  - message{msg="<mob.name>&e begins casting a spell."} @PIR{r=15}
+  - potion{type=SLOW;d=40;level=7;} @self
+  - delay 40
+  - message{m="<target.name> &ecombusts."} @PIR{r=20}
+  - effect:particles{p=largesmoke;vs=1;hs=1;a=50;s=0.01;}
+  - effect:particles{p=flame;hs=1;vs=1;a=50;s=0.01;} @target
+  - effect:particles{p=explode;vs=1;hs=1;a=50;s=0.01;}
+  - effect:sound{s=entity.ghast.fireball;v=1;p=1;}
+  - damage{a=6;ignorearmor=true;}
+  - ignite{d=60;}
+AOEFire:
+  Cooldown: 1
+  Skills:
+  - message{msg="<mob.name>&e begins casting a spell."} @PIR{r=15}
+  - potion{type=SLOW;d=80;level=7;}
+  - delay 80
+  - message{m="<target.name>&e combusts."} @PIR{r=20}
+  - effect:particles{p=reddust;hs=10;vs=1;a=1000;s=0.01;}
+  - effect:particles{p=flame;hs=10;vs=1;a=1000;s=0.01;}
+  - effect:sound{s=entity.ghast.fireball;v=1;p=1;}
+  - damage{a=6;ignorearmor=true;} @PIR{r=10}
+  - ignite{d=60;} @PIR{r=10}
+DamageImmunity:
+  Cooldown: 1
+  Skills:
+  - message{msg="<mob.name>&e begins casting a spell."} @PIR{r=15}
+  - potion{type=SLOW;duration=40;level=7;} @self
+  - delay 40
+  - message{msg="<mob.name>&e is shielded."} @PIR{r=15}
+  - effect:particles{particle=slime;amount=250;vSpread=1;hSpread=1;Speed=0.1;} @self
+  - potion{type=DAMAGE_RESISTANCE;duration=80;level=1;} @self
+Bash:
+  Cooldown: 1
+  Conditions:
+  - targetwithin 5
+  - targetinlineofsight true
+  Skills:
+  - message{msg="&4<mob.name>&f bashes &c<target.name>!"} @a[r=5;c=2]
+  - effect:sound{s=block.anvil.land;v=1;p=1;} @a[r=5;c=2]
+  - damage{a=2} @a[r=5]
+  - potion{t=SLOW;d=200;l=7}
+Kick:
+  Cooldown: 1
+  Conditions:
+  - targetwithin 5
+  - targetinlineofsight true
+  Skills:
+  - message{msg="&4<mob.name>&f kicks &c<target.name>."} @a[r=7;c=2]
+  - damage{a=4} @a[r=7;c=2]
+  - potion{t=CONFUSION;d=200;l=3} @a[r=7;c=2]
+  - throw{v=5;} @a[r=7]

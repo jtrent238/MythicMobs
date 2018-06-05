@@ -1,0 +1,25 @@
+### Regenerator Mob ###
+### Awesome_Dante ###
+
+SpawnSkeleRegenerator:
+  Cooldown: 10
+  Skills:
+  - effect:particles{p=Crit;amount=10;hSpread=15;vSpread=1;speed=0;yOffset=0.5} @Self
+  - summon{type=RegeneratorSkeleton;amount=1;radius=1} @Self
+
+RegenerateToZombie:
+  Cooldown: 10
+  Skills:
+  - delay 100
+  - message{m="&5Regenerator is pulling himself together"} @PlayersInRadius{r=20}
+  - delay 100
+  - message{m="&5Regenerator has regenerated 25%"} @PlayersInRadius{r=20}
+  - delay 100
+  - message{m="&5Regenerator has regenerated 50%"} @PlayersInRadius{r=20}
+  - delay 100
+  - message{m="&5Regenerator has regenerated 75%"} @PlayersInRadius{r=20}
+  - delay 100
+  - message{m="&5Regenerator has reassembled himself."} @PlayersInRadius{r=20}
+  - effect:particles{p=flame;amount=200;hSpread=1;vSpread=2;speed=0.5;yOffset=0.5} @Self
+  - summon{type=RegeneratorZombie;amount=1;radius=1} @Self
+  - remove @self

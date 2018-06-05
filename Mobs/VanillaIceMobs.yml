@@ -1,0 +1,181 @@
+FrostHarbinger:
+  Type: ZOMBIE
+  Display: '&bFrost Harbinger'
+  Faction: ChillDudes
+  Disguise:
+    Type: Player
+    Player: '&bFrost Harbinger'
+    Skin: FrostHarbinger
+  Drops:
+  - exp 20-35
+  - Yetidroptable
+  - 332 1-2 .3
+  AIGoalSelectors:
+  - 0 opendoors
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 hurtbytarget
+  - 2 players
+  - 3 OtherFaction
+  KillMessages:
+  - "&2<mob.name> &ffroze &c<target.name> &fsolid."
+  - "&c<target.name> &ffroze to death"
+  Health: 35
+  Damage: 0.5
+  Equipment:
+  - YetisButton:4
+  Skills:
+  - effect:particletornado{p=snowshovel;cp=snowpoof;mr=1;h=2;i=1;sh=1;d=200;rs=0.5;sh=1;cs=0;ca=10;chs=0.1;cvs=0.1;cps=1} @self ~onTimer:100
+  - equip{item=YetisIce:5} .5 ~onSpawn
+  - sound{s=item.elytra.flying;v=1;p=1} @PIR{r=35} ~onTimer:100
+  - skill{s=Frostnado} ~onTimer:5
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 20
+    Silent: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+### Spacer ###
+FrostWarriorMount:
+  Mobtype: HORSE
+  Display: ''
+  Health: 30
+  Damage: 1
+  Options:
+    MaxCombatDistance: 50
+    FollowRange: 30
+    MovementSpeed: 0.3
+    PreventOtherDrops: true
+    HorseColor: WHITE
+    HorseSaddled: true
+    HorseTamed: true
+    HorseStyle: WHITE
+### Spacer ###
+FrostWarrior:
+  Mobtype: ZOMBIE_VILLAGER
+  Display: '&bFrozen Warrior'
+  Health: 30
+  Damage: 1
+  Mount: FrostWarriorMount
+  Drops:
+  - exp 20-35
+  - Yetidroptable
+  - 332 1-2 .3
+  KillMessages:
+  - "&c<target.name> &ffound out just how sharp a blade made of ice is."
+  Equipment:
+  - FrostWarriorsChest:3
+  - FrostWarriorsPants:2
+  - FrostWarriorsBoots:1
+  - FrostWarriorsButton:4
+  - FrostWarriorsSword:0
+  - FrostWarriorsShield:5
+  Skills:
+  - sound{s=block.snow.place;v=1;p=0} @PIR{r=30} ~onTimer:100
+  AIGoalSelectors:
+  - 0 opendoors
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 hurtbytarget
+  - 2 players
+  - 3 OtherFaction
+  Options:
+    AlwaysShowName: true
+    MaxCombatDistance: 50
+    PreventOtherDrops: true
+    FollowRange: 15
+    PreventRandomEquipment: true
+    Silent: true
+    MovementSpeed: 0.3
+    Profession: librarian
+### Spacer ###
+Yeti:
+  Type: ZOMBIE_VILLAGER
+  Display: '&bYeti'
+  Faction: ChillDudes
+  Drops:
+  - exp 20-35
+  - Yetidroptable
+  - 332 1-2 .3
+  - 80 1-2 .3
+  AIGoalSelectors:
+  - 0 opendoors
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 hurtbytarget
+  - 2 players
+  - 3 OtherFaction
+  KillMessages:
+  - "&2<mob.name> &fhas taken &c<target.name>, &fto his cave to never be heard from again."
+  - "&c<target.name> &ffroze to death"
+  Health: 35
+  Damage: 0.5
+  Equipment:
+  - YetisChest:3
+  - YetisPANTS:2
+  - YetisBoots:1
+  - YetisSword:0
+  - YetisButton:4
+  Skills:
+  - skill{s=Snowglobe} ~onTimer:5
+  - skill{s=Freeze} ~onTimer:5
+  - equip{item=YetisIce:5} .5 ~onSpawm
+  - sound{s=block.snow.place;v=1;p=0} @PIR{r=30} ~onTimer:100
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 20
+    Silent: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    Profession: librarian
+### Spacer ###
+SnowSentery:
+  Type: ZOMBIE
+  Display: '&bSnowSentery'
+  Faction: ChillDudes
+  Drops:
+  - exp 20-35
+  - Yetidroptable
+  - 78 1-2 .3
+  - 332 1-2 .3
+  AIGoalSelectors:
+  - 0 opendoors
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 hurtbytarget
+  - 2 players
+  - 3 OtherFaction
+  KillMessages:
+  - "&c<target.name> &ffroze to death"
+  - "&c<target.name> &fwas snowballed to death by &b<mob.name>."
+  Health: 30
+  Damage: 0
+  Equipment:
+  - SnowPumpkin:4
+  - SnowBoots:1
+  - SnowPANTS:2
+  - SnowChest:3
+  Skills:
+  - skill{s=SnowShower} ~onTimer:200
+  - skill{s=RapidSnowShower} ~onTimer:700
+  - effect:particles{p=spell;color=#3AB3DA;a=100;vs=1;hs=0;s=0} @Self ~onTimer:20
+  - effect:particles{p=spell;color=#3AB3DA;a=100;vs=1;hs=0;s=0} @Self ~onTimer:25
+  - effect:particles{p=spell;color=#3AB3DA;a=100;vs=1;hs=0;s=0} @Self ~onTimer:30
+  - sound{s=block.snow.place;v=1;p=0} @PIR{r=30} ~onTimer:100
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.15
+    MaxCombatDistance: 30
+    Silent: true
+    PreventItemPickup: true
+    PreventOtherDrops: true

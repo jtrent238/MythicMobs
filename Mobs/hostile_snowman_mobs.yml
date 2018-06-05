@@ -1,0 +1,35 @@
+########################################################################
+###                                                                    #
+###   Hostile Snowman v1.0                                             #
+###                                                                    #
+###   Created by jaylawl                                               #
+###   Contact: jaylawlMC@gmail.com                                     #
+###                                                                    #
+########################################################################
+hostile_snowman:
+  Type: snowman
+  Display: '&rHostile Snowman'
+  KillMessages:
+  - '<target.name> was shot by a Hostile Snowman'
+  - '<target.name> lost a snowball fight against a Hostile Snowman'
+  - '<target.name> brought a sword to a snowball fight'
+  Health: 20
+  Options:
+    FollowRange: 64
+    KnockbackResistance: 0.5
+    Despawn: true
+  AITargetSelectors:
+  - 0 clear
+  - 1 attacker
+  - 2 players
+  - 3 monsters
+  Drops:
+  - snowball 1-8 1
+  - snow_block 0-3 1
+  - packed_ice 1 0.1
+  - exp 10 1
+  Skills:
+  - shoot{t=SNOWBALL;v=1.75;d=2} @target ~onTimer:20 0.5                # the "d" value in this line controls the damage done by the mob
+  - effect:particles{p=angryVillager;a=1;hS=0.3;vS=0.05;s=0;y=1.5;repeat=2;repeatInterval=5} @self ~onTimer:20 0.75
+  - effect:particles{p=snowshovel;a=1;hS=0.5;vS=0.6;s=0;y=1} @self ~onTimer:20 0.89
+########################################################################

@@ -1,0 +1,90 @@
+### Survivor 1.0 by Awesome_Dante ###
+### Available only on mythicmobs.net ###
+### Skills File ###
+
+
+RevealSelf:
+  Cooldown: 10000
+  Conditions:
+  - playerwithin 5
+  Skills:
+  - randomskill
+      {
+      skills=
+      RewardMoneySurvivor,
+      EnemySurvivor,
+      RewardItemsSurvivor
+      } 
+
+### Money Giving Survivor ###
+RewardMoneySurvivor:
+  Cooldown: 0
+  Skills:
+  - sendtitle{title="";subtitle="&aThank you for saving me!";d=60} @NearestPlayer
+  - skill{KilledSurvivor} @NearestPlayer ~onDeath 
+  - delay 60
+  - sendtitle{title="";subtitle="&aHere is some money";d=60} @NearestPlayer
+  - command{c="eco give <target.name> 200"} @NearestPlayer
+  - delay 60
+  - effect:particlesphere{particle=cloud;amount=70;radius=1;yOffset=0.5} @origin
+  - remove @Self
+
+### Item Giving Survior ###
+RewardItemsSurvivor:
+  Cooldown: 0
+  Skills:
+  - sendtitle{title="";subtitle="&aThank you for saving me!";d=60} @NearestPlayer
+  - skill{s=JumpHappy} @Self
+  - delay 60
+  - sendtitle{title="";subtitle="&aHere is a Diamond!";d=60} @NearestPlayer
+  - command{c="give <target.name> DIAMOND 1"} @NearestPlayer
+  - delay 60
+  - effect:particlesphere{particle=cloud;amount=70;radius=1;yOffset=0.5} @origin
+  - remove @Self
+
+### Enemy Survivor ###
+EnemySurvivor:
+  Cooldown: 0
+  Skills:
+  - delay 60
+  - sendtitle{title="";subtitle="&cHAHA YOU FELL FOR IT!";d=30} @NearestPlayer
+  - delay 40
+  - sendtitle{title="";subtitle="&cGET HIM BOYS!";d=30} @NearestPlayer
+  - skill{s=SummonEnemies}
+  - delay 120
+  - effect:particlesphere{particle=cloud;amount=70;radius=1;yOffset=0.5} @Self
+  - remove @Self
+
+SummonEnemies:
+  Cooldown: 0
+  Skills:
+  - delay 20
+  - summon{type=SupriseEnemy;amount=1;radius=3} @Self
+  - delay 20
+  - summon{type=SupriseEnemy;amount=1;radius=3} @Self
+  - delay 20
+  - summon{type=SupriseEnemy;amount=1;radius=3} @Self
+  - remove @Self
+  
+EnemySpawnAnim:
+  Skills:
+  - effect:particlesphere{particle=cloud;amount=70;radius=1;yOffset=0.5} @Self
+
+CryForHelp:
+  Conditions:
+  - playernotwithin 10
+  Skills:
+  - message{m="&a[&2Survivor&a] &fHelp me! Im at &b<mob.l.x>&f,&b<mob.l.y>&f,&b<mob.l.z> &fLess than 50 blocks away!"} @PlayersInRadius{r=50} 
+
+JumpHappy:
+  Skills:
+  - jump{velocity=0.5}
+  - delay 40
+  - jump{velocity=0.5}
+  - delay 40
+  - jump{velocity=0.5}
+ 
+KilledSurvivor:
+  Skills:
+  - message{m="&cYou killed a &eSurvivor &c and lost &f$100"} @Target
+  - command{c="eco take <target.name> 100"} @Target

@@ -1,0 +1,18 @@
+Diamond_Golem:
+  Type: IRON_GOLEM
+  Health: 100
+  Damage: 2
+  Disguise:
+    Type: IRON_GOLEM
+    Skin: 'Diamond_Golem'
+    Player: 'Diamond_Golem'
+  AIGoalSelectors:
+  - 0 clear
+  - 1 randomstroll
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Options:
+    MovementSpeed: 0.2
+    Silent: true

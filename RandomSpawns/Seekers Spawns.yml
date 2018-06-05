@@ -1,0 +1,37 @@
+# 
+Growseeker:
+  MobType: Growseeker
+  Worlds: MagicWorld,world
+  Chance: 0.009
+  Priority: 3
+  Action: replace
+  Conditions:
+  - inblock air
+  
+Mowseeker:
+  MobType: Mowseeker
+  Worlds: MagicWorld,world
+  Chance: 0.0055
+  Priority: 3
+  Action: replace
+  Conditions:
+  - inblock air
+  
+Glowseeker:
+  MobType: Glowseeker
+  Worlds: MagicWorld,world
+  Chance: 0.006
+  Priority: 1
+  Action: replace
+  Conditions:
+  - inblock air
+  
+# 
+Glowling:
+  MobType: Glowling
+  Worlds: MagicWorld,world
+  Chance: 0.004
+  Priority: 1
+  Action: replace
+  Conditions:
+  - inblock air

@@ -1,0 +1,52 @@
+### Regenerator Mob ###
+### Awesome_Dante ###
+
+RegeneratorZombie:
+  Type: ZOMBIE
+  Display: '&7Regenerator'
+  Health: 100
+  Damage: 5
+  Faction: Enemy
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    PreventOtherDrops: true
+    PreventItemPickup: true
+  Equipment:
+  - Regenerator_Helmet:4
+  - Regenerator_Chestplate:3
+  - Regenerator_Leggings:2
+  - Regenerator_Boots:1
+  Skills:
+  - skill{s=SpawnSkeleRegenerator} ~onDeath
+  - dismount ~onDamaged
+
+RegeneratorSkeleton:
+  Type: SKELETON
+  Display: '&7Regenerator'
+  Health: 50
+  Damage: 4
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.38
+    MaxCombatDistance: 25
+    PreventOtherDrops: false
+    PreventItemPickup: true
+  AIGoalSelectors:
+    - 0 clear
+    - 1 fleeplayers
+    - 2 arrowattack
+    - 3 float
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+  Equipment:
+  - Regenerator_Helmet:4
+  - Regenerator_Chestplate:3
+  - Regenerator_Leggings:2
+  - Regenerator_Boots:1
+  Drops:
+  - exp 10 1
+  Skills:
+  - skill{s=RegenerateToZombie} ~onSpawn
+  - dismount ~onDamaged

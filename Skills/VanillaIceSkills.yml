@@ -1,0 +1,50 @@
+Snowglobe:
+  Cooldown: 1
+  Skills:
+  - effect:particlebox{particle=snowshovel;amount=200;radius=5} @Self
+Freeze:
+  Cooldown: 1
+  Skills:
+  - potion{type=SLOW;duration=200;level=5} @EIR{r=5}
+SnowShower:
+  Cooldown: 1
+  Skills:
+  - shoot{type=SNOWBALL;velocity=3;damage=2;md=100} @PlayersInRadius{r=30}
+  - delay 10
+  - shoot{type=SNOWBALL;velocity=3;damage=2;md=100} @PlayersInRadius{r=30}
+  - delay 10
+  - shoot{type=SNOWBALL;velocity=3;damage=2;md=100} @PlayersInRadius{r=30}
+  - delay 10
+  - shoot{type=SNOWBALL;velocity=3;damage=2;md=100} @PlayersInRadius{r=30}
+  - delay 10
+  - shoot{type=SNOWBALL;velocity=3;damage=2;md=100} @PlayersInRadius{r=30}
+  - delay 10
+  - shoot{type=SNOWBALL;velocity=3;damage=2;md=100} @PlayersInRadius{r=30}
+  - delay 10
+  - shoot{type=SNOWBALL;velocity=3;damage=2;md=100} @PlayersInRadius{r=30}
+  - delay 10
+  - shoot{type=SNOWBALL;velocity=3;damage=2;md=100} @PlayersInRadius{r=20}
+  - delay 10
+  - shoot{type=SNOWBALL;velocity=3;damage=2;md=100} @PlayersInRadius{r=30}
+  - delay 10
+  - shoot{type=SNOWBALL;velocity=3;damage=2;md=100} @PlayersInRadius{r=30}
+RapidSnowShower:
+  Cooldown: 1
+  Skills:
+  - shoot{type=SNOWBALL;velocity=3;damage=2;md=100} @PlayersInRadius{r=30}
+  - delay 3
+  - shoot{type=SNOWBALL;velocity=3;damage=2;md=100} @PlayersInRadius{r=30}
+  - delay 3
+  - shoot{type=SNOWBALL;velocity=3;damage=2;md=100} @PlayersInRadius{r=30}
+  - delay 3
+  - shoot{type=SNOWBALL;velocity=3;damage=2;md=100} @PlayersInRadius{r=30}
+  - delay 3
+  - shoot{type=SNOWBALL;velocity=3;damage=2;md=100} @PlayersInRadius{r=30}
+  - delay 3
+  - shoot{type=SNOWBALL;velocity=3;damage=2;md=100} @PlayersInRadius{r=30}
+  - delay 3
+  - shoot{type=SNOWBALL;velocity=3;damage=2;md=100} @PlayersInRadius{r=30}
+Frostnado:
+ Skills:
+  - damage{amount=4} @PlayersInRadius{r=3}
+  - throw{velocity=15;velocityY=5} @PlayersInRadius{r=3}

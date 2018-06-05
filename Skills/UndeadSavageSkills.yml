@@ -1,0 +1,60 @@
+MobHealth:
+  Skills:
+  - sendactionmessage{msg="&c&l<<&a <mob.hp> &c&l>>"} @PIR{r=40}
+SmashAttackII:
+  Cooldown: 12
+  Conditions:
+  - targetwithin 25
+  Skills:
+  - effect:particles{cooldown=5;particle=angryVillager;amount=20;vSpread=1;hSpread=2;Speed=0;yoffset=2} @target
+  - message{cooldown=30;m="<mob.name><&co> SAVAGE SMASH!"} @PlayersInRadius{r=40}
+  - teleport @target
+  - effect:sound{s=ENTITY_ZOMBIE_ATTACK_IRON_DOOR;volume=2.0;pitch=0.5}
+  - sendtitle{title="";subtitle="&c<<Hit by Savage Smash!>>";d=40} @PlayersNearOrigin{r=10}
+  - delay 10
+  - damage{amount=2;ignorearmor=true} @PlayersInRadius{r=5}
+  - throw{velocity=4;velocityY=4} @PlayersInRadius{r=5}
+  - effect:explosion @Self
+AngryAura:
+  Cooldown: 0.1
+  Skills:
+  - effect:sound{s=ZOMBIE_HORSE_DEATH;volume=2.0;pitch=0.5}
+  - sendtitle{title="";subtitle="&c<<<mob.name> &cbuffed by Outrage Aura!>>";d=40} @PlayersNearOrigin{r=10}
+  - potion{type=FIRE_RESISTANCE;lvl=1;duration=1900} @Self
+  - potion{type=SPEED;lvl=1;duration=1900} @Self
+  - potion{type=GLOWING;lvl=0;duration=300} @Self
+  - effect:particles{cooldown=5;particle=angryVillager;amount=100;vSpread=1;hSpread=2;Speed=0;yoffset=2} @self @onTimer:0.1
+FireResistanceSpeed:
+  Cooldown: 0.1
+  Skills:
+  - effect:sound{s=ENTITY_ZOMBIE_HORSE_HURT;volume=2.0;pitch=0.5}
+  - sendtitle{title="";subtitle="&c<<<mob.name> buffed by his Rage Aura!>>";d=40} @PlayersNearOrigin{r=10}
+  - potion{type=FIRE_RESISTANCE;lvl=1;duration=1800} @Self
+  - potion{type=SPEED;lvl=0;duration=1800} @Self
+  - potion{type=GLOWING;lvl=0;duration=150} @Self
+  - effect:particles{p=angryVillager;amount=10;hSpread=1;ySpread=1;speed=0;yOFfset=1} @Self
+Death:
+  Skills:
+  - effect:sound{s=entity.endermen.scream;v=.5;p=0.8} @Self ~onDeath
+  - delay 10
+  - effect:sound{s=entity.endermen.scream;v=.5;p=1.5} @Self ~onDeath
+  - delay 7
+  - effect:sound{s=entity.endermen.scream;v=.5;p=1.1} @Self ~onDeath
+  - delay 8
+  - effect:sound{s=entity.endermen.scream;v=.5;p=1.4} @Self ~onDeath
+  - delay 11
+  - effect:sound{s=entity.endermen.scream;v=.5;p=1.2} @Self ~onDeath
+  - delay 10
+  - effect:sound{s=entity.endermen.scream;v=.5;p=1.1} @Self ~onDeath
+CallPig:
+  Skills:
+  - mount{type=UndeadMount}
+  - delay 500
+SummonZombies:
+  Cooldown: 15
+  Skills:
+  - effect:sound{s=ENTITY_ZOMBIE_VILLAGER_CONVERTED ;volume=2.0;pitch=0.5}
+  - message{m="<mob.name><&co> Guards! Defend me!"} @PlayersInRadius{r=40}
+  - sendtitle{title="";subtitle="&c<<A Undead Guard was summoned!>>";d=40} @PlayersNearOrigin{r=10}
+  - delay 30
+  - summon{mob=UndeadGuard;amount=1;noise=5} @Self

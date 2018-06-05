@@ -1,0 +1,33 @@
+### Regenerator Mob ###
+### Awesome_Dante ###
+
+Regenerator_Helmet:
+  Id: leather_helmet
+  Display: '&0Regenerator Helmet'
+  Amount: 1
+  Options:
+    Color: 0,0,0
+    Unbreakable: true
+  Enchantments:
+  - PROTECTION_FIRE:4
+
+Regenerator_Chestplate:
+  Id: leather_chestplate
+  Display: '&0Regenerator Chestplate'
+  Amount: 1
+  Options:
+    Color: 0,0,0
+
+Regenerator_Leggings:
+  Id: leather_leggings
+  Display: '&0Regenerator Leggings'
+  Amount: 1
+  Options:
+    Color: 0,0,0
+
+Regenerator_Boots:
+  Id: leather_boots
+  Display: '&0Regenerator Boots'
+  Amount: 1
+  Options:
+    Color: 0,0,0

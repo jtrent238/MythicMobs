@@ -1,0 +1,25 @@
+EnderEye:
+  Mobtype: vex
+  Display: 'Ender Eye'
+  Disguise.Type: zombie
+  Disguise.Invisible: true
+  Skills:
+   - sound{s=entity.endermen.teleport;p=0.0;v=1.0} @self ~onDamaged
+   - sound{s=block.portal.trigger;p=2.0;v=1.0} @self ~onDeath
+   - sound{s=block.portal.ambient;p=0.0;v=1.0} @self ~onTimer:20 0.25
+   - equip{i=flying_eye_head:4} ~onSpawn
+   - skill{s=EnderEyeDeathEffect} @Self ~onDeath
+   - skill{s=FlyingEyeEffect} @Self ~onTimer:20
+   - skill{s=EnderEyeLaser} @Target ~onTimer:20 0.4
+   - skill{s=EnderEyeAttackEffect} @Target ~onAttack
+   - teleport{spreadh=15;spreadv=5} @Self ~onDamaged 0.35
+  AITargetSelectors:
+  - 0 clear
+  - 1 villagers
+  - 2 players
+  Options:
+    MovementSpeed: 0.15
+    Collidable: true
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+    Silent: true

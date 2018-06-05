@@ -1,0 +1,81 @@
+EnderEyeAttackEffect:
+  Cooldown: 0
+  Skills:
+  - skill{s=EEAEffect}
+EEAEffect:
+  Cooldown: 0.01
+  Skills:
+  - effect:particles{p=reddust;c=#036669;a=200;hs=0.8;vs=0.8;s=0;y=1.5}
+
+EnderEyeDeathEffect:
+  Cooldown: 0
+  Skills:
+  - skill{s=EEDEffect1}
+  - delay 10
+  - skill{s=EEDEffect2}
+  - delay 10
+  - skill{s=EEDEffect3}
+  - delay 10
+  - skill{s=EEDEffect4}
+  - delay 10
+  - skill{s=EEDEffect5}
+
+EEDEffect1:
+  Cooldown: 0.01
+  Skills:
+  - effect:particles{p=reddust;c=#036669;a=500;hs=2.0;vs=2.0;s=0;y=1.5}
+EEDEffect2:
+  Cooldown: 0.01
+  Skills:
+  - effect:particles{p=reddust;c=#036669;a=400;hs=1.5;vs=1.5;s=0;y=1.5}
+EEDEffect3:
+  Cooldown: 0.01
+  Skills:
+  - effect:particles{p=reddust;c=#036669;a=300;hs=1.0;vs=1.0;s=0;y=1.5}
+EEDEffect4:
+  Cooldown: 0.01
+  Skills:
+  - effect:particles{p=reddust;c=#036669;a=200;hs=0.5;vs=0.5;s=0;y=1.5}
+EEDEffect5:
+  Cooldown: 0.01
+  Skills:
+  - effect:particles{p=reddust;c=#036669;a=100;hs=0.1;vs=0.1;s=0;y=1.5}
+
+FlyingEyeEffect:
+  Cooldown: 0
+  Skills:
+  - skill{s=FEEffect}
+  - delay 2
+  - skill{s=FEEffect}
+  - delay 2
+  - skill{s=FEEffect}
+  - delay 2
+  - skill{s=FEEffect}
+  - delay 2
+  - skill{s=FEEffect}
+  - delay 2
+  - skill{s=FEEffect}
+  - delay 2
+  - skill{s=FEEffect}
+  - delay 2
+  - skill{s=FEEffect}
+  - delay 2
+  - skill{s=FEEffect}
+  - delay 2
+  - skill{s=FEEffect}
+FEEffect:
+  Cooldown: 0.01
+  Skills:
+  - effect:particles{p=reddust;c=#036669;a=1;hs=0.5;vs=0.25;s=0;y=1.0}
+  - effect:particles{p=reddust;c=#036669;a=1;hs=0.25;vs=0.5;s=0;y=1.0}
+
+EnderEyeLaser:
+  Cooldown: 0
+  TargetConditions:
+  - lineofsight true
+  - distance{d=<21}
+  Skills:
+  - damage{a=3;i=false}
+  - effect:particleline{p=reddust;c=#8bdb98;amount=1;fromOrigin=true;ys=1.4}
+  - effect:particles{p=reddust;c=#8bdb98;a=30;hS=0.3;vS=0.8;y=1.0}
+  - effect:sound{s=entity.enderdragon.shoot;v=0.8;p=2.0} @self

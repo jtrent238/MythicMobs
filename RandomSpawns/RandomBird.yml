@@ -1,0 +1,11 @@
+RandomBird:
+  Action: ADD
+  Type: Bird
+  Level: 1
+  Chance: 1.00
+  Priority: 100
+  UseWorldScaling: false
+  Worlds: Nevayln,world
+  Conditions:
+  - inblock AIR
+  - day true

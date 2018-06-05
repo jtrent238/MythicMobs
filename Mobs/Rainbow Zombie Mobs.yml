@@ -1,0 +1,41 @@
+RainbowZombie:
+  MobType: zombie
+  Display: '&cR&6a&ei&an&bb&1o&5w &dZ&co&6m&eb&ai&be'
+  Health: 275
+  Damage: 3
+  KillMessages:
+  - '<target.name> tasted the rainbow'
+  - '<target.name> contracted the rainbow'
+  - '<target.name> thought the <mob.name> was a bag of skittles'
+  - '<target.name> was shown the power of the rainbow by <mob.name>'
+  Skills:
+  - skill{s=RainbowZombieArmorChange} @Self ~onSpawn
+  - sendactionmessage{m="<mob.name><&sp>&6<mob.hp>&8/&6<mob.mhp>"} @Trigger ~onDamaged
+  - summon{type=StashBat;a=10;r=1} @Self ~onDeath
+  Equipment:
+  - FalconPunchSword:0
+  - BlackHelm:4
+  - BlackChest:3
+  - BlackLegs:2
+  - BlackBoots:1
+  Drops:
+  - RainbowZombieDrops
+  Options:
+    PreventItemPickup: true
+    AlwaysShowName: true
+    ReinforcementsChance: 0
+    MovementSpeed: 0.32
+    Despawn: true
+    PreventMobKillDrops: true
+StashBat:
+  MobType: bat
+  Display: '&6Loot Stash Bat'
+  Health: 2
+  Damage: 1
+  Skills:
+  - skill{s=LootMobTimer} @Self ~onSpawn
+  Drops:
+  - StashBatDrops
+  Options:
+    Silent: true
+    Despawn: true

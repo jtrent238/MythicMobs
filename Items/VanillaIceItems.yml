@@ -1,0 +1,114 @@
+### Frost Warriors Items ###
+FrostWarriorsChest:
+  Id: LEATHER_CHESTPLATE
+  Display: 'Frost Warriors Chest'
+  Options:
+     Color: 58,179,218
+     Unbreakable: true
+     HideFlags: true
+FrostWarriorsPants:
+  Id: 300
+  Display: 'Frost Warriors PANTS'
+  Options:
+    Color: 58,179,218
+    Unbreakable: true
+    HideFlags: true
+FrostWarriorsBoots:
+  Id: 301
+  Display: 'Frost Warriors Boots'
+  Options:
+    Color: 58,179,218
+    Unbreakable: true
+    HideFlags: true
+FrostWarriorsSword:
+  Id: 267
+  Display: 'Frost Warriors Sword'
+  Enchantments:
+  - DAMAGE_ALL:3
+  Options:
+    Unbreakable: true
+    HideFlags: true
+FrostWarriorsShield:
+  Id: 442
+  Display: 'Frost Warriors shield'
+  Options:
+    Unbreakable: true
+    HideFlags: true
+FrostWarriorsButton:
+  Id: 77
+  Display: 'YetiButton'
+  Options:
+    Unbreakable: true
+    HideFlags: true
+### Ice Yetis Item ###
+YetisChest:
+  Id: LEATHER_CHESTPLATE
+  Display: 'YetisChest'
+  Options:
+     Color: 153,217,236
+     Unbreakable: true
+     HideFlags: true
+YetisPANTS:
+  Id: 300
+  Display: 'YetiPANTS'
+  Options:
+    Color: 255,255,255
+    Unbreakable: true
+    HideFlags: true
+YetisBoots:
+  Id: 301
+  Display: 'YetiBoots'
+  Options:
+    Color: 153,217,236
+    Unbreakable: true
+    HideFlags: true
+YetisSword:
+  Id: 267
+  Display: 'Yetis Sword'
+  Enchantments:
+  - DAMAGE_ALL:3
+  Options:
+    Unbreakable: true
+    HideFlags: true
+YetisIce:
+  Id: 174
+  Display: "&bIce Shard"
+  Lore:
+  - '&6&lA frozen crystal, might be used in trading somewhere.'
+  Options:
+    Unbreakable: true
+    HideFlags: true
+YetisButton:
+  Id: 77
+  Display: 'YetiButton'
+  Options:
+    Unbreakable: true
+    HideFlags: true
+### Snow Senterys Items ###
+SnowChest:
+  Id: LEATHER_CHESTPLATE
+  Display: 'SS Chest'
+  Options:
+     Color: 255,255,255
+     Unbreakable: true
+     HideFlags: true
+SnowPANTS:
+  Id: 300
+  Display: 'SS PANTS'
+  Options:
+    Color: 255,255,255
+    Unbreakable: true
+    HideFlags: true
+SnowBoots:
+  Id: 301
+  Display: 'SS Boots'
+  Options:
+    Color: 255,255,255
+    Unbreakable: true
+    HideFlags: true
+SnowPumpkin:
+  Id: 86
+  Display: 'SS Pumpkin'
+  Options:
+    Unbreakable: true
+    HideFlags: true

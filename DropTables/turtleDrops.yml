@@ -1,0 +1,6 @@
+turtleDrops:
+  Conditions:
+  - playerwithin 40
+  Drops:
+  - 351:2 1 0.25
+  - exp 2

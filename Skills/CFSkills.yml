@@ -1,0 +1,185 @@
+BloodWell:
+  Cooldown: 0
+  Skills:
+  - healpercent{m=0.03} @self ~onAttack
+DarkFlight:
+  Cooldown: 50
+  Conditions:
+  - offgcd true
+  Skills:
+  - GCD{t=20}
+  - message{msg="&cXotaar takes flight"} @PlayersInRadius{r=15}
+  - potion{type=SLOW;duration=60;level=10} @Self
+  - delay 60
+  - leap{velocity=200} @target
+  - delay 20
+  - jump{velocity=-100}
+  - effect:explosion @self
+  - damage{amount=20} @EntitiesInRadius{r=5}
+BloodThirst:
+  Cooldown: 50
+  Skills:
+  - message{msg="&cXotaar thirsts for blood"} @PlayersInRadius{r=15}
+  - delay 300
+  - message{msg="&cXotaar is thirsty"} @PlayersInRadius{r=25}
+  - potion{type=SLOW;duration=100;level=10} @Self
+  - effect:blockmask{m=WOOL;dv=14;n=1;r=25;d=120} @self
+  - delay 100
+  - skill{s=BloodDrink} @PlayersInRadius{r=25}
+  - delay 300
+  - message{msg="&cXotaar is releasing blood"} @PlayersInRadius{r=25}
+  - potion{type=SLOW;duration=100;level=10} @Self
+  - effect:blockmask{m=WOOL;dv=14;n=1;r=25;d=120} @self
+  - delay 100
+  - damage{amount=30} @EntitiesInRadius{r=10}
+BloodDrink:
+  Cooldown: 50
+  Conditions:
+  - targetinlineofsight true
+  Skills:
+  - damage{amount=10} @EntitiesInRadius{r=25}
+BoneChill:
+  Cooldown: 50
+  Conditions:
+  - offgcd true
+  Skills:
+  - GCD{t=20}
+  - message{msg="&cXotaar is watching you"} @Target
+  - potion{type=SLOW;duration=100;level=10} @Self
+  - delay 100
+  - damage{amount=5} @Target
+  - potion{type=SLOW;duration=200;level=1} @Target
+Massacre:
+  Cooldown: 50
+  Conditions:
+  - offgcd true
+  Skills:
+  - GCD{t=20}
+  - message{msg="&cXotaar is enraged"} @Target
+  - potion{type=SLOW;duration=60;level=10} @Self
+  - delay 100
+  - damage{amount=5} @Target
+  - potion{type=INCREASE_DAMAGE;duration=200;level=1} @Self
+  
+PoisonWaveNaN:
+  Cooldown: 50
+  Conditions:
+  - offgcd true
+  Skills:
+  - GCD{t=20}
+  - message{msg="&cVixius is leaking poison!"} @PlayersInRadius{r=25}
+  - potion{type=SLOW;duration=100;level=10} @Self
+  - delay 100
+  - skill{s=PoisonWave} @Target
+PoisonWave:
+  Cooldown: 50
+  Conditions:
+  - offgcd true
+  TargetConditions:
+  - onblock MYCEL,REDSTONE_ORE,DIRT,END_BRICKS
+  Skills:
+  - potion{type=POISON;duration=1200;level=4} @PlayersInRadius{r=25}
+WeakeningDarknessNAN:
+  Cooldown: 50
+  Conditions:
+  - offgcd true
+  Skills:
+  - GCD{t=20}
+  - message{msg="&cVixius is absorbing light"} @PlayersInRadius{r=25}
+  - potion{type=SLOW;duration=100;level=10} @Self
+  - delay 100
+  - skill{s=WeakeningDarkness} @PlayersInRadius{r=25}
+WeakeningDarkness:
+  Cooldown: 50
+  Conditions:
+  - offgcd true
+  - targetinlineofsight true
+  Skills:
+  - potion{type=BLINDNESS;duration=1200;level=4} @Target
+SoulRip:
+  Cooldown: 50
+  Conditions:
+  - offgcd true
+  Skills:
+  - GCD{t=20}
+  - message{msg="&cVixius reaped your soul"} @Target
+  - potion{type=WITHER;duration=400;level=0} @Target
+CreepingParanoia:
+  Cooldown: 50
+  Conditions:
+  - offgcd true
+  Skills:
+  - GCD{t=20}
+  - message{msg="&cVixius is getting scary"} @PlayersInRadius{r=25}
+  - potion{type=SLOW;duration=100;level=10} @Self
+  - delay 100
+  - potion{type=SLOW;duration=200;level=10} @PlayersInRadius{r=10}
+NightmareBolt:
+  Cooldown: 50
+  Conditions:
+  - offgcd true
+  Skills:
+  - damage{amount=10;ignoreArmor=true} @target
+
+CrushingGrip:
+  Cooldown: 50
+  Conditions:
+  - offgcd true
+  Skills:
+  - GCD{t=20}
+  - potion{type=SLOW;duration=200;level=0} @target
+  - effect:explosion @Self
+  - damage{amount=10} @PlayersInRadius{r=5}
+  - throw{velocity=15;velocityY=5} @PlayersInRadius{r=5}
+NightmareFlamesNAN:
+  Cooldown: 50
+  Conditions:
+  - offgcd true
+  Skills:
+  - GCD{t=20}
+  - message{msg="&cBreakheart is gathering heat"} @PlayersInRadius{r=25}
+  - potion{type=SLOW;duration=100;level=10} @Self
+  - delay 100
+  - skill{s=NightmareFlames} @PlayersInRadius{r=25}
+NightmareFlames:
+  Cooldown: 50
+  Conditions:
+  - offgcd true
+  - targetinlineofsight true
+  Skills:
+  - ignite{ticks=1200} @PlayersInRadius{r=25}
+CaveFallNAN:
+  Cooldown: 50
+  Conditions:
+  - offgcd true
+  Skills:
+  - GCD{t=20}
+  - message{msg="&cThe cave is trembling"} @PlayersInRadius{r=25}
+  - delay 100
+  - skill{s=CaveFall} @PlayersInRadius{r=25}
+CaveFall:
+  Cooldown: 50
+  Conditions:
+  - offgcd true
+  TargetConditions:
+  - inside true
+  Skills:
+  - damage{amount=50} @target
+CrimsonRootsNaN:
+  Cooldown: 50
+  Conditions:
+  - offgcd true
+  Skills:
+  - GCD{t=20}
+  - message{msg="&cBreakheart is summoning crimson roots!"} @PlayersInRadius{r=25}
+  - potion{type=SLOW;duration=100;level=10} @Self
+  - delay 100
+  - skill{s=CrimsonRoots} @Target
+CrimsonRoots:
+  Cooldown: 50
+  Conditions:
+  - offgcd true
+  TargetConditions:
+  - onblock STONE,NETHERRACK,MOSSY_COBBLESTONE,OBSIDIAN
+  Skills:
+  - potion{type=SLOW;duration=200;level=10} @PlayersInRadius{r=25}

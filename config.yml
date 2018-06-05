@@ -1,8 +1,8 @@
 # 
-# CONFIGURATION INFORMATION AVAILABLE AT: http://xikage.elseland.net/mythicmobs/
+# CONFIGURATION INFORMATION AVAILABLE AT: http://www.mythicmobs.net
 
 Configuration:
-  Version: 2.4
+  Version: 4.0
   General:
     AllowMetrics: true
     CheckForUpdates: true
@@ -20,12 +20,14 @@ Configuration:
     CustomSpawners: true
     RandomSpawning: true
   Mobs:
+    DespawnByDefault: true
     EnableAIModifiers: true
     EnableTimerSkills: true
     EnableThreatTables: true
     EnablePlayerFactions: true
     EnableLegacySkills: true
     KillMessagePrefix: ''
+    PreventOtherDropsByDefault: false
     ShowHealth:
       Radius: 25
       Format: <mob.name> - <mob.php> (<mob.hp> / <mob.mhp>)

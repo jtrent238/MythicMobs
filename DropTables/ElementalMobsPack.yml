@@ -1,0 +1,14 @@
+generaldrop: #lets you specify exactly how many items will drop from this table
+  Drops:
+  - magma_cream 1-5 .2
+  - sulfur 1-4 .2
+  - emerald 1 .05
+  - diamond 1 .02
+  DropsPerLevel:
+  - exp 1 1
+  - bone 1 .1
+  - iron_ingot 1 .1
+  - gold_ingot 1 .05
+  - redstone 1 .1
+  - glowstone_dust 1 .05
+  - arrow 1 .04

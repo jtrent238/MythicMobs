@@ -1,0 +1,75 @@
+UndeadSavage:
+  Type: PIG_ZOMBIE_VILLAGER
+  BossBar:
+    Enabled: true
+    Title: 'Undead Savage'
+    Range: 20
+    Color: RED
+    Style: SEGMENTED_6
+    CreateFog: true
+    DarkenSky: true
+    PlayMusic: true
+  Display: '&c&lUndead Savage&r'
+  Health: 135
+  Damage: 0.8
+  Skills:
+  - message{cooldown=20;m="<mob.name><&co> BRAWWWWAINS!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
+  - message{m="<mob.name><&co> Eating you alive will be a real treat! Braw hah hah!"} @PlayersInRadius{r=40} ~onPlayerKill >0 1
+  - skill{s=SummonZombies} ~onTimer:200
+  - effect:particletornado{p=flame;cp=largeexplode;mr=1;h=3;i=4;d=100;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2} @self ~onTimer:200
+  - skill{s=SmashAttackII} @Target >0 0.2
+  - skill{s=AngryAura} ~onTimer:150
+  - skill{s=MobHealth} ~onDamaged >0 1
+  - skill{s=Death} @Self ~onDeath
+  - skill{s=CallPig} @self 0.1
+  Equipment:
+  - 276
+  - chainmail_helmet:4
+  - iron_chestplate:3
+  - iron_leggings:2
+  - iron_boots:1
+  Drops:
+  - UndeadSavageDrops
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.1
+    Profession: Priest
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+UndeadMount:
+  Type: PIG
+  Display: '&cPIG'
+  Health: 1
+  Damage: 0.1
+  Skills:
+  - message{cooldown=20;m="<mob.name><&co> Oink oink oink!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
+  - skill{s=MobHealth} ~onDamaged >0 1
+  Equipment:
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Drops:
+  Options:
+    AlwaysShowName: true
+    MaxCombatDistance: 25
+    Despawn: true
+    PreventOtherDrops: true
+UndeadGuard:
+  Type: ZOMBIE_VILLAGER
+  Display: '&cUndead Guard'
+  Health: 45
+  Damage: 0.15
+  Skills:
+  - skill{s=FireResistanceSpeed} ~onTimer:100
+  - skill{s=MobHealth} ~onDamaged >0 1
+  Equipment:
+  - 275
+  - iron_helmet:4
+  Drops:
+  - exp 10
+  - gold_nugget 4 0.6
+  - iron_ingot 1 0.4
+  - diamond 1 0.1
+  Options:
+    MovementSpeed: 0.2
+    Despawn: true

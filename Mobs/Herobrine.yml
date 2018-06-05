@@ -1,0 +1,40 @@
+Herobrine:
+  Type: Husk
+  Display: '&lHerobrine'
+  Health: 600
+  Damage: 10
+  Disguise:
+    Type: player
+    Skin: 'MHF_Herobrine'
+    Player: '&lHerobrine'
+  Equipment:
+  - diamond_sword:0
+  - diamond_boots:1
+  - diamond_leggins:2
+  - diamond_chestplate:3
+  - diamond_helment:4
+  Skills:
+  - skill{s=HerobrineHealthRegeneration} @self ~onTimer:500
+  - gcd{t=60}
+  #- message{m="<mob.name> begins casting a spell"}
+  - potion{t=SLOW;d=60;l=7}
+  - delay 60
+  ##- message{m="<target.name> &ecombusts"}
+  - effect:particles{p=flame;a=20;hS=3;vS=1;s=0;y=2}
+  - potion{t=HARM;d=1;l=1}
+  AIGoalSelectors:
+  - 0 clear
+  - 1 randomstroll
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Options:
+    MovementSpeed: 0.2
+    Silent: true
+  BossBar:
+    Enabled: true
+    Title: '&lHerobrine'
+    Range: 20
+    Color: RED
+    Style: SOLID

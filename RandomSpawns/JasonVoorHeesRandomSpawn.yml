@@ -1,0 +1,14 @@
+JasonVoorhees:
+  MobType: JasonVoorhees
+  Worlds: normal,world
+  Chance: 0.1
+  Priority: 10
+  Action: replace
+  LegacyConditions:
+  - outside true
+  - biome swampland
+  - lightlevelbelow 8
+  - playernotwithin 10
+  - raining true
+  Conditions:
+    - biome{b=swampland} true

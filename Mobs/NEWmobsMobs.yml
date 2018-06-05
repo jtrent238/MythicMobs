@@ -1,0 +1,226 @@
+# Do not say you are the owner of this product
+# Do not copy, resell, give this product
+# created by binodio
+
+SummonerCreeper:
+  Type: ZOMBIE
+  Display: '&6Summoner'
+  Health: 200
+  Damage: 3
+  Skills:
+  - sound{s=mob.endermen.portal} @self ~onTimer:200
+  - effect:particles{p=witchMagic;amount=190;speed=0.03;hR=3;vR=3} @self ~onTimer:20
+  - skill{s=KarazschBossParticles} @self ~onTimer:20
+  - skill{s=Summoncreepers} @Self 
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.2
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+CreeperMinion:
+  Type: CREEPER
+  Display: '&2Creeper Minion'
+  Health: 2
+  Damage: 2
+  Options:
+    MovementSpeed: 0.4 
+
+skeleton2:
+  Type: SKELETON
+  Display: '&6Hydros'
+  Health: 200
+  Damage: 1
+  Skills:
+  - sound{s=mob.endermen.portal} @self ~onTimer:200
+  - effect:particles{p=witchMagic;amount=190;speed=0.03;hR=3;vR=3} @self ~onTimer:20
+  - skill{s=KarazschBossParticles} @self ~onTimer:20
+  - skill{s=test} @Target ~onTimer:30
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.2
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    AttackSpeed: 1
+    
+esgand:
+  Type: SKELETON
+  Display: '&6Esgand'
+  Health: 200
+  Damage: 1
+  Skills:
+  - sound{s=mob.endermen.portal} @self ~onTimer:200
+  - effect:particlesphere{particle=largesmoke;amount=100;radius=3} @self ~onTimer:20
+  - skill{s=firearrow} @Target ~onTimer:50 0.3
+  - skill{s=tp} @Target ~onTimer:50 0.3
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.2
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    AttackSpeed: 1
+  
+supzombie:
+  Type: ZOMBIE
+  Display: '&6Sup Zombie'
+  Health: 200
+  Damage: 1
+  Skills:
+  - sound{s=mob.endermen.portal} @self ~onTimer:200
+  - effect:particlebox{particle=portal;amount=100;radius=1} @self ~onTimer:20
+  - skill{s=Leap} @Target ~onTimer:50 0.5
+  - skill{s=tp} @Target ~onTimer:50 0.3
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.2
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    AttackSpeed: 1  
+    
+darkendermen:
+  Type: ENDERMAN
+  Display: '&cDark &0Enderman'
+  Health: 80
+  Damage: 1
+  Skills:
+  - sound{s=mob.endermen.portal} @self ~onTimer:200
+  - effect:particlebox{particle=portal;amount=100;radius=1} @self ~onTimer:20
+  - effect:particlebox{particle=flame;amount=100;radius=1} @self ~onTimer:20
+  - skill{s=potion} @Target ~onTimer:50 0.5
+  - skill{s=tp} @Target ~onTimer:50 0.3
+  - skill{s=laser1} @Target ~onTimer:50 0.7
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.2
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    AttackSpeed: 1         
+    
+creeper2:
+  Type: CREEPER
+  Display: '&2Creeper Esgard'
+  Health: 150
+  Damage: 1
+  Skills:
+  - effect:particles{p=lava;amount=100;speed=0.03;hR=3;vR=3} @self ~onTimer:100
+  - sound{s=entity.enderdragon.hurt} @self ~onTimer:40
+  - skill{s=test2} @Target ~onCombat
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.015
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    AttackSpeed: 1
+    PreventSuicide: true   
+    FuseTicks: 10000  
+    
+
+
+Enderal:
+  Mobtype: ZOMBIE
+  Disguise:
+    Type: player
+    Player: '&6&lElder-Sigon'
+    Skin: king
+  Display: '&6Elder-Sigon'
+  Health: 225
+  Damage: 0
+  Skills:
+  - sound{s=entity.elder_guardian.ambient} @self ~onTimer:200
+  - effect:particlesphere{particle=portal;amount=200;radius=3} @self ~onTimer:25
+  - skill{s=wiz1} @Target ~onTimer:100 0.5
+  - skill{s=wiz2} @Target ~onTimer:100 0.5
+  - skill{s=wiz3} @Target ~onTimer:100 0.5
+  Options:
+    Despawn: true
+    AlwaysShowName: true
+    MovementSpeed: 0.15
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    AttackSpeed: 1    
+   
+tnt:
+  Type: ZOMBIE
+  Disguise:
+    Type: BLOCK
+    Block: TNT
+    BlockData: 0
+  Skills:
+  - skill{s=tntwiz} @Self ~onSpawn
+  Options:
+    ShowName: true   
+    MovementSpeed: 0.001  
+
+
+
+
+saok:
+  Mobtype: VILLAGER
+  Disguise:
+    Type: player
+    Player: '&6&lSaok'
+    Skin: QT7
+  Display: '&6&lSaok'
+  Health: 225
+  Damage: 0
+  Skills:
+  - skill{s=saokspawn} @Self ~onSpawn
+  - throw{velocity=90;velocityY=2} @PlayersInRadius{r=105} ~onDamaged 1
+  Options:
+    Despawn: true
+    AlwaysShowName: true
+    MovementSpeed: 0.0001
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    AttackSpeed: 1 
+    NoGravity: true
+    Invincible: true
+
+    
+saok2:
+  Type: CREEPER
+  Display: '&c&lSaok'
+  Health: 450
+  Damage: 0
+  Skills:
+  - effect:particles{p=reddust;color=#ffd500;amount=30;hS=1.1;vd=500;vS=1.1;speed=0.1} @self ~onTimer:20
+  - effect:particles{p=reddust;color=#A50008;amount=150;hS=7.1;vd=500;vS=7.1;speed=0.1} @self ~onTimer:20
+  - sound{s=entity.wither.hurt} @self ~onSpawn
+  - skill{s=saokskill1} @Self ~onTimer:50 0.15
+  - skill{s=saokskill2} @Self ~onTimer:50 0.15
+  - skill{s=saokskill3} @Self ~onTimer:50 0.04
+  - skill{s=saokskill4} @Self ~onTimer:50 0.09
+  - skill{s=saokskill5} @Self ~onTimer:50 0.15
+  - skill{s=saokskill6} @Self ~onTimer:50 0.15
+  - skill{s=saokskill7} @Self ~onDamaged 0.3
+  - skill{s=saokskill8} @Self ~oTimer:100 0.1
+  - skill{s=saokmsg} @Self ~onTimer:100 0.43
+  - sound{s=entity.wither.hurt} @self ~onDeath 1
+  - skill{s=saokskill3} @Self ~onDeath 1
+  - lightning @Ring{radius=8;points=5} ~onDamaged 0.15
+  - message{cooldown=30;m="<mob.name><&co> Aaawww.."} @PlayersInRadius{r=40} ~onDamaged 0.09
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.015
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    AttackSpeed: 1
+    PreventSuicide: true   
+    FuseTicks: 10000  
+    SuperCharged: true
+    
+saok3:
+  Type: CREEPER
+  Display: '&6&lSaok'
+  Health: 1
+  Damage: 0
+  Skills:
+  - effect:particles{p=reddust;color=#ffd500;amount=30;hS=1.1;vd=500;vS=1.1;speed=0.1} @self ~onTimer:20
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.45
+    MaxCombatDistance: 65
+    PreventOtherDrops: true
+    AttackSpeed: 1
+    PreventSuicide: false  
+    FuseTicks: 1
+    SuperCharged: true    

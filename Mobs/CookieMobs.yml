@@ -1,0 +1,282 @@
+#
+#   Peaceful/NPC
+#
+Librarian:
+  Type: COW
+  Display: '&aLibrarian'
+  Health: 20
+  Faction: NPC
+  Options:
+    AlwaysShowName: true
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  AIGoalSelectors:
+  - 0 clear
+  - 2 randomstroll
+  - 3 lookatplayers
+  Drops:
+  - exp 400 1
+  DropsPerLevel:
+  - exp 7 1
+  KillMessages:
+  LevelModifiers:
+  Disguise:
+    Type: Villager
+  Skills:
+Miner:
+  Type: HUSK
+  Display: '&aMiner &8[&7Lvl <mob.level>&8]'
+  Health: 20
+  Damage: 5
+  Armor: 5
+  Faction: NPC
+  Options:
+    AlwaysShowName: true
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  - 3 lookatplayers
+  AITargetSelectors:
+  - 0 clear
+  - 1 OtherFactionMonsters
+  - 2 attacker/hurtbytarget
+  Drops:
+  - diamond_ore 1 1
+  - exp 7 1
+  DropsPerLevel:
+  - exp 7 1
+  Equipment:
+  KillMessages:
+  - '<target.name>&7 was stupid enough to attack the miner. RIP.'
+  LevelModifiers:
+    Health: 3
+    Damage: 0.3
+  Disguise:
+    Type: player
+    Skin: Miner
+    Player: '&aMiner'
+  Skills:
+  - dropmythicitem{i=Diamond_Ore;a=1} @self ~onTimer:1200
+Lost_Knight:
+  Type: HUSK
+  Display: '&aLost Knight &8[&7Lvl <mob.level>&8]'
+  Health: 30
+  Damage: 7
+  Armor: 7
+  Faction: NPC
+  Options:
+    AlwaysShowName: true
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  - 3 lookatplayers
+  AITargetSelectors:
+  - 0 clear
+  - 1 OtherFactionMonsters
+  - 2 attacker/hurtbytarget
+  Drops:
+  - 306 0.3
+  - 307 0.3
+  - 308 0.3
+  - 309 0.3
+  - 267 0.3
+  DropsPerLevel:
+  - exp 7 1
+  DamageModifiers:
+  Equipment:
+  - shield:5
+  - iron_helmet:4
+  - iron_chestplate:3
+  - iron_leggings:2
+  - iron_boots:1
+  - iron_sword:0
+  KillMessages:
+  - '&7The good knight did good once again by killing <target.name>.'
+  LevelModifiers:
+    Health: 5
+    Damage: 0.5
+  Disguise:
+    Type: player
+    Skin: Knight5
+    Player: '&aLost Knight'
+#
+#    Neutral Mobs.
+#
+Diamond_dude:
+  Type: COW
+  Display: '&9Diamond Dude &8[&7Lvl <mob.level>&8]'
+  Health: 30
+  Faction: NEUTRAL
+  Options:
+    AlwaysShowName: true
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    MovementSpeed: 0.4
+  Modules:
+    ImmunityTable: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 fleeplayers
+  - 2 randomstroll
+  DropsPerLevel:
+  - exp 7 1
+  KillMessages:
+  - '&7How? This mob does no damage! How did you manage to get killed by it?'
+  Disguise:
+    Type: player
+    Skin: diamondore
+    Player: '&9Diamond Dude'
+  Skills:
+  - skill{s=DiamondLoot} @self ~onDeath
+JackPot:
+  Type: COW
+  Display: '&9Jackpot Cow. &8[&7Lvl <mob.level>&8]'
+  Health: 30
+  Faction: NEUTRAL
+  Options:
+    AlwaysShowName: true
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    MovementSpeed: 0.4
+  Modules:
+    ImmunityTable: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 fleeplayers
+  - 2 randomstroll
+  DropsPerLevel:
+  - exp 7 1
+  KillMessages:
+  - '&7How? This mob does no damage! How did you manage to get killed by it?'
+  Disguise:
+  Skills:
+  - skill{s=MilkLoot} @self ~onDeath
+  - message{m="&9JACKPOT COW&f<&co> MOOOOOOOOO"} @PlayersInRadius{r=40} ~onTimer:600
+#
+#   Hostile Mobs
+#
+LilGhost:
+  Type: VEX
+  Display: '&4Lil'' Ghost &8[&7Lvl <mob.level>&8]'
+  Health: 2
+  Damage: 4
+  Faction: HOSTILE
+  Options:
+    AlwaysShowName: true
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  AIGoalSelectors:
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  - 2 OtherFaction
+  DropsPerLevel:
+  - exp 7 1
+  KillMessages:
+  - '&7A fly killed you! "HAHA HAHA HAHA HAHA" - Nelson'
+Walker:
+  Type: ZOMBIE
+  Display: '&4Walker &8[&7Lvl <mob.level>&8]'
+  Health: 15
+  Damage: 7
+  Armor: 5
+  Faction: HOSTILE
+  Options:
+    AlwaysShowName: true
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  - 2 OtherFaction
+  DropsPerLevel:
+  - exp 7 1
+  KillMessages:
+  - '"&7IT BIT ME! I AM GOING TO DIE!" - <target.name>'
+  Disguise:
+  Skills:
+  - skill{s=WalkerEffect} @target ~onAttack
+Ghost:
+  Type: Skeleton
+  Display: '&4Ghost &8[&7Lvl <mob.level>&8]'
+  Health: 20
+  Damage: 6
+  Armor: 2
+  Faction: HOSTILE
+  Options:
+    AlwaysShowName: true
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  AIGoalSelectors:
+  AITargetSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  - 2 OtherFaction
+  DropsPerLevel:
+  - exp 7 1
+  KillMessages:
+  - '<target.name>&7 got possessed by a ghost'
+  Skills:
+  - potion{type=INVISIBILITY;duration=999999;level=20} @self ~onSpawn
+  - potion{type=GLOWING;duration=999999;level=20} @self ~onSpawn
+  - skill{s=GhostSkill} @self ~onDamaged
+EVOKER:
+  Type: EVOKER
+STRAY:
+  Type: Stray

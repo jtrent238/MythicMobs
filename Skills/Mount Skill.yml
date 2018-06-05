@@ -1,0 +1,6 @@
+# 
+# These example files show you some VERY basic meta skills.
+# You can copy and expand them however you'd like.
+HorseMount:
+  Skills:
+  - mount{type=Horse1} @self

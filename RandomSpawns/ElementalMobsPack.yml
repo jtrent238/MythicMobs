@@ -1,0 +1,53 @@
+zombie_overworld:
+  Action: REPLACE
+  Conditions:
+  - night true
+  - onblock grass,dirt,stone,sand,sandstone,cobblestone,gravel,snow,snow_block,ice,packed_ice,soul_sand,NETHER_BRICK,NETHERRACK
+  Type: flamezombie,frostzombie,corruptzombie,chargedzombie
+  Chance: 0.04
+  Worlds: world,world_nether,world_end
+skeleton_overworld:
+  Action: REPLACE
+  Conditions:
+  - night true
+  - onblock grass,dirt,stone,sand,sandstone,cobblestone,gravel,snow,snow_block,ice,packed_ice,soul_sand,NETHER_BRICK,NETHERRACK
+  Type: flameskeleton,frostskeleton,corruptskeleton,chargedskeleton,gravityskeleton
+  Chance: 0.04
+  Worlds: world,world_nether,world_end
+creeper_overworld:
+  Action: REPLACE
+  Conditions:
+  - night true
+  - onblock grass,dirt,stone,sand,sandstone,cobblestone,gravel,snow,snow_block,ice,packed_ice,soul_sand,NETHER_BRICK,NETHERRACK
+  Type: flamecreeper,frostcreeper,corruptcreeper,chargedcreeper,gravitycreeper
+  Chance: 0.04
+  Worlds: world,world_nether,world_end
+ghast_overworld:
+  Action: REPLACE
+  Type: frostghast,corruptghast
+  Chance: 0.04
+  Worlds: world_nether
+spider_overworld:
+  Action: REPLACE
+  Conditions:
+  - night true
+  - onblock grass,dirt,stone,sand,sandstone,cobblestone,gravel,snow,snow_block,ice,packed_ice,soul_sand,NETHER_BRICK,NETHERRACK
+  Type: flamespider,frostspider,chargedspider,corruptspider
+  Chance: 0.04
+  Worlds: world,world_nether,world_end
+husk_overworld:
+  Action: REPLACE
+  Conditions:
+  - night true
+  - onblock grass,dirt,stone,sand,sandstone,cobblestone,gravel,snow,snow_block,ice,packed_ice,soul_sand,NETHER_BRICK,NETHERRACK
+  Type: flamehusk,frosthusk,corrupthusk,chargedhusk
+  Chance: 0.04
+  Worlds: world,world_nether,world_end
+ender_overworld:
+  Action: REPLACE
+  Conditions:
+  - night true
+  - onblock grass,dirt,stone,sand,sandstone,cobblestone,gravel,snow,snow_block,ice,packed_ice,soul_sand,NETHER_BRICK,NETHERRACK,ENDER_STONE
+  Type: flameenderman,frostenderman,corruptenderman,chargedenderman,gravityenderman
+  Chance: 0.04
+  Worlds: world,world_nether,world_end

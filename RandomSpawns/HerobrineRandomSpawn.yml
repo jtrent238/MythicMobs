@@ -1,0 +1,6 @@
+Herobrine:
+  MobType: Herobrine
+  Worlds: normal,world,world_nether,world_the_end
+  Chance: 0.001
+  Priority: 10
+  Action: replace
